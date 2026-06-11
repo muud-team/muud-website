@@ -607,6 +607,8 @@
       "messagePlaceholder": "Quero uma demonstração para minha equipe…",
       "messagePlaceholderSchool": "Quero agendar uma demonstração para minha escola…",
       "submitButton": "Agendar demonstração gratuita",
+      "submitting": "Enviando...",
+      "errorGeneric": "Ocorreu um erro. Tente novamente.",
       "successEmoji": "🎉",
       "successTitle": "Obrigado!",
       "successMessage": "Recebemos sua solicitação. Entraremos em contato em breve.",
@@ -621,6 +623,8 @@
       "placeholder": "seuemail@exemplo.com",
       "ariaLabel": "Seu e-mail",
       "submitButton": "Inscrever-se",
+      "submitting": "Enviando...",
+      "errorGeneric": "Ocorreu um erro. Tente novamente.",
       "successMessage": "Pronto! Você se inscreveu em nossa newsletter 🎉",
       "disclaimer": "Sem spam. Você pode cancelar quando quiser."
     }

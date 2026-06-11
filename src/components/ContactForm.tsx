@@ -2,6 +2,9 @@
 
 import { useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
+const API_BASE = "https://back.muud.app/api";
 
 interface ContactFormProps {
   variant?: "schools" | "business" | "general";
@@ -9,16 +12,51 @@ interface ContactFormProps {
 
 export default function ContactForm({ variant = "general" }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const t = useTranslations('contact.form');
+  const locale = useLocale();
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
-    setSubmitted(true);
+
+    setLoading(true);
+    setError(null);
+
+    const data = new FormData(form);
+    const body = {
+      name: data.get("nombre") as string,
+      organization: data.get("org") as string,
+      email: data.get("email") as string,
+      role: data.get("rol") as string,
+      message: data.get("msg") as string,
+      variant,
+      locale,
+    };
+
+    try {
+      const res = await fetch(`${API_BASE}/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => null);
+        throw new Error(err?.message || `Error ${res.status}`);
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : t('errorGeneric'));
+    } finally {
+      setLoading(false);
+    }
   }
 
   // Get variant-specific translations
@@ -79,7 +117,10 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
             <label htmlFor="msg">{t('messageLabel')}</label>
             <textarea id="msg" name="msg" rows={3} placeholder={messagePlaceholder} />
           </div>
-          <button type="submit" className="btn btn-primary">{t('submitButton')}</button>
+          {error && <p className="form-error" style={{ color: "#ff6b6b", marginBottom: 8 }}>{error}</p>}
+          <button type="submit" className="btn btn-primary" disabled={loading}>
+            {loading ? t('submitting') : t('submitButton')}
+          </button>
           <p className="form-note">{t('note')}</p>
         </>
       ) : (

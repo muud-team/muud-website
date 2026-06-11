@@ -607,6 +607,8 @@
       "messagePlaceholder": "I want a demo for my team…",
       "messagePlaceholderSchool": "I want to schedule a demo for my school…",
       "submitButton": "Schedule free demo",
+      "submitting": "Sending...",
+      "errorGeneric": "An error occurred. Please try again.",
       "successEmoji": "🎉",
       "successTitle": "Thank you!",
       "successMessage": "We received your request. We'll contact you very soon.",
@@ -621,6 +623,8 @@
       "placeholder": "youremail@example.com",
       "ariaLabel": "Your email",
       "submitButton": "Subscribe",
+      "submitting": "Sending...",
+      "errorGeneric": "An error occurred. Please try again.",
       "successMessage": "Done! You've subscribed to our newsletter 🎉",
       "disclaimer": "No spam. You can unsubscribe anytime."
     }
