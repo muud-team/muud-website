@@ -653,6 +653,27 @@
       }
     }
   },
+  "cookie": {
+    "title": "Usamos cookies",
+    "description": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas son esenciales para el funcionamiento básico, mientras que otras nos ayudan a entender cómo usas el sitio y a mostrarte contenido relevante.",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Solo esenciales",
+    "customize": "Personalizar",
+    "savePreferences": "Guardar preferencias",
+    "essential": "Esenciales",
+    "essentialDescription": "Cookies necesarias para el funcionamiento básico del sitio. Siempre están activas.",
+    "analytics": "Analíticas",
+    "analyticsDescription": "Nos ayudan a entender cómo los visitantes interactúan con el sitio web.",
+    "marketing": "Marketing",
+    "marketingDescription": "Se utilizan para rastrear visitantes en los sitios web y mostrar anuncios relevantes.",
+    "learnMore": "Política de privacidad",
+    "customizeTitle": "Personaliza tus preferencias de cookies",
+    "customizeDescription": "Puedes elegir qué tipos de cookies permitir. Ten en cuenta que deshabilitar algunas cookies puede afectar tu experiencia en el sitio."
+  },
+  "terms": {
+    "title": "Términos y Condiciones MUUD SpA",
+    "lastUpdated": "Última actualización"
+  },
   "metadata": {
     "home": {
       "title": "MUUD — Convertimos emociones en datos",
@@ -677,23 +698,12 @@
       "description": "Artículos de opinión sobre violencia escolar, salud mental, políticas educativas y convivencia en Chile. Por Rodrigo Torres, cofundador de MUUD.",
       "ogTitle": "Blog — MUUD",
       "ogDescription": "Opinión sobre educación, convivencia escolar y salud mental en Chile."
+    },
+    "terms": {
+      "title": "Términos y Condiciones — MUUD SpA",
+      "description": "Términos y condiciones de uso de MUUD SpA. Condiciones legales para el acceso y uso de la plataforma MUUD, aplicaciones móviles y servicios relacionados.",
+      "ogTitle": "Términos y Condiciones — MUUD SpA",
+      "ogDescription": "Condiciones legales para el acceso y uso de la plataforma MUUD y sus servicios."
     }
-  },
-  "cookie": {
-    "title": "Usamos cookies",
-    "description": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas son esenciales para el funcionamiento básico, mientras que otras nos ayudan a entender cómo usas el sitio y a mostrarte contenido relevante.",
-    "acceptAll": "Aceptar todo",
-    "rejectAll": "Solo esenciales",
-    "customize": "Personalizar",
-    "savePreferences": "Guardar preferencias",
-    "essential": "Esenciales",
-    "essentialDescription": "Cookies necesarias para el funcionamiento básico del sitio. Siempre están activas.",
-    "analytics": "Analíticas",
-    "analyticsDescription": "Nos ayudan a entender cómo los visitantes interactúan con el sitio web.",
-    "marketing": "Marketing",
-    "marketingDescription": "Se utilizan para rastrear visitantes en los sitios web y mostrar anuncios relevantes.",
-    "learnMore": "Política de privacidad",
-    "customizeTitle": "Personaliza tus preferencias de cookies",
-    "customizeDescription": "Puedes elegir qué tipos de cookies permitir. Ten en cuenta que deshabilitar algunas cookies puede afectar tu experiencia en el sitio."
   }
 }

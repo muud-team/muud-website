@@ -677,6 +677,12 @@
       "description": "Opinion articles on school violence, mental health, educational policies, and coexistence in Chile. By Rodrigo Torres, MUUD co-founder.",
       "ogTitle": "Blog — MUUD",
       "ogDescription": "Opinion on education, school coexistence, and mental health in Chile."
+    },
+    "terms": {
+      "title": "Terms and Conditions — MUUD SpA",
+      "description": "Terms and conditions of use for MUUD SpA. Legal conditions for access and use of the MUUD platform, mobile applications and related services.",
+      "ogTitle": "Terms and Conditions — MUUD SpA",
+      "ogDescription": "Legal conditions for access and use of the MUUD platform and its services."
     }
   },
   "cookie": {
@@ -695,5 +701,9 @@
     "learnMore": "Privacy policy",
     "customizeTitle": "Customize your cookie preferences",
     "customizeDescription": "You can choose which types of cookies to allow. Note that disabling some cookies may affect your experience on the site."
+  },
+  "terms": {
+    "title": "Terms and Conditions MUUD SpA",
+    "lastUpdated": "Last updated"
   }
 }

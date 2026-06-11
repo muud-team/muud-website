@@ -52,7 +52,7 @@ export default function Footer({ variant = "general" }: FooterProps) {
           </div>
           <div className="foot-col">
             <h4>{t('legalTitle')}</h4>
-            <a href="https://muud-app.webflow.io/terminos-y-condiciones-muud-spa" target="_blank" rel="noopener noreferrer">{t('termsAndConditions')}</a>
+            <Link href="/terminos-y-condiciones">{t('termsAndConditions')}</Link>
             <a href="https://www.muud.app/politica-de-privacidad-muud-spa" target="_blank" rel="noopener noreferrer">{t('privacyPolicy')}</a>
             <a href="https://www.muud.app/eula" target="_blank" rel="noopener noreferrer">{t('eula')}</a>
             <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">{t('deleteAccount')}</a>
