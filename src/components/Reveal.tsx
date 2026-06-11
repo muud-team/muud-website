@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { type ReactNode, type JSX } from "react";
 
 interface RevealProps {
   children: ReactNode;

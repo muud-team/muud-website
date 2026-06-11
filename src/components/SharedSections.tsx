@@ -76,19 +76,19 @@ export function NewsletterSection() {
 
   const socialItems = [
     {
+      ...SOCIAL[0],
       net: tSocial('instagram.network'),
       handle: tSocial('instagram.handle'),
-      ...SOCIAL[0],
     },
     {
+      ...SOCIAL[1],
       net: tSocial('linkedin.network'),
       handle: tSocial('linkedin.handle'),
-      ...SOCIAL[1],
     },
     {
+      ...SOCIAL[2],
       net: tSocial('facebook.network'),
       handle: tSocial('facebook.handle'),
-      ...SOCIAL[2],
     },
   ];
 

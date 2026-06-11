@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -53,9 +52,9 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const t = useTranslations('blog');
-  const tNav = useTranslations('blog.navLinks');
-  const tMeta = useTranslations('blog.meta');
+  const t = await getTranslations('blog');
+  const tNav = await getTranslations('blog.navLinks');
+  const tMeta = await getTranslations('blog.meta');
 
   const idx = BLOG_POSTS.findIndex((p) => p.slug === slug);
   const related = BLOG_POSTS.filter((_, i) => i !== idx).slice(0, 3);
