@@ -1,0 +1,695 @@
+{
+  "nav": {
+    "schools": "Colegios",
+    "business": "Empresas",
+    "login": "Iniciar sesión",
+    "loginSchool": "Colegio",
+    "loginSchoolDescription": "Plataforma para instituciones",
+    "loginBusiness": "Empresa",
+    "loginBusinessDescription": "Bienestar para equipos",
+    "scheduleDemo": "Agendar demo",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "forSchools": "Para colegios",
+    "forBusiness": "Para empresas"
+  },
+  "footer": {
+    "description": "Impulsamos el desarrollo socioemocional de estudiantes y docentes con inteligencia artificial, para promover una sana convivencia escolar.",
+    "descriptionBusiness": "Impulsamos el bienestar emocional de las personas con inteligencia artificial, para construir equipos y comunidades más sanas.",
+    "solutionsTitle": "Soluciones",
+    "forSchools": "Para colegios",
+    "forBusiness": "Para empresas",
+    "home": "Inicio",
+    "schoolLogin": "Acceso colegios",
+    "businessLogin": "Acceso empresas",
+    "legalTitle": "Legal",
+    "termsAndConditions": "Términos y condiciones",
+    "privacyPolicy": "Política de privacidad",
+    "eula": "EULA",
+    "deleteAccount": "Eliminar cuenta",
+    "contactTitle": "Contacto",
+    "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
+    "email": "hola@muud.app",
+    "copyright": "© 2026 MUUD SpA · Todos los derechos reservados",
+    "madeInChile": "Hecho con cariño en Chile 🇨🇱"
+  },
+  "common": {
+    "learnMore": "Conocer más",
+    "contact": "Contactar",
+    "send": "Enviar",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "message": "Mensaje",
+    "close": "Cerrar"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Bienestar socioemocional con IA",
+      "title": "Convertimos emociones en <highlight>datos</highlight> para prevenir conflictos",
+      "subtitle": "Fortalecemos el bienestar escolar acompañando a estudiantes y docentes, día a día, con inteligencia artificial.",
+      "downloadAppStore": "Descargar en App Store",
+      "downloadPlayStore": "Descargar en Google Play",
+      "trustBadge": "Valorada por colegios en toda Latinoamérica",
+      "phoneAlt": "App MÜUD"
+    },
+    "navLinks": {
+      "whatIs": "Qué es MUUD",
+      "howItWorks": "Cómo funciona",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "context": {
+      "text": "El acoso, la violencia y la exclusión afectan el bienestar y el rendimiento de millones de estudiantes en el mundo."
+    },
+    "problems": {
+      "eyebrow": "El desafío",
+      "title": "¿Te suena familiar?",
+      "subtitle": "Las barreras emocionales en el aula son invisibles hasta que estallan. MUUD las hace visibles a tiempo.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Exclusión social",
+          "description": "Grupos de estudiantes que deliberadamente marginan o excluyen a otros compañeros."
+        },
+        {
+          "number": "02",
+          "title": "Conflictos y tensiones",
+          "description": "Enfrentamientos recurrentes por diferencias de opinión, personalidades o intereses."
+        },
+        {
+          "number": "03",
+          "title": "Bullying",
+          "description": "Estudiantes que sufren burlas, insultos o agresiones físicas por parte de sus compañeros."
+        },
+        {
+          "number": "04",
+          "title": "Falta de comunicación",
+          "description": "Docentes y estudiantes sin canales efectivos y comprensivos para expresarse."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "El futuro del bienestar emocional",
+      "title": "Conoce la app MÜUD",
+      "paragraphs": [
+        "Con MÜUD, los estudiantes <strong>aprenden a gestionar sus emociones</strong> y a comunicarse mejor, mientras los docentes obtienen señales claras para acompañarlos.",
+        "Mejoramos el clima escolar, prevenimos conflictos y fortalecemos los lazos entre estudiantes y docentes, creando un entorno de aprendizaje seguro y armonioso para todos."
+      ],
+      "pills": [
+        "Estudiantes",
+        "Docentes",
+        "Equipos de convivencia"
+      ],
+      "characterAlt": "Mascota MÜUD"
+    },
+    "howItWorks": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la emoción a la acción, en cuatro pasos",
+      "subtitle": "Cada interacción del estudiante se transforma en información útil y accionable para el colegio.",
+      "steps": [
+        {
+          "number": "01",
+          "tag": "Diario",
+          "title": "Check-in emocional",
+          "description": "Los estudiantes registran y monitorean sus emociones cada día, fomentando la autoconciencia y la reflexión."
+        },
+        {
+          "number": "02",
+          "tag": "Privado",
+          "title": "Journal de vida",
+          "description": "Un espacio seguro y privado para escribir sobre pensamientos y experiencias, y procesar lo que sienten."
+        },
+        {
+          "number": "03",
+          "tag": "Inteligencia artificial",
+          "title": "Reportes personalizados",
+          "description": "La IA analiza la información registrada para detectar patrones y entregar insights valiosos sobre el bienestar emocional."
+        },
+        {
+          "number": "04",
+          "tag": "Para docentes",
+          "title": "Sistema de alerta temprana",
+          "description": "Notifica a los docentes sobre estudiantes que requieren apoyo, con recursos y actividades para intervenir a tiempo."
+        }
+      ],
+      "dashboard": {
+        "title": "Panel del docente · Convivencia escolar",
+        "metrics": {
+          "checkins": "Check-ins esta semana",
+          "checkinsValue": "312",
+          "climate": "Clima del curso",
+          "climateValue": "Estable",
+          "participation": "Participación",
+          "participationValue": "91%",
+          "alerts": "Alertas activas",
+          "alertsValue": "3"
+        }
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "¿Qué dicen de nosotros?",
+      "subtitle": "Directores y encargados de convivencia que ya transformaron su comunidad escolar.",
+      "items": [
+        {
+          "quote": "MÜUD nos ha permitido identificar señales de alerta a tiempo y prevenir situaciones de crisis antes de que escalen.",
+          "name": "Antonella Torres",
+          "role": "Encargada de Convivencia Escolar, Colegio Amor de Dios"
+        },
+        {
+          "quote": "MÜUD transformó el bienestar estudiantil en una prioridad visible, medible y accionable para toda nuestra comunidad educativa.",
+          "name": "Paulo Godoy",
+          "role": "Director, Colegio Nuestra Señora del Carmen"
+        },
+        {
+          "quote": "Por primera vez contamos con información en tiempo real sobre el bienestar de nuestros estudiantes, lo que nos permite tomar decisiones más oportunas y efectivas.",
+          "name": "Natalia Rojas",
+          "role": "Jefa Unidad Técnico Pedagógica, Instituto Profesor Héctor Duarte"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Únanse a la revolución",
+      "title": "Revolucionemos la convivencia escolar, juntos",
+      "subtitle": "No esperes más para marcar la diferencia en la vida de tus estudiantes y docentes. Empieza hoy a cultivar un entorno educativo próspero, seguro y emocionalmente saludable.",
+      "downloadAppStore": "Descargar en App Store",
+      "downloadPlayStore": "Descargar en Google Play"
+    }
+  },
+  "schools": {
+    "hero": {
+      "eyebrow": "MUUD para Colegios",
+      "title": "Una comunidad escolar que <highlight>se cuida</highlight>",
+      "subtitle": "Fortalecemos el bienestar socioemocional de estudiantes, docentes y familias con inteligencia artificial, para prevenir conflictos y construir convivencia escolar.",
+      "scheduleDemo": "Agendar demo",
+      "learnMore": "Conoce la solución",
+      "phoneAlt": "App MÜUD"
+    },
+    "navLinks": {
+      "challenge": "El desafío",
+      "solution": "La solución",
+      "forWho": "Para quién",
+      "contact": "Contacto"
+    },
+    "problems": {
+      "eyebrow": "El desafío",
+      "title": "¿Te suena familiar?",
+      "subtitle": "Las barreras emocionales en el aula son invisibles hasta que estallan. MUUD las hace visibles a tiempo.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Exclusión social",
+          "description": "Grupos que marginan o excluyen a otros compañeros de manera deliberada."
+        },
+        {
+          "number": "02",
+          "title": "Conflictos en el aula",
+          "description": "Enfrentamientos recurrentes por diferencias de opinión, personalidades o intereses."
+        },
+        {
+          "number": "03",
+          "title": "Bullying y ciberacoso",
+          "description": "Estudiantes que sufren burlas, insultos o agresiones por parte de sus compañeros."
+        },
+        {
+          "number": "04",
+          "title": "Falta de comunicación",
+          "description": "Docentes y estudiantes sin canales efectivos para expresar lo que sienten."
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "La solución",
+      "title": "Bienestar escolar en dos dimensiones",
+      "subtitle": "Un acompañante para cada estudiante y un panel inteligente para cada líder educativo.",
+      "students": {
+        "eyebrow": "Para estudiantes",
+        "title": "Un compañero que los escucha",
+        "description": "Los estudiantes registran sus emociones, escriben en su journal y reciben acompañamiento diario con inteligencia artificial.",
+        "features": [
+          "Check-in emocional diario",
+          "Journal privado y seguro",
+          "Ejercicios de regulación emocional",
+          "Contenido personalizado con IA"
+        ],
+        "imageAlt": "App MÜUD para estudiantes"
+      },
+      "school": {
+        "eyebrow": "Para el colegio",
+        "title": "Un dashboard que ilumina",
+        "description": "Monitorea el pulso emocional de tu comunidad, detecta focos de riesgo y actúa con datos, no con suposiciones.",
+        "features": [
+          "Mapa de bienestar por curso y nivel",
+          "Alertas tempranas automatizadas",
+          "Reportes consolidados con IA",
+          "Historial de intervenciones"
+        ],
+        "dashboard": {
+          "title": "Panel escolar · Convivencia",
+          "climate": "Clima del curso",
+          "climateValue": "Estable",
+          "alerts": "Alertas activas",
+          "alertsValue": "3"
+        }
+      }
+    },
+    "roles": {
+      "eyebrow": "Para quién",
+      "title": "Diseñado para toda la comunidad",
+      "subtitle": "Cada rol en el colegio tiene herramientas a su medida.",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Estudiantes",
+          "description": "Registran sus emociones, escriben en su journal y reciben acompañamiento personalizado."
+        },
+        {
+          "icon": "👩‍🏫",
+          "title": "Docentes",
+          "description": "Visualizan el clima emocional de sus cursos y reciben alertas cuando un estudiante necesita apoyo."
+        },
+        {
+          "icon": "🤝",
+          "title": "Convivencia escolar",
+          "description": "Acceden a reportes consolidados, identifican focos de riesgo y documentan intervenciones."
+        },
+        {
+          "icon": "🏫",
+          "title": "Dirección",
+          "description": "Monitorean indicadores de bienestar a nivel institucional y toman decisiones basadas en datos."
+        }
+      ]
+    },
+    "implementation": {
+      "eyebrow": "Implementación",
+      "title": "Tres pasos para empezar",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Onboarding guiado",
+          "description": "Configuramos la plataforma con los datos de tu colegio y capacitamos a los equipos en menos de una semana."
+        },
+        {
+          "number": "2",
+          "title": "Acompañamiento diario",
+          "description": "Los estudiantes usan la app, los docentes monitorean y MUUD aprende del contexto de cada curso."
+        },
+        {
+          "number": "3",
+          "title": "Datos que guían",
+          "description": "Convierte la información emocional en decisiones: reportes, alertas y recomendaciones basadas en IA."
+        }
+      ]
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "+90%",
+          "label": "de satisfacción de docentes y directivos"
+        },
+        {
+          "value": "3x",
+          "label": "más detección temprana de conflictos"
+        },
+        {
+          "value": "24/7",
+          "label": "acompañamiento emocional para estudiantes"
+        },
+        {
+          "value": "1",
+          "label": "semana para implementar en tu colegio"
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "¿Qué dicen de nosotros?",
+      "subtitle": "Directores y encargados de convivencia que ya transformaron su comunidad escolar.",
+      "items": [
+        {
+          "quote": "MÜUD nos ha permitido identificar señales de alerta a tiempo y prevenir situaciones de crisis antes de que escalen.",
+          "name": "Antonella Torres",
+          "role": "Encargada de Convivencia Escolar, Colegio Amor de Dios"
+        },
+        {
+          "quote": "MÜUD transformó el bienestar estudiantil en una prioridad visible, medible y accionable para toda nuestra comunidad educativa.",
+          "name": "Paulo Godoy",
+          "role": "Director, Colegio Nuestra Señora del Carmen"
+        },
+        {
+          "quote": "Por primera vez contamos con información en tiempo real sobre el bienestar de nuestros estudiantes, lo que nos permite tomar decisiones más oportunas y efectivas.",
+          "name": "Natalia Rojas",
+          "role": "Jefa Unidad Técnico Pedagógica, Instituto Profesor Héctor Duarte"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Comienza hoy",
+      "title": "Lleva MUUD a tu colegio",
+      "subtitle": "No esperes más para marcar la diferencia en la vida de tus estudiantes y docentes. Empieza hoy a cultivar un entorno educativo próspero, seguro y emocionalmente saludable."
+    }
+  },
+  "business": {
+    "hero": {
+      "eyebrow": "MUUD para empresas",
+      "title": "El bienestar emocional de tu equipo, <highlight>en datos</highlight>",
+      "subtitle": "Damos a cada colaborador un espacio para cuidarse, y a líderes y RRHH señales claras para acompañar a tiempo.",
+      "scheduleDemo": "Agendar una demo",
+      "seeHowItWorks": "Ver cómo funciona",
+      "trustBadge": "Equipos que eligen cuidar a sus personas",
+      "phoneAlt": "App MÜUD — pantalla principal mostrando check-in emocional"
+    },
+    "navLinks": {
+      "solution": "La solución",
+      "roles": "Para quién",
+      "faq": "Preguntas",
+      "contact": "Contacto"
+    },
+    "problems": {
+      "eyebrow": "El costo invisible del malestar",
+      "title": "Lo que no se nombra, igual pasa la cuenta",
+      "subtitle": "El malestar emocional impacta el clima, la productividad y la permanencia de las personas. MUUD lo hace visible antes de que escale.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Estrés y burnout",
+          "description": "Cargas sostenidas que desgastan a las personas y deterioran su rendimiento."
+        },
+        {
+          "number": "02",
+          "title": "Clima tenso",
+          "description": "Conflictos y fricciones que erosionan la confianza y la colaboración del equipo."
+        },
+        {
+          "number": "03",
+          "title": "Desconexión",
+          "description": "Personas que se sienten solas o poco escuchadas y terminan desvinculándose."
+        },
+        {
+          "number": "04",
+          "title": "Rotación",
+          "description": "Talento que se va porque el malestar no se detectó ni se abordó a tiempo."
+        }
+      ]
+    },
+    "solution": {
+      "collaborators": {
+        "eyebrow": "Para cada colaborador",
+        "title": "Un espacio propio para cuidar el bienestar",
+        "description": "MÜUD acompaña a cada persona a reconocer cómo se siente y a desarrollar hábitos de bienestar, en privado.",
+        "features": [
+          {
+            "title": "Check-in emocional",
+            "description": "para tomar el pulso a cómo va cada día."
+          },
+          {
+            "title": "Journal personal",
+            "description": "y privado para procesar el estrés y reflexionar."
+          },
+          {
+            "title": "Hábitos de autocuidado",
+            "description": "que fortalecen la regulación emocional."
+          }
+        ],
+        "imageAlt": "App MÜUD para colaboradores"
+      },
+      "leaders": {
+        "eyebrow": "Para líderes y RRHH",
+        "title": "Señales para liderar con empatía",
+        "description": "MUUD transforma el día a día del equipo en datos <strong>agregados</strong> que respetan la privacidad de cada persona.",
+        "features": [
+          {
+            "title": "Reportes agregados",
+            "description": "del clima y el ánimo por equipo, sin exponer a individuos."
+          },
+          {
+            "title": "Alertas tempranas",
+            "description": "para acompañar antes de que el malestar escale."
+          },
+          {
+            "title": "Recursos accionables",
+            "description": "para fortalecer el bienestar y la cultura del equipo."
+          }
+        ],
+        "dashboard": {
+          "title": "Panel de Personas · Datos agregados",
+          "participation": "Participación",
+          "participationValue": "87%",
+          "climate": "Clima del equipo",
+          "climateValue": "Positivo",
+          "mood": "Índice de ánimo",
+          "moodValue": "7.8",
+          "areas": "Áreas a observar",
+          "areasValue": "2"
+        }
+      }
+    },
+    "roles": {
+      "eyebrow": "Para toda la organización",
+      "title": "Una herramienta, cada mirada",
+      "subtitle": "MUUD aporta valor en cada nivel de la empresa.",
+      "items": [
+        {
+          "tag": "Colaboradores",
+          "title": "Se cuidan",
+          "description": "Un espacio privado para registrar cómo se sienten y desarrollar hábitos de bienestar."
+        },
+        {
+          "tag": "Líderes",
+          "title": "Acompañan mejor",
+          "description": "Visibilidad del clima de su equipo para liderar con cercanía y a tiempo."
+        },
+        {
+          "tag": "Recursos Humanos",
+          "title": "Deciden con datos",
+          "description": "Una mirada del bienestar organizacional para diseñar mejores iniciativas."
+        }
+      ]
+    },
+    "implementation": {
+      "eyebrow": "Implementación",
+      "title": "Listos en tres pasos",
+      "subtitle": "Te acompañamos para que MUUD se integre al día a día de tu equipo sin fricción.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Activación",
+          "description": "Configuramos equipos y damos la bienvenida a las personas con una experiencia simple."
+        },
+        {
+          "number": "2",
+          "title": "Uso diario",
+          "description": "Cada colaborador cuenta con su espacio para registrar y cuidar su bienestar."
+        },
+        {
+          "number": "3",
+          "title": "Insights para liderar",
+          "description": "Líderes y RRHH reciben reportes agregados y alertas para acompañar al equipo."
+        }
+      ]
+    },
+    "stats": {
+      "eyebrow": "El impacto",
+      "title": "Equipos más sanos, más conectados",
+      "subtitle": "Lo que las organizaciones buscan al cuidar el bienestar de sus personas.",
+      "items": [
+        {
+          "value": "+85%",
+          "label": "de participación del equipo"
+        },
+        {
+          "value": "−30%",
+          "label": "en señales de estrés sostenido"
+        },
+        {
+          "value": "24/7",
+          "label": "espacio de bienestar disponible"
+        },
+        {
+          "value": "100%",
+          "label": "reportes agregados y privados"
+        }
+      ],
+      "disclaimer": "Cifras ilustrativas. Reemplázalas con los resultados reales de tu organización."
+    },
+    "quote": {
+      "text": "Cuando las personas se sienten escuchadas y acompañadas, los equipos florecen. Eso es lo que hacemos posible.",
+      "author": "Equipo MÜUD",
+      "role": "Bienestar para personas",
+      "imageAlt": "MÜUD"
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Lo que suelen preguntarnos",
+      "items": [
+        {
+          "question": "¿Los datos de cada persona son privados?",
+          "answer": "Sí. El journal y los registros de cada colaborador son personales. Líderes y RRHH solo acceden a reportes agregados, diseñados para resguardar la privacidad individual."
+        },
+        {
+          "question": "¿Qué ven exactamente líderes y RRHH?",
+          "answer": "Una mirada agregada del clima y el ánimo por equipo, junto a alertas que indican cuándo conviene acompañar, sin exponer el detalle de personas individuales."
+        },
+        {
+          "question": "¿Cómo se implementa en mi empresa?",
+          "answer": "Activamos los equipos, damos la bienvenida a las personas y acompañamos la adopción. La experiencia es simple desde el primer día."
+        },
+        {
+          "question": "¿Funciona para equipos remotos o híbridos?",
+          "answer": "Sí. MÜUD es una app móvil que acompaña a cada persona donde esté, sin importar la modalidad de trabajo."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Empieza hoy",
+      "title": "Cuida a tu equipo con MUUD",
+      "subtitle": "Agenda una demo y descubre cómo darle a tu organización un entorno laboral más sano, conectado y humano.",
+      "downloadAppStore": "Descargar en App Store",
+      "downloadPlayStore": "Descargar en Google Play"
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Blog MUUD",
+      "title": "Opinión y análisis sobre <highlight>educación</highlight> en Chile",
+      "subtitle": "Artículos de Rodrigo Torres, cofundador de MUUD, sobre convivencia escolar, violencia, salud mental y políticas educativas."
+    },
+    "navLinks": {
+      "articles": "Artículos",
+      "contact": "Contacto"
+    },
+    "meta": {
+      "author": "Rodrigo Torres",
+      "readMore": "Leer más"
+    },
+    "allArticles": "Ver todos los artículos →",
+    "backToBlog": "Volver al blog",
+    "authorRole": "Cofundador MUUD",
+    "scheduleDemo": "Agendar demo",
+    "keepReading": "Sigue leyendo",
+    "otherArticles": "Otros artículos"
+  },
+  "contact": {
+    "form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "orgLabel": "Empresa",
+      "orgLabelSchool": "Colegio",
+      "orgLabelGeneral": "Colegio / Organización",
+      "orgPlaceholder": "Nombre de la empresa",
+      "orgPlaceholderSchool": "Nombre del colegio",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tucorreo@empresa.com",
+      "emailPlaceholderSchool": "tucorreo@colegio.cl",
+      "roleLabel": "Rol",
+      "rolesSchool": [
+        "Dirección",
+        "Convivencia escolar",
+        "Docente",
+        "Familia / Apoderado"
+      ],
+      "rolesBusiness": [
+        "Recursos Humanos",
+        "Líder / Jefatura",
+        "Gerencia",
+        "Colaborador/a"
+      ],
+      "rolesGeneral": [
+        "Dirección",
+        "Convivencia escolar",
+        "Docente",
+        "Familia / Apoderado",
+        "Empresa"
+      ],
+      "messageLabel": "Cuéntanos qué necesitas",
+      "messagePlaceholder": "Quiero una demo para mi equipo…",
+      "messagePlaceholderSchool": "Quiero agendar una demo para mi colegio…",
+      "submitButton": "Agendar demo gratuita",
+      "successEmoji": "🎉",
+      "successTitle": "¡Gracias!",
+      "successMessage": "Recibimos tu solicitud. Te contactaremos muy pronto.",
+      "note": "Te responderemos dentro de 24 horas hábiles."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Súmate a la comunidad MUUD",
+    "subtitle": "Recibe noticias, recursos y novedades sobre bienestar socioemocional, directo en tu correo.",
+    "form": {
+      "placeholder": "tucorreo@ejemplo.com",
+      "ariaLabel": "Tu correo",
+      "submitButton": "Suscribirme",
+      "successMessage": "¡Listo! Te suscribiste a nuestro newsletter 🎉",
+      "disclaimer": "Sin spam. Puedes darte de baja cuando quieras."
+    }
+  },
+  "shared": {
+    "news": {
+      "eyebrow": "Blog",
+      "title": "Últimos artículos",
+      "subtitle": "Opinión y análisis sobre educación, convivencia escolar y salud mental en Chile.",
+      "press": {
+        "label": "Medios que nos mencionan"
+      }
+    },
+    "social": {
+      "instagram": {
+        "network": "Instagram",
+        "handle": "@muud.app"
+      },
+      "linkedin": {
+        "network": "LinkedIn",
+        "handle": "MUUD App"
+      },
+      "facebook": {
+        "network": "Facebook",
+        "handle": "muud.app.latam"
+      }
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "MUUD — Convertimos emociones en datos",
+      "description": "MUUD impulsa el desarrollo socioemocional de estudiantes y docentes con inteligencia artificial, para prevenir conflictos y fortalecer una sana convivencia escolar.",
+      "ogTitle": "MUUD — Convertimos emociones en datos",
+      "ogDescription": "Bienestar socioemocional con inteligencia artificial para colegios y empresas."
+    },
+    "schools": {
+      "title": "MUUD para Colegios — Bienestar socioemocional escolar",
+      "description": "Acompaña a tus estudiantes y docentes con MUUD: check-in emocional, journal, reportes con IA y alertas tempranas para una sana convivencia escolar.",
+      "ogTitle": "MUUD para Colegios — Bienestar socioemocional escolar",
+      "ogDescription": "Plataforma de bienestar socioemocional con IA para comunidades escolares."
+    },
+    "business": {
+      "title": "MUUD para Empresas — Bienestar emocional para tu equipo",
+      "description": "MUUD ayuda a las empresas a cuidar el bienestar emocional de sus equipos: un espacio para cada colaborador y datos agregados para liderar con empatía.",
+      "ogTitle": "MUUD para Empresas — Bienestar emocional para tu equipo",
+      "ogDescription": "Un espacio para cada colaborador y datos agregados para liderar con empatía."
+    },
+    "blog": {
+      "title": "Blog — MUUD | Opinión sobre educación y convivencia escolar",
+      "description": "Artículos de opinión sobre violencia escolar, salud mental, políticas educativas y convivencia en Chile. Por Rodrigo Torres, cofundador de MUUD.",
+      "ogTitle": "Blog — MUUD",
+      "ogDescription": "Opinión sobre educación, convivencia escolar y salud mental en Chile."
+    }
+  },
+  "cookie": {
+    "title": "Usamos cookies",
+    "description": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas son esenciales para el funcionamiento básico, mientras que otras nos ayudan a entender cómo usas el sitio y a mostrarte contenido relevante.",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Solo esenciales",
+    "customize": "Personalizar",
+    "savePreferences": "Guardar preferencias",
+    "essential": "Esenciales",
+    "essentialDescription": "Cookies necesarias para el funcionamiento básico del sitio. Siempre están activas.",
+    "analytics": "Analíticas",
+    "analyticsDescription": "Nos ayudan a entender cómo los visitantes interactúan con el sitio web.",
+    "marketing": "Marketing",
+    "marketingDescription": "Se utilizan para rastrear visitantes en los sitios web y mostrar anuncios relevantes.",
+    "learnMore": "Política de privacidad",
+    "customizeTitle": "Personaliza tus preferencias de cookies",
+    "customizeDescription": "Puedes elegir qué tipos de cookies permitir. Ten en cuenta que deshabilitar algunas cookies puede afectar tu experiencia en el sitio."
+  }
+}

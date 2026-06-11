@@ -339,7 +339,7 @@ section { position: relative }
 /* FOOTER */
 .footer { background: var(--ink); color: #fff; padding: 70px 0 34px }
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px }
-.foot-logo { height: 40px; margin-bottom: 20px }
+.foot-logo { margin-bottom: 20px }
 .footer p { color: rgba(255,255,255,.6); font-size: .95rem; line-height: 1.7 }
 .foot-col h4 { font-family: var(--font-text); font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.5); margin-bottom: 16px; margin-top: 0 }
 .foot-col a { display: block; color: rgba(255,255,255,.78); font-size: .96rem; padding: 6px 0; transition: color .2s }
@@ -351,6 +351,11 @@ section { position: relative }
 .foot-socials img { width: 20px; height: 20px }
 .foot-bottom { margin-top: 54px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center }
 .foot-bottom p { font-size: .86rem }
+.language-switcher { display: flex; align-items: center; gap: 0 }
+.footer .language-switcher button { background: none; border: none; color: rgba(255,255,255,.45); font-size: .85rem; cursor: pointer; padding: 4px 10px; transition: color .2s; font-family: inherit; letter-spacing: .02em }
+.footer .language-switcher button:hover { color: rgba(255,255,255,.9) }
+.footer .language-switcher button.active { color: #fff; font-weight: 600 }
+.language-switcher .sep { color: rgba(255,255,255,.18); font-size: .85rem; user-select: none }
 
 /* REVEAL */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1) }
@@ -463,3 +468,60 @@ section { position: relative }
 .mm-login { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; padding-top: 18px; border-top: 1px solid var(--line-soft) }
 .mm-login-label { font-weight: 700; font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 0 8px }
 .mm-login .btn { text-align: center; font-size: 1rem }
+
+/* BLOG */
+.hero-blog { text-align: center; padding-bottom: 40px }
+.hero-blog .hero-lede { max-width: 640px; margin-inline: auto }
+
+.blog-featured { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line-soft); box-shadow: var(--shadow-sm); transition: transform .3s, box-shadow .3s; text-decoration: none; color: inherit; margin-bottom: 56px }
+.blog-featured:hover { transform: translateY(-6px); box-shadow: var(--shadow) }
+.blog-featured-img { position: relative; min-height: 340px }
+.blog-featured-copy { padding: 40px 38px; display: flex; flex-direction: column; justify-content: center; gap: 14px }
+.blog-featured-copy h2 { font-size: 1.6rem; line-height: 1.25 }
+.blog-featured-copy p { color: var(--muted); font-size: 1.02rem; line-height: 1.6 }
+
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px }
+.blog-card { border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line-soft); box-shadow: var(--shadow-sm); transition: transform .3s, box-shadow .3s; text-decoration: none; color: inherit; display: flex; flex-direction: column }
+.blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow) }
+.blog-card-img { position: relative; height: 200px; flex: 0 0 auto }
+.blog-card-body { padding: 26px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1 }
+.blog-card-body h3 { font-size: 1.15rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
+.blog-card-body p { color: var(--muted); font-size: .92rem; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 1 }
+
+.blog-tags { display: flex; flex-wrap: wrap; gap: 8px }
+.blog-tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 4px 10px; border-radius: 100px; background: rgba(249,139,107,.12); color: var(--coral-deep) }
+.blog-meta { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--muted); margin-top: auto }
+.blog-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--muted); flex: 0 0 auto }
+
+/* BLOG POST */
+.blog-post-hero { position: relative; height: 420px; width: 100% }
+.blog-post-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(23,18,58,0) 30%, rgba(23,18,58,.6)) }
+.blog-post-wrap { max-width: 780px; margin-top: -60px; position: relative; z-index: 1 }
+.blog-post-header { background: #fff; border-radius: var(--radius) var(--radius) 0 0; padding: 48px 48px 32px; border: 1px solid var(--line-soft); border-bottom: none }
+.blog-post-header h1 { font-size: 2rem; line-height: 1.2; margin-top: 12px }
+.blog-post-byline { display: flex; align-items: center; gap: 14px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line-soft); font-size: .9rem; color: var(--muted); flex-wrap: wrap }
+.blog-post-byline strong { display: block; color: var(--ink); font-weight: 700 }
+.blog-post-byline span { font-size: .82rem }
+.blog-post-byline time { margin-left: auto; font-size: .85rem }
+
+.blog-post-body { background: #fff; padding: 8px 48px 48px; border: 1px solid var(--line-soft); border-top: none; border-bottom: none }
+.blog-post-body p { font-size: 1.08rem; line-height: 1.8; color: var(--ink-text); margin-bottom: 22px }
+.blog-post-body h2 { font-size: 1.4rem; margin-top: 36px; margin-bottom: 16px }
+.blog-post-body strong { color: var(--ink) }
+
+.blog-post-footer { background: #fff; padding: 32px 48px 42px; border-radius: 0 0 var(--radius) var(--radius); border: 1px solid var(--line-soft); border-top: 1px solid var(--line-soft); display: flex; justify-content: space-between; align-items: center; gap: 16px }
+
+@media (max-width: 860px) {
+  .blog-featured { grid-template-columns: 1fr }
+  .blog-featured-img { min-height: 220px }
+  .blog-grid { grid-template-columns: 1fr 1fr }
+  .blog-post-header, .blog-post-body, .blog-post-footer { padding-inline: 28px }
+  .blog-post-header h1 { font-size: 1.6rem }
+}
+@media (max-width: 600px) {
+  .blog-grid { grid-template-columns: 1fr }
+  .blog-post-hero { height: 280px }
+  .blog-post-header, .blog-post-body, .blog-post-footer { padding-inline: 20px }
+  .blog-post-header h1 { font-size: 1.35rem }
+  .blog-post-footer { flex-direction: column }
+}

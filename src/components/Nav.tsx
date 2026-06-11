@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 interface NavLink {
   href: string;
@@ -24,6 +25,8 @@ export default function Nav({
   const [loginOpen, setLoginOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const loginRef = useRef<HTMLDivElement>(null);
+
+  const t = useTranslations('nav');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -68,8 +71,8 @@ export default function Nav({
             />
           </Link>
           <div className="seg">
-            <Link href="/colegios" className={activePage === "colegios" ? "active" : ""}>Colegios</Link>
-            <Link href="/empresas" className={activePage === "empresas" ? "active" : ""}>Empresas</Link>
+            <Link href="/colegios" className={activePage === "colegios" ? "active" : ""}>{t('schools')}</Link>
+            <Link href="/empresas" className={activePage === "empresas" ? "active" : ""}>{t('business')}</Link>
           </div>
           <nav className="nav-links">
             {sectionLinks.map((l) => (
@@ -86,7 +89,7 @@ export default function Nav({
                 aria-haspopup="true"
                 aria-expanded={loginOpen}
               >
-                Iniciar sesión
+                {t('login')}
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
                   <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -94,20 +97,20 @@ export default function Nav({
               <div className="login-menu" role="menu">
                 <a href="https://school.muud.app/welcome" role="menuitem">
                   <span className="lm-ico" style={{ background: "rgba(84,196,232,.16)" }}>🏫</span>
-                  <span>Colegio<small>Plataforma para instituciones</small></span>
+                  <span>{t('loginSchool')}<small>{t('loginSchoolDescription')}</small></span>
                 </a>
                 <a href="https://business.muud.app" role="menuitem">
                   <span className="lm-ico" style={{ background: "rgba(249,139,107,.16)" }}>💼</span>
-                  <span>Empresa<small>Bienestar para equipos</small></span>
+                  <span>{t('loginBusiness')}<small>{t('loginBusinessDescription')}</small></span>
                 </a>
               </div>
             </div>
-            <a href="#contacto" className="btn btn-primary" style={{ padding: "12px 22px" }}>
-              Agendar demo
+            <a href="https://calendar.app.google/eM6oThKNK9euEWmg7" className="btn btn-primary" style={{ padding: "12px 22px" }} target="_blank" rel="noopener noreferrer">
+              {t('scheduleDemo')}
             </a>
             <button
               className="nav-burger"
-              aria-label="Abrir menú"
+              aria-label={t('openMenu')}
               onClick={() => setMobileOpen(true)}
             >
               <svg viewBox="0 0 24 24" fill="none">
@@ -123,27 +126,27 @@ export default function Nav({
         onClick={() => setMobileOpen(false)}
       />
       <nav className={`mobile-menu${mobileOpen ? " open" : ""}`}>
-        <button className="mm-close" aria-label="Cerrar menú" onClick={() => setMobileOpen(false)}>✕</button>
+        <button className="mm-close" aria-label={t('closeMenu')} onClick={() => setMobileOpen(false)}>✕</button>
         {mobile.map((l) => (
           <a key={l.href} href={l.href} onClick={() => setMobileOpen(false)}>{l.label}</a>
         ))}
         {activePage !== "colegios" && (
-          <Link href="/colegios" onClick={() => setMobileOpen(false)}>Para colegios</Link>
+          <Link href="/colegios" onClick={() => setMobileOpen(false)}>{t('forSchools')}</Link>
         )}
         {activePage !== "empresas" && (
-          <Link href="/empresas" onClick={() => setMobileOpen(false)}>Para empresas</Link>
+          <Link href="/empresas" onClick={() => setMobileOpen(false)}>{t('forBusiness')}</Link>
         )}
         <div className="mm-login">
-          <span className="mm-login-label">Iniciar sesión</span>
+          <span className="mm-login-label">{t('login')}</span>
           <a href="https://school.muud.app/welcome" className="btn btn-ghost" onClick={() => setMobileOpen(false)}>
-            🏫 Colegio
+            🏫 {t('loginSchool')}
           </a>
           <a href="https://business.muud.app" className="btn btn-ghost" onClick={() => setMobileOpen(false)}>
-            💼 Empresa
+            💼 {t('loginBusiness')}
           </a>
         </div>
-        <a className="btn btn-primary" href="#contacto" onClick={() => setMobileOpen(false)}>
-          Agendar demo
+        <a className="btn btn-primary" href="https://calendar.app.google/eM6oThKNK9euEWmg7" onClick={() => setMobileOpen(false)} target="_blank" rel="noopener noreferrer">
+          {t('scheduleDemo')}
         </a>
       </nav>
     </>

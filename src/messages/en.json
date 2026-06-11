@@ -1,0 +1,695 @@
+{
+  "nav": {
+    "schools": "Schools",
+    "business": "Business",
+    "login": "Sign in",
+    "loginSchool": "School",
+    "loginSchoolDescription": "Platform for institutions",
+    "loginBusiness": "Business",
+    "loginBusinessDescription": "Wellbeing for teams",
+    "scheduleDemo": "Schedule demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "forSchools": "For schools",
+    "forBusiness": "For business"
+  },
+  "footer": {
+    "description": "We drive the socioemotional development of students and teachers with artificial intelligence to promote healthy school coexistence.",
+    "descriptionBusiness": "We drive the emotional wellbeing of people with artificial intelligence to build healthier teams and communities.",
+    "solutionsTitle": "Solutions",
+    "forSchools": "For schools",
+    "forBusiness": "For business",
+    "home": "Home",
+    "schoolLogin": "School access",
+    "businessLogin": "Business access",
+    "legalTitle": "Legal",
+    "termsAndConditions": "Terms and conditions",
+    "privacyPolicy": "Privacy policy",
+    "eula": "EULA",
+    "deleteAccount": "Delete account",
+    "contactTitle": "Contact",
+    "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
+    "email": "hola@muud.app",
+    "copyright": "© 2026 MUUD SpA · All rights reserved",
+    "madeInChile": "Made with love in Chile 🇨🇱"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "contact": "Contact",
+    "send": "Send",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "close": "Close"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Socioemotional wellbeing with AI",
+      "title": "We turn emotions into <highlight>data</highlight> to prevent conflicts",
+      "subtitle": "We strengthen school wellbeing by supporting students and teachers, day by day, with artificial intelligence.",
+      "downloadAppStore": "Download on App Store",
+      "downloadPlayStore": "Get it on Google Play",
+      "trustBadge": "Trusted by schools across Latin America",
+      "phoneAlt": "MÜUD App"
+    },
+    "navLinks": {
+      "whatIs": "What is MUUD",
+      "howItWorks": "How it works",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "context": {
+      "text": "Bullying, violence, and exclusion affect the wellbeing and performance of millions of students worldwide."
+    },
+    "problems": {
+      "eyebrow": "The challenge",
+      "title": "Does this sound familiar?",
+      "subtitle": "Emotional barriers in the classroom are invisible until they explode. MUUD makes them visible in time.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Social exclusion",
+          "description": "Groups of students who deliberately marginalize or exclude other classmates."
+        },
+        {
+          "number": "02",
+          "title": "Conflicts and tensions",
+          "description": "Recurring confrontations due to differences in opinion, personalities, or interests."
+        },
+        {
+          "number": "03",
+          "title": "Bullying",
+          "description": "Students who suffer teasing, insults, or physical aggression from their peers."
+        },
+        {
+          "number": "04",
+          "title": "Lack of communication",
+          "description": "Teachers and students without effective and understanding channels to express themselves."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "The future of emotional wellbeing",
+      "title": "Meet the MÜUD app",
+      "paragraphs": [
+        "With MÜUD, students <strong>learn to manage their emotions</strong> and communicate better, while teachers get clear signals to support them.",
+        "We improve school climate, prevent conflicts, and strengthen bonds between students and teachers, creating a safe and harmonious learning environment for everyone."
+      ],
+      "pills": [
+        "Students",
+        "Teachers",
+        "Coexistence teams"
+      ],
+      "characterAlt": "MÜUD mascot"
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "From emotion to action, in four steps",
+      "subtitle": "Every student interaction transforms into useful and actionable information for the school.",
+      "steps": [
+        {
+          "number": "01",
+          "tag": "Daily",
+          "title": "Emotional check-in",
+          "description": "Students record and monitor their emotions every day, fostering self-awareness and reflection."
+        },
+        {
+          "number": "02",
+          "tag": "Private",
+          "title": "Life journal",
+          "description": "A safe and private space to write about thoughts and experiences, and process what they feel."
+        },
+        {
+          "number": "03",
+          "tag": "Artificial intelligence",
+          "title": "Personalized reports",
+          "description": "AI analyzes recorded information to detect patterns and deliver valuable insights about emotional wellbeing."
+        },
+        {
+          "number": "04",
+          "tag": "For teachers",
+          "title": "Early warning system",
+          "description": "Notifies teachers about students who need support, with resources and activities to intervene in time."
+        }
+      ],
+      "dashboard": {
+        "title": "Teacher Panel · School Coexistence",
+        "metrics": {
+          "checkins": "Check-ins this week",
+          "checkinsValue": "312",
+          "climate": "Class climate",
+          "climateValue": "Stable",
+          "participation": "Participation",
+          "participationValue": "91%",
+          "alerts": "Active alerts",
+          "alertsValue": "3"
+        }
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What people say about us",
+      "subtitle": "Principals and coexistence coordinators who have already transformed their school community.",
+      "items": [
+        {
+          "quote": "MÜUD has allowed us to identify warning signs on time and prevent crisis situations before they escalate.",
+          "name": "Antonella Torres",
+          "role": "School Coexistence Coordinator, Colegio Amor de Dios"
+        },
+        {
+          "quote": "MÜUD transformed student wellbeing into a visible, measurable, and actionable priority for our entire educational community.",
+          "name": "Paulo Godoy",
+          "role": "Principal, Colegio Nuestra Señora del Carmen"
+        },
+        {
+          "quote": "For the first time we have real-time information about our students' wellbeing, allowing us to make more timely and effective decisions.",
+          "name": "Natalia Rojas",
+          "role": "Head of Pedagogical Unit, Instituto Profesor Héctor Duarte"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Join the revolution",
+      "title": "Let's revolutionize school coexistence, together",
+      "subtitle": "Don't wait any longer to make a difference in the lives of your students and teachers. Start cultivating a thriving, safe, and emotionally healthy educational environment today.",
+      "downloadAppStore": "Download on App Store",
+      "downloadPlayStore": "Get it on Google Play"
+    }
+  },
+  "schools": {
+    "hero": {
+      "eyebrow": "MUUD for Schools",
+      "title": "A school community that <highlight>cares</highlight>",
+      "subtitle": "We strengthen the socioemotional wellbeing of students, teachers, and families with artificial intelligence to prevent conflicts and build school coexistence.",
+      "scheduleDemo": "Schedule demo",
+      "learnMore": "Discover the solution",
+      "phoneAlt": "MÜUD App"
+    },
+    "navLinks": {
+      "challenge": "The challenge",
+      "solution": "The solution",
+      "forWho": "For whom",
+      "contact": "Contact"
+    },
+    "problems": {
+      "eyebrow": "The challenge",
+      "title": "Does this sound familiar?",
+      "subtitle": "Emotional barriers in the classroom are invisible until they explode. MUUD makes them visible in time.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Social exclusion",
+          "description": "Groups that deliberately marginalize or exclude other classmates."
+        },
+        {
+          "number": "02",
+          "title": "Classroom conflicts",
+          "description": "Recurring confrontations due to differences in opinion, personalities, or interests."
+        },
+        {
+          "number": "03",
+          "title": "Bullying and cyberbullying",
+          "description": "Students who suffer teasing, insults, or aggression from their peers."
+        },
+        {
+          "number": "04",
+          "title": "Lack of communication",
+          "description": "Teachers and students without effective channels to express what they feel."
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "The solution",
+      "title": "School wellbeing in two dimensions",
+      "subtitle": "A companion for every student and an intelligent panel for every educational leader.",
+      "students": {
+        "eyebrow": "For students",
+        "title": "A companion that listens",
+        "description": "Students record their emotions, write in their journal, and receive daily support with artificial intelligence.",
+        "features": [
+          "Daily emotional check-in",
+          "Private and secure journal",
+          "Emotional regulation exercises",
+          "AI-personalized content"
+        ],
+        "imageAlt": "MÜUD App for students"
+      },
+      "school": {
+        "eyebrow": "For the school",
+        "title": "A dashboard that illuminates",
+        "description": "Monitor the emotional pulse of your community, detect risk areas, and act with data, not assumptions.",
+        "features": [
+          "Wellbeing map by class and level",
+          "Automated early alerts",
+          "AI-consolidated reports",
+          "Intervention history"
+        ],
+        "dashboard": {
+          "title": "School Panel · Coexistence",
+          "climate": "Class climate",
+          "climateValue": "Stable",
+          "alerts": "Active alerts",
+          "alertsValue": "3"
+        }
+      }
+    },
+    "roles": {
+      "eyebrow": "For whom",
+      "title": "Designed for the entire community",
+      "subtitle": "Every role in the school has tools tailored to their needs.",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Students",
+          "description": "Record their emotions, write in their journal, and receive personalized support."
+        },
+        {
+          "icon": "👩‍🏫",
+          "title": "Teachers",
+          "description": "Visualize the emotional climate of their classes and receive alerts when a student needs support."
+        },
+        {
+          "icon": "🤝",
+          "title": "School coexistence",
+          "description": "Access consolidated reports, identify risk areas, and document interventions."
+        },
+        {
+          "icon": "🏫",
+          "title": "Leadership",
+          "description": "Monitor wellbeing indicators at institutional level and make data-driven decisions."
+        }
+      ]
+    },
+    "implementation": {
+      "eyebrow": "Implementation",
+      "title": "Three steps to get started",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Guided onboarding",
+          "description": "We configure the platform with your school's data and train teams in less than a week."
+        },
+        {
+          "number": "2",
+          "title": "Daily support",
+          "description": "Students use the app, teachers monitor, and MUUD learns from the context of each class."
+        },
+        {
+          "number": "3",
+          "title": "Data that guides",
+          "description": "Turn emotional information into decisions: reports, alerts, and AI-based recommendations."
+        }
+      ]
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "+90%",
+          "label": "teacher and leadership satisfaction"
+        },
+        {
+          "value": "3x",
+          "label": "more early conflict detection"
+        },
+        {
+          "value": "24/7",
+          "label": "emotional support for students"
+        },
+        {
+          "value": "1",
+          "label": "week to implement at your school"
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What people say about us",
+      "subtitle": "Principals and coexistence coordinators who have already transformed their school community.",
+      "items": [
+        {
+          "quote": "MÜUD has allowed us to identify warning signs on time and prevent crisis situations before they escalate.",
+          "name": "Antonella Torres",
+          "role": "School Coexistence Coordinator, Colegio Amor de Dios"
+        },
+        {
+          "quote": "MÜUD transformed student wellbeing into a visible, measurable, and actionable priority for our entire educational community.",
+          "name": "Paulo Godoy",
+          "role": "Principal, Colegio Nuestra Señora del Carmen"
+        },
+        {
+          "quote": "For the first time we have real-time information about our students' wellbeing, allowing us to make more timely and effective decisions.",
+          "name": "Natalia Rojas",
+          "role": "Head of Pedagogical Unit, Instituto Profesor Héctor Duarte"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Start today",
+      "title": "Bring MUUD to your school",
+      "subtitle": "Don't wait any longer to make a difference in the lives of your students and teachers. Start cultivating a thriving, safe, and emotionally healthy educational environment today."
+    }
+  },
+  "business": {
+    "hero": {
+      "eyebrow": "MUUD for business",
+      "title": "Your team's emotional wellbeing, <highlight>in data</highlight>",
+      "subtitle": "We give each team member a space to care for themselves, and leaders and HR clear signals to support them in time.",
+      "scheduleDemo": "Schedule a demo",
+      "seeHowItWorks": "See how it works",
+      "trustBadge": "Teams that choose to care for their people",
+      "phoneAlt": "MÜUD App — main screen showing emotional check-in"
+    },
+    "navLinks": {
+      "solution": "The solution",
+      "roles": "For whom",
+      "faq": "Questions",
+      "contact": "Contact"
+    },
+    "problems": {
+      "eyebrow": "The invisible cost of distress",
+      "title": "What isn't named still takes its toll",
+      "subtitle": "Emotional distress impacts climate, productivity, and retention. MUUD makes it visible before it escalates.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Stress and burnout",
+          "description": "Sustained loads that wear people down and deteriorate their performance."
+        },
+        {
+          "number": "02",
+          "title": "Tense climate",
+          "description": "Conflicts and friction that erode trust and team collaboration."
+        },
+        {
+          "number": "03",
+          "title": "Disconnection",
+          "description": "People who feel alone or unheard and end up disengaging."
+        },
+        {
+          "number": "04",
+          "title": "Turnover",
+          "description": "Talent that leaves because distress wasn't detected or addressed in time."
+        }
+      ]
+    },
+    "solution": {
+      "collaborators": {
+        "eyebrow": "For each team member",
+        "title": "Their own space to care for wellbeing",
+        "description": "MÜUD supports each person in recognizing how they feel and developing wellbeing habits, privately.",
+        "features": [
+          {
+            "title": "Emotional check-in",
+            "description": "to take the pulse of how each day is going."
+          },
+          {
+            "title": "Personal journal",
+            "description": "and private to process stress and reflect."
+          },
+          {
+            "title": "Self-care habits",
+            "description": "that strengthen emotional regulation."
+          }
+        ],
+        "imageAlt": "MÜUD App for team members"
+      },
+      "leaders": {
+        "eyebrow": "For leaders and HR",
+        "title": "Signals to lead with empathy",
+        "description": "MUUD transforms the team's day-to-day into <strong>aggregated</strong> data that respects each person's privacy.",
+        "features": [
+          {
+            "title": "Aggregated reports",
+            "description": "of climate and mood by team, without exposing individuals."
+          },
+          {
+            "title": "Early alerts",
+            "description": "to support before distress escalates."
+          },
+          {
+            "title": "Actionable resources",
+            "description": "to strengthen team wellbeing and culture."
+          }
+        ],
+        "dashboard": {
+          "title": "People Panel · Aggregated Data",
+          "participation": "Participation",
+          "participationValue": "87%",
+          "climate": "Team climate",
+          "climateValue": "Positive",
+          "mood": "Mood index",
+          "moodValue": "7.8",
+          "areas": "Areas to watch",
+          "areasValue": "2"
+        }
+      }
+    },
+    "roles": {
+      "eyebrow": "For the entire organization",
+      "title": "One tool, every perspective",
+      "subtitle": "MUUD brings value at every level of the company.",
+      "items": [
+        {
+          "tag": "Team members",
+          "title": "They care for themselves",
+          "description": "A private space to record how they feel and develop wellbeing habits."
+        },
+        {
+          "tag": "Leaders",
+          "title": "They support better",
+          "description": "Visibility of their team's climate to lead with closeness and timeliness."
+        },
+        {
+          "tag": "Human Resources",
+          "title": "They decide with data",
+          "description": "A view of organizational wellbeing to design better initiatives."
+        }
+      ]
+    },
+    "implementation": {
+      "eyebrow": "Implementation",
+      "title": "Ready in three steps",
+      "subtitle": "We support you so MUUD integrates into your team's day-to-day without friction.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Activation",
+          "description": "We configure teams and welcome people with a simple experience."
+        },
+        {
+          "number": "2",
+          "title": "Daily use",
+          "description": "Each team member has their space to record and care for their wellbeing."
+        },
+        {
+          "number": "3",
+          "title": "Insights to lead",
+          "description": "Leaders and HR receive aggregated reports and alerts to support the team."
+        }
+      ]
+    },
+    "stats": {
+      "eyebrow": "The impact",
+      "title": "Healthier, more connected teams",
+      "subtitle": "What organizations seek when caring for their people's wellbeing.",
+      "items": [
+        {
+          "value": "+85%",
+          "label": "team participation"
+        },
+        {
+          "value": "−30%",
+          "label": "in sustained stress signals"
+        },
+        {
+          "value": "24/7",
+          "label": "wellbeing space available"
+        },
+        {
+          "value": "100%",
+          "label": "aggregated and private reports"
+        }
+      ],
+      "disclaimer": "Illustrative figures. Replace with your organization's actual results."
+    },
+    "quote": {
+      "text": "When people feel heard and supported, teams flourish. That's what we make possible.",
+      "author": "MÜUD Team",
+      "role": "Wellbeing for people",
+      "imageAlt": "MÜUD"
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "What people usually ask us",
+      "items": [
+        {
+          "question": "Is each person's data private?",
+          "answer": "Yes. The journal and records of each team member are personal. Leaders and HR only access aggregated reports, designed to protect individual privacy."
+        },
+        {
+          "question": "What exactly do leaders and HR see?",
+          "answer": "An aggregated view of climate and mood by team, along with alerts that indicate when it's appropriate to provide support, without exposing individual details."
+        },
+        {
+          "question": "How is it implemented in my company?",
+          "answer": "We activate teams, welcome people, and support adoption. The experience is simple from day one."
+        },
+        {
+          "question": "Does it work for remote or hybrid teams?",
+          "answer": "Yes. MÜUD is a mobile app that supports each person wherever they are, regardless of work modality."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Start today",
+      "title": "Care for your team with MUUD",
+      "subtitle": "Schedule a demo and discover how to give your organization a healthier, more connected, and more human work environment.",
+      "downloadAppStore": "Download on App Store",
+      "downloadPlayStore": "Get it on Google Play"
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "MUUD Blog",
+      "title": "Opinion and analysis on <highlight>education</highlight> in Chile",
+      "subtitle": "Articles by Rodrigo Torres, MUUD co-founder, on school coexistence, violence, mental health, and educational policies."
+    },
+    "navLinks": {
+      "articles": "Articles",
+      "contact": "Contact"
+    },
+    "meta": {
+      "author": "Rodrigo Torres",
+      "readMore": "Read more"
+    },
+    "allArticles": "View all articles →",
+    "backToBlog": "Back to blog",
+    "authorRole": "MUUD Co-founder",
+    "scheduleDemo": "Schedule demo",
+    "keepReading": "Keep reading",
+    "otherArticles": "Other articles"
+  },
+  "contact": {
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "orgLabel": "Company",
+      "orgLabelSchool": "School",
+      "orgLabelGeneral": "School / Organization",
+      "orgPlaceholder": "Company name",
+      "orgPlaceholderSchool": "School name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "youremail@company.com",
+      "emailPlaceholderSchool": "youremail@school.com",
+      "roleLabel": "Role",
+      "rolesSchool": [
+        "Leadership",
+        "School coexistence",
+        "Teacher",
+        "Family / Parent"
+      ],
+      "rolesBusiness": [
+        "Human Resources",
+        "Leader / Manager",
+        "Management",
+        "Team member"
+      ],
+      "rolesGeneral": [
+        "Leadership",
+        "School coexistence",
+        "Teacher",
+        "Family / Parent",
+        "Business"
+      ],
+      "messageLabel": "Tell us what you need",
+      "messagePlaceholder": "I want a demo for my team…",
+      "messagePlaceholderSchool": "I want to schedule a demo for my school…",
+      "submitButton": "Schedule free demo",
+      "successEmoji": "🎉",
+      "successTitle": "Thank you!",
+      "successMessage": "We received your request. We'll contact you very soon.",
+      "note": "We'll respond within 24 business hours."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Join the MUUD community",
+    "subtitle": "Receive news, resources, and updates about socioemotional wellbeing, straight to your inbox.",
+    "form": {
+      "placeholder": "youremail@example.com",
+      "ariaLabel": "Your email",
+      "submitButton": "Subscribe",
+      "successMessage": "Done! You've subscribed to our newsletter 🎉",
+      "disclaimer": "No spam. You can unsubscribe anytime."
+    }
+  },
+  "shared": {
+    "news": {
+      "eyebrow": "Blog",
+      "title": "Latest articles",
+      "subtitle": "Opinion and analysis on education, school coexistence, and mental health in Chile.",
+      "press": {
+        "label": "Media mentions"
+      }
+    },
+    "social": {
+      "instagram": {
+        "network": "Instagram",
+        "handle": "@muud.app"
+      },
+      "linkedin": {
+        "network": "LinkedIn",
+        "handle": "MUUD App"
+      },
+      "facebook": {
+        "network": "Facebook",
+        "handle": "muud.app.latam"
+      }
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "MUUD — We turn emotions into data",
+      "description": "MUUD drives the socioemotional development of students and teachers with artificial intelligence to prevent conflicts and strengthen healthy school coexistence.",
+      "ogTitle": "MUUD — We turn emotions into data",
+      "ogDescription": "Socioemotional wellbeing with artificial intelligence for schools and businesses."
+    },
+    "schools": {
+      "title": "MUUD for Schools — Socioemotional school wellbeing",
+      "description": "Support your students and teachers with MUUD: emotional check-in, journal, AI reports, and early alerts for healthy school coexistence.",
+      "ogTitle": "MUUD for Schools — Socioemotional school wellbeing",
+      "ogDescription": "Socioemotional wellbeing platform with AI for school communities."
+    },
+    "business": {
+      "title": "MUUD for Business — Emotional wellbeing for your team",
+      "description": "MUUD helps companies care for their teams' emotional wellbeing: a space for each team member and aggregated data to lead with empathy.",
+      "ogTitle": "MUUD for Business — Emotional wellbeing for your team",
+      "ogDescription": "A space for each team member and aggregated data to lead with empathy."
+    },
+    "blog": {
+      "title": "Blog — MUUD | Opinion on education and school coexistence",
+      "description": "Opinion articles on school violence, mental health, educational policies, and coexistence in Chile. By Rodrigo Torres, MUUD co-founder.",
+      "ogTitle": "Blog — MUUD",
+      "ogDescription": "Opinion on education, school coexistence, and mental health in Chile."
+    }
+  },
+  "cookie": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience on our website. Some are essential for basic functionality, while others help us understand how you use the site and show you relevant content.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Essential only",
+    "customize": "Customize",
+    "savePreferences": "Save preferences",
+    "essential": "Essential",
+    "essentialDescription": "Cookies necessary for the basic functioning of the site. Always active.",
+    "analytics": "Analytics",
+    "analyticsDescription": "Help us understand how visitors interact with the website.",
+    "marketing": "Marketing",
+    "marketingDescription": "Used to track visitors across websites and display relevant ads.",
+    "learnMore": "Privacy policy",
+    "customizeTitle": "Customize your cookie preferences",
+    "customizeDescription": "You can choose which types of cookies to allow. Note that disabling some cookies may affect your experience on the site."
+  }
+}

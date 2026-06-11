@@ -1,17 +1,19 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface FooterProps {
   variant?: "general" | "colegios" | "empresas";
 }
 
-const DESCRIPTIONS = {
-  general: "Impulsamos el desarrollo socioemocional de estudiantes y docentes con inteligencia artificial, para promover una sana convivencia escolar.",
-  colegios: "Impulsamos el desarrollo socioemocional de estudiantes y docentes con inteligencia artificial, para promover una sana convivencia escolar.",
-  empresas: "Impulsamos el bienestar emocional de las personas con inteligencia artificial, para construir equipos y comunidades más sanas.",
-};
-
 export default function Footer({ variant = "general" }: FooterProps) {
+  const t = useTranslations('footer');
+
+  const description = variant === "empresas"
+    ? t('descriptionBusiness')
+    : t('description');
+
   return (
     <footer className="footer">
       <div className="wrap">
@@ -22,9 +24,9 @@ export default function Footer({ variant = "general" }: FooterProps) {
               src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620c8_Logo%20MUUD%20(1).png"
               alt="MUUD"
               width={140}
-              height={40}
+              height={140}
             />
-            <p>{DESCRIPTIONS[variant]}</p>
+            <p>{description}</p>
             <div className="foot-socials">
               <a href="https://www.instagram.com/muud.app/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/662996d8d341aac4a3f456c2_4.png" alt="Instagram" width={20} height={20} />
@@ -38,38 +40,39 @@ export default function Footer({ variant = "general" }: FooterProps) {
             </div>
           </div>
           <div className="foot-col">
-            <h4>Soluciones</h4>
-            <Link href="/colegios">Para colegios</Link>
-            <Link href="/empresas">Para empresas</Link>
-            <Link href="/">Inicio</Link>
+            <h4>{t('solutionsTitle')}</h4>
+            <Link href="/colegios">{t('forSchools')}</Link>
+            <Link href="/empresas">{t('forBusiness')}</Link>
+            <Link href="/">{t('home')}</Link>
             {variant === "colegios" || variant === "general" ? (
-              <a href="https://school.muud.app/welcome" target="_blank" rel="noopener noreferrer">Acceso colegios</a>
+              <a href="https://school.muud.app/welcome" target="_blank" rel="noopener noreferrer">{t('schoolLogin')}</a>
             ) : (
-              <a href="https://business.muud.app" target="_blank" rel="noopener noreferrer">Acceso empresas</a>
+              <a href="https://business.muud.app" target="_blank" rel="noopener noreferrer">{t('businessLogin')}</a>
             )}
           </div>
           <div className="foot-col">
-            <h4>Legal</h4>
-            <a href="https://muud-app.webflow.io/terminos-y-condiciones-muud-spa" target="_blank" rel="noopener noreferrer">Términos y condiciones</a>
-            <a href="https://www.muud.app/politica-de-privacidad-muud-spa" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
-            <a href="https://www.muud.app/eula" target="_blank" rel="noopener noreferrer">EULA</a>
-            <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">Eliminar cuenta</a>
+            <h4>{t('legalTitle')}</h4>
+            <a href="https://muud-app.webflow.io/terminos-y-condiciones-muud-spa" target="_blank" rel="noopener noreferrer">{t('termsAndConditions')}</a>
+            <a href="https://www.muud.app/politica-de-privacidad-muud-spa" target="_blank" rel="noopener noreferrer">{t('privacyPolicy')}</a>
+            <a href="https://www.muud.app/eula" target="_blank" rel="noopener noreferrer">{t('eula')}</a>
+            <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">{t('deleteAccount')}</a>
           </div>
           <div className="foot-col">
-            <h4>Contacto</h4>
+            <h4>{t('contactTitle')}</h4>
             <div className="foot-contact">
               <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620c5_Location.svg" alt="" width={18} height={18} style={{ marginTop: 2 }} />
-              <span>Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile</span>
+              <span>{t('address')}</span>
             </div>
             <div className="foot-contact">
               <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620c6_Mail.svg" alt="" width={18} height={18} style={{ marginTop: 2 }} />
-              <a href="mailto:hola@muud.app" style={{ padding: 0 }}>hola@muud.app</a>
+              <a href="mailto:hola@muud.app" style={{ padding: 0 }}>{t('email')}</a>
             </div>
           </div>
         </div>
         <div className="foot-bottom">
-          <p>© 2026 MUUD SpA · Todos los derechos reservados</p>
-          <div style={{ color: "rgba(255,255,255,.4)" }}>Hecho con cariño en Chile 🇨🇱</div>
+          <p>{t('copyright')}</p>
+          <LanguageSwitcher />
+          <div style={{ color: "rgba(255,255,255,.4)" }}>{t('madeInChile')}</div>
         </div>
       </div>
     </footer>
