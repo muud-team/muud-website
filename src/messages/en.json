@@ -683,6 +683,18 @@
       "description": "Terms and conditions of use for MUUD SpA. Legal conditions for access and use of the MUUD platform, mobile applications and related services.",
       "ogTitle": "Terms and Conditions — MUUD SpA",
       "ogDescription": "Legal conditions for access and use of the MUUD platform and its services."
+    },
+    "privacy": {
+      "title": "Privacy Policy — MUUD SpA",
+      "description": "Privacy policy of MUUD SpA. Information about how we collect, use and protect your personal information.",
+      "ogTitle": "Privacy Policy — MUUD SpA",
+      "ogDescription": "How MUUD SpA collects, uses and protects your personal information."
+    },
+    "eula": {
+      "title": "EULA — MUUD SpA",
+      "description": "End User License Agreement for MUUD SpA. License terms for using the MUUD application.",
+      "ogTitle": "EULA — MUUD SpA",
+      "ogDescription": "End user license agreement for the MUUD application."
     }
   },
   "cookie": {
@@ -704,6 +716,14 @@
   },
   "terms": {
     "title": "Terms and Conditions MUUD SpA",
+    "lastUpdated": "Last updated"
+  },
+  "privacy": {
+    "title": "Privacy Policy MUUD SpA",
+    "lastUpdated": "Last updated"
+  },
+  "eula": {
+    "title": "End User License Agreement",
     "lastUpdated": "Last updated"
   }
 }

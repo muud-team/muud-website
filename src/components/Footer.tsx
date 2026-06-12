@@ -53,8 +53,8 @@ export default function Footer({ variant = "general" }: FooterProps) {
           <div className="foot-col">
             <h4>{t('legalTitle')}</h4>
             <Link href="/terminos-y-condiciones">{t('termsAndConditions')}</Link>
-            <a href="https://www.muud.app/politica-de-privacidad-muud-spa" target="_blank" rel="noopener noreferrer">{t('privacyPolicy')}</a>
-            <a href="https://www.muud.app/eula" target="_blank" rel="noopener noreferrer">{t('eula')}</a>
+            <Link href="/politica-de-privacidad">{t('privacyPolicy')}</Link>
+            <Link href="/eula">{t('eula')}</Link>
             <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">{t('deleteAccount')}</a>
           </div>
           <div className="foot-col">

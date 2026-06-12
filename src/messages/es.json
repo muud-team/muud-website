@@ -674,6 +674,14 @@
     "title": "Términos y Condiciones MUUD SpA",
     "lastUpdated": "Última actualización"
   },
+  "privacy": {
+    "title": "Política de Privacidad MUUD SpA",
+    "lastUpdated": "Última actualización"
+  },
+  "eula": {
+    "title": "Acuerdo de Licencia de Usuario Final",
+    "lastUpdated": "Última actualización"
+  },
   "metadata": {
     "home": {
       "title": "MUUD — Convertimos emociones en datos",
@@ -704,6 +712,18 @@
       "description": "Términos y condiciones de uso de MUUD SpA. Condiciones legales para el acceso y uso de la plataforma MUUD, aplicaciones móviles y servicios relacionados.",
       "ogTitle": "Términos y Condiciones — MUUD SpA",
       "ogDescription": "Condiciones legales para el acceso y uso de la plataforma MUUD y sus servicios."
+    },
+    "privacy": {
+      "title": "Política de Privacidad — MUUD SpA",
+      "description": "Política de privacidad de MUUD SpA. Información sobre cómo recopilamos, utilizamos y protegemos su información personal.",
+      "ogTitle": "Política de Privacidad — MUUD SpA",
+      "ogDescription": "Cómo MUUD SpA recopila, utiliza y protege su información personal."
+    },
+    "eula": {
+      "title": "EULA — MUUD SpA",
+      "description": "Acuerdo de Licencia de Usuario Final de MUUD SpA. Términos de licencia para el uso de la aplicación MUUD.",
+      "ogTitle": "EULA — MUUD SpA",
+      "ogDescription": "Acuerdo de licencia de usuario final para la aplicación MUUD."
     }
   }
 }
