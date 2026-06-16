@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         destination: "/politica-de-privacidad",
         permanent: true,
       },
+      {
+        source: "/terminos-y-condiciones-muud-spa",
+        destination: "/terminos-y-condiciones",
+        permanent: true,
+      },
     ];
   },
   images: {
