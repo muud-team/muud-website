@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function RevealOnScroll() {
+  const pathname = usePathname();
+
   useEffect(() => {
-    const reveals = document.querySelectorAll(".reveal");
+    const reveals = document.querySelectorAll(".reveal:not(.in)");
     const show = (el: Element) => el.classList.add("in");
 
     if ("IntersectionObserver" in window) {
@@ -19,12 +22,21 @@ export default function RevealOnScroll() {
         },
         { threshold: 0.1, rootMargin: "0px 0px -6% 0px" }
       );
-      reveals.forEach((el) => io.observe(el));
+
+      reveals.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          show(el);
+        } else {
+          io.observe(el);
+        }
+      });
+
       return () => io.disconnect();
     }
 
     reveals.forEach(show);
-  }, []);
+  }, [pathname]);
 
   return null;
 }
