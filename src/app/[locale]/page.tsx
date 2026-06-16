@@ -207,7 +207,10 @@ export default function HomePage() {
             <div className="context-card reveal">
               <Image className="star-bg" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b3_Star%201.svg" alt="" width={160} height={160} />
               <p>{t('context.text')}</p>
-              <Image className="ctx-emoji" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7bac38164fd8fc55ed9e_emoji-4.png" alt="" width={120} height={120} />
+              <div className="ctx-media">
+                <Image className="ctx-emoji" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7bac38164fd8fc55ed9e_emoji-4.png" alt="" width={120} height={120} />
+                <Image className="ctx-muudy" src="/muudy.png" alt="Muudy" width={300} height={300} />
+              </div>
             </div>
           </div>
         </section>

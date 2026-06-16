@@ -147,7 +147,7 @@ export default function ColegiosPage() {
               </ul>
             </div>
             <div className="split-visual reveal" data-d="1">
-              <Image className="split-img" src="/tablet_preview_es.webp" alt={t('solution.students.imageAlt')} width={450} height={600} />
+              <Image className="split-img" src="/muudy.png" alt={t('solution.students.imageAlt')} width={450} height={600} />
             </div>
           </div>
 

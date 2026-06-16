@@ -303,9 +303,13 @@ section { position: relative }
 /* PRESS */
 .press { margin-top: 56px; padding-top: 42px; border-top: 1px solid var(--line); text-align: center }
 .press-label { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-2) }
-.press-logos { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px }
-.press-logo { padding: 14px 28px; display: grid; place-items: center; opacity: .5; transition: opacity .2s, transform .2s; border-radius: 12px; background: rgba(23,18,58,.04); font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; white-space: nowrap; letter-spacing: -.01em }
-.press-logo:hover { opacity: 1; transform: translateY(-2px) }
+.press-videos { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; margin-inline: auto }
+.press-video { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(23,18,58,.10) }
+.press-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none }
+.press-logos { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px }
+.press-logo { padding: 14px 28px; display: grid; place-items: center; transition: filter .3s, transform .2s; border-radius: 12px; background: rgba(23,18,58,.04); text-decoration: none; filter: grayscale(1) }
+.press-logo img { height: 40px; width: auto; max-width: 120px }
+.press-logo:hover { filter: grayscale(0); transform: translateY(-2px) }
 
 /* NEWSLETTER */
 .newsletter .nl-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center }
@@ -380,7 +384,9 @@ section { position: relative }
 .context-card { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 46px 50px; display: flex; gap: 40px; align-items: center; box-shadow: var(--shadow-lg); position: relative; overflow: hidden }
 .context-card .star-bg { position: absolute; right: -30px; top: -30px; width: 160px; opacity: .12 }
 .context-card p { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.3rem, 2.4vw, 2rem); line-height: 1.18; letter-spacing: -0.02em; max-width: 24ch }
-.context-card .ctx-emoji { width: 120px; flex: 0 0 auto }
+.context-card .ctx-media { display: flex; gap: 18px; align-items: stretch; align-self: stretch; flex: 0 0 auto; margin: -46px -50px -46px 0 }
+.context-card .ctx-emoji { width: 120px; height: auto; flex: 0 0 auto; align-self: center }
+.context-card .ctx-muudy { width: auto; height: 100%; max-height: none; object-fit: contain; object-position: bottom right; flex: 0 0 auto }
 
 /* ABOUT / WHAT IS MUUD */
 .about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 60px; align-items: center }
@@ -462,6 +468,7 @@ section { position: relative }
   .role-grid { grid-template-columns: 1fr }
   .stat-grid { grid-template-columns: repeat(2, 1fr) }
   .news-grid { grid-template-columns: 1fr }
+  .press-videos { grid-template-columns: 1fr }
 }
 
 /* mobile login section */
