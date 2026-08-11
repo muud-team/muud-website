@@ -547,6 +547,10 @@ section { position: relative }
 .legal-toc h3 { margin-top: 0; border: none; font-size: 1.1rem }
 .legal-toc ol { padding-left: 20px; margin-bottom: 0; columns: 2; column-gap: 32px }
 .legal-toc li { font-size: .92rem; line-height: 1.6; margin-bottom: 4px; color: var(--muted) }
+.legal-table-wrap { overflow-x: auto; margin: 24px 0 32px }
+.legal-table { width: 100%; min-width: 620px; border-collapse: collapse }
+.legal-table th, .legal-table td { border: 1px solid var(--line-soft); padding: 12px 14px; text-align: left; vertical-align: top; font-size: .92rem; line-height: 1.6; color: var(--ink-text) }
+.legal-table th { background: var(--cream); font-weight: 700; color: var(--ink) }
 @media (max-width: 600px) {
   .legal-toc ol { columns: 1 }
   .legal-toc { padding: 20px 22px }

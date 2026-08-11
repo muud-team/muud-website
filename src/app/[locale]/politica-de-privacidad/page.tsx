@@ -37,292 +37,183 @@ export default function PrivacyPolicyPage() {
           <div className="wrap legal-wrap">
             <div className="legal-header">
               <h1>{t("title")}</h1>
-              <p className="legal-updated">{t("lastUpdated")}: 20 de julio de 2024</p>
+              <p className="legal-updated">{t("lastUpdated")}: August 10, 2026 &middot; Effective date: August 10, 2026</p>
             </div>
 
             <div className="legal-body">
-              <p>Este aviso de privacidad de MUUD SpA (&quot;Empresa&quot;, &quot;nosotros&quot;, &quot;nos&quot; o &quot;nuestro&quot;) describe cómo y por qué podemos recopilar, almacenar, utilizar y/o compartir (&quot;procesar&quot;) su información cuando usted utiliza nuestros servicios (&quot;Servicios&quot;), como cuando usted:</p>
-              <ul>
-                <li>Visite nuestro sitio web en https://www.muud.app o cualquier sitio web que enlace con este aviso de privacidad.</li>
-                <li>Descargue y utilice nuestra aplicación móvil (MUUD) o cualquier otra aplicación que conecte con este aviso de privacidad.</li>
-                <li>Participar con nosotros en actividades relacionadas, como ventas, marketing o eventos.</li>
-              </ul>
-              <p><strong>¿Preguntas o dudas?</strong> La lectura de este aviso de privacidad le ayudará a comprender sus derechos y opciones en materia de privacidad. Si no está de acuerdo con nuestras políticas y prácticas, no utilice nuestros Servicios. Si sigue teniendo preguntas o dudas, póngase en contacto con nosotros en soporte@muud.app.</p>
+              <p>This Privacy Policy explains how MUUD SpA, RUT 77.634.166-5, Av. Presidente Kennedy 5600, Of. 507, Vitacura, Santiago, Chile (&quot;MUUD&quot;, &quot;we&quot;, &quot;us&quot;), processes personal data in connection with the MUUD websites, mobile and web applications and related services (the &quot;Services&quot;). The Services are a student wellbeing platform provided primarily to schools and other educational institutions, and a team wellbeing offering for organizations. This Policy should be read together with our Terms of Service and, for institutions, the Data Processing Addendum (&quot;DPA&quot;).</p>
+              <p>This Policy is drafted to comply with the data protection laws of the jurisdictions where MUUD operates, including the GDPR and UK GDPR, Spain&apos;s LOPDGDD, Brazil&apos;s LGPD, Chile&apos;s Law No. 19.628 and Law No. 21.719 (in force December 1, 2026), Mexico&apos;s LFPDPPP, Colombia&apos;s Law 1581 of 2012, Peru&apos;s Law No. 29733, Argentina&apos;s Law No. 25.326, the U.S. FERPA, COPPA and applicable state privacy and student privacy laws, and India&apos;s Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025 (collectively, &quot;Applicable Data Protection Laws&quot;).</p>
 
-              <h2>Resumen de los puntos clave</h2>
-              <p><em>Este resumen proporciona los puntos clave de nuestro aviso de privacidad, pero puede encontrar más detalles sobre cualquiera de estos temas haciendo click en el enlace que sigue a cada punto clave o utilizando nuestro índice para encontrar la sección que busca.</em></p>
-              <p><strong>¿Qué información personal procesamos?</strong> Cuando visita, utiliza o navega por nuestros Servicios, podemos procesar información personal dependiendo de cómo interactúe con MUUD SpA y los Servicios, de sus elecciones y de los productos y funciones que utilice.</p>
-              <p><strong>¿Tratamos información personal sensible?</strong> Podemos procesar información personal sensible cuando sea necesario con su consentimiento o según lo permita la legislación aplicable.</p>
-              <p><strong>¿Recibimos información de terceros?</strong> No aceptamos información de terceros.</p>
-              <p><strong>¿Cómo procesamos su información?</strong> Procesamos su información para prestar, mejorar y administrar nuestros Servicios, comunicarnos con usted por motivos de seguridad y prevención del fraude, y para cumplir la ley. También podemos procesar su información para otros fines con su consentimiento. No obstante, sólo procesamos sus datos por motivos legales válidos.</p>
-              <p><strong>¿En qué situaciones y con qué terceros compartimos información personal?</strong> Podemos compartir información en situaciones específicas y con terceros específicos.</p>
-              <p><strong>¿Cómo mantenemos segura su información?</strong> Disponemos de procesos y procedimientos organizativos y técnicos para proteger su información personal. Sin embargo, no se puede garantizar al 100% la seguridad de ninguna transmisión electrónica por Internet ni de ninguna tecnología de almacenamiento de información.</p>
-              <p><strong>¿Cuáles son sus derechos?</strong> Dependiendo de dónde se encuentre geográficamente, la ley de privacidad aplicable puede significar que usted tiene ciertos derechos con respecto a su información personal.</p>
-              <p><strong>¿Cómo puede ejercer sus derechos?</strong> La forma más sencilla de ejercer sus derechos es presentando una solicitud de acceso a los datos o poniéndose en contacto con nosotros. Tendremos en cuenta cualquier solicitud y actuaremos conforme a la legislación aplicable en materia de protección de datos.</p>
+              <h2>Summary of Key Points</h2>
+              <ul>
+                <li>(a) When your school uses MUUD, your school controls your data. MUUD processes Student Data only as the school&apos;s processor, under its instructions, to provide the Services.</li>
+                <li>(b) We collect only what the Services need. We do not collect data revealing race or ethnicity, political opinions or religious beliefs, and we do not ask for precise geolocation.</li>
+                <li>(c) Wellbeing check-ins and journal entries are sensitive. They are protected with heightened confidentiality, are visible only as described in Section 5, and are never used for advertising.</li>
+                <li>(d) We do not sell personal data, we do not show third-party advertising in the Services, and we do not use personal data of students or of any user for targeted advertising, offer walls, contests or similar commercial schemes.</li>
+                <li>(e) Children use MUUD only through their school, with consent obtained as required in their country.</li>
+                <li>(f) You have rights over your data, described in Section 11, and students and parents can also exercise them through their school.</li>
+              </ul>
 
               <nav className="legal-toc">
-                <h3>Índice</h3>
+                <h3>Contents</h3>
                 <ol>
-                  <li>¿Qué información recogemos?</li>
-                  <li>¿Cómo procesamos su información?</li>
-                  <li>¿Cuándo y con quién compartimos sus datos personales?</li>
-                  <li>¿Utilizamos cookies y otras tecnologías de seguimiento?</li>
-                  <li>¿Cómo gestionamos sus accesos sociales?</li>
-                  <li>¿Cuánto tiempo conservamos sus datos?</li>
-                  <li>¿Cómo mantenemos segura su información?</li>
-                  <li>¿Cuáles son sus derechos de privacidad?</li>
-                  <li>Requisito de edad</li>
-                  <li>Controles para las funciones &quot;Do-Not-Track&quot;</li>
-                  <li>¿Tienen los residentes en California derechos específicos en materia de privacidad?</li>
-                  <li>¿Tienen los residentes en Virginia derechos específicos en materia de privacidad?</li>
-                  <li>¿Realizamos actualizaciones de este aviso?</li>
-                  <li>¿Cómo puede ponerse en contacto con nosotros en relación con este aviso?</li>
-                  <li>¿Cómo puede revisar, actualizar o eliminar los datos que recopilamos sobre usted?</li>
+                  <li>Who Is Responsible for Your Data (Roles)</li>
+                  <li>Information We Collect</li>
+                  <li>Purposes and Legal Bases</li>
+                  <li>Automated Analysis and AI Features</li>
+                  <li>Wellbeing Data: Confidentiality and Visibility</li>
+                  <li>De-identified and Aggregated Data</li>
+                  <li>When and With Whom We Share Personal Data</li>
+                  <li>International Data Transfers</li>
+                  <li>Retention</li>
+                  <li>Security and Breach Notification</li>
+                  <li>Your Rights</li>
+                  <li>Cookies and Similar Technologies</li>
+                  <li>Children&apos;s Privacy</li>
+                  <li>Jurisdiction-Specific Disclosures</li>
+                  <li>Contact</li>
+                  <li>Changes to This Policy</li>
                 </ol>
               </nav>
 
-              <h2>1. ¿Qué información recogemos?</h2>
-              <h3>Los datos personales que nos comunique</h3>
-              <p><em>En resumen: recopilamos la información personal que usted nos proporciona.</em></p>
-              <p>Recopilamos información personal que usted nos proporciona voluntariamente cuando se registra en los Servicios, expresa su interés en obtener información sobre nosotros o nuestros productos y Servicios al participar en actividades en los Servicios, o de otro modo cuando se pone en contacto con nosotros.</p>
-              <p><strong>Información personal proporcionada por usted.</strong> La información personal que recopilamos depende del contexto de sus interacciones con nosotros y con los Servicios, de sus elecciones y de los productos y funciones que utilice. La información personal que recopilamos puede incluir lo siguiente:</p>
-              <ul>
-                <li>nombres</li>
-                <li>números de teléfono</li>
-                <li>direcciones de correo electrónico</li>
-                <li>nombres de usuario</li>
-                <li>contraseñas</li>
-              </ul>
-              <p><strong>Información sensible.</strong> Cuando es necesario, con su consentimiento o según lo permita la legislación aplicable, procesamos las siguientes categorías de información sensible:</p>
-              <ul>
-                <li>información que revele la raza o el origen étnico</li>
-                <li>información que revele opiniones políticas</li>
-                <li>informar sobre creencias religiosas o filosóficas</li>
-              </ul>
-              <p>La App utiliza tecnología de reconocimiento emocional para analizar y comprender su estado emocional basándose en los datos que usted proporciona voluntariamente. Al utilizar la App, usted reconoce y acepta el análisis y tratamiento de sus datos emocionales para prestarle servicios relacionados con el reconocimiento emocional.</p>
-              <p><strong>Datos de pago.</strong> Podemos recopilar los datos necesarios para procesar su pago si realiza compras, como el número de su instrumento de pago y el código de seguridad asociado a su instrumento de pago. Todos los datos de pago se almacenan en Apple Store y Android. Puede encontrar los enlaces a sus avisos de privacidad aquí: https://www.apple.com/legal/privacy/data/en/app-store/ y https://policies.google.com/privacy.</p>
-              <p><strong>Datos de inicio de sesión en redes sociales.</strong> Es posible que le permitamos registrarse con nosotros utilizando los datos de su cuenta de redes sociales, como Facebook, Twitter u otras cuentas de redes sociales. Si se registra de esta forma, recopilaremos la información descrita en la sección &quot;¿CÓMO MANEJAMOS SUS DATOS DE ACCESO A LAS REDES SOCIALES?&quot; que figura a continuación.</p>
-              <p><strong>Datos de la aplicación.</strong> Si utiliza nuestra(s) aplicación(es), también podemos recopilar la siguiente información si decide proporcionarnos acceso o permiso:</p>
-              <ul>
-                <li><em>Información de geolocalización.</em> Podemos solicitar acceso o permiso para rastrear información basada en la ubicación de su dispositivo móvil de forma continua o mientras utiliza nuestra(s) aplicación(es) móvil(es) para proporcionar determinados servicios basados en la ubicación. Puede hacerlo en la configuración de su dispositivo para cambiar el acceso o los permisos.</li>
-                <li><em>Acceso a dispositivos móviles.</em> Podemos solicitar acceso o permiso a determinadas funciones de su dispositivo móvil, como la cámara, el micrófono, las cuentas de redes sociales, el almacenamiento y otras funciones. Puede hacerlo en la configuración de su dispositivo para cambiar el acceso o los permisos.</li>
-                <li><em>Datos del dispositivo móvil.</em> Recopilamos automáticamente información sobre el dispositivo (como el identificador, el modelo y el fabricante de su dispositivo móvil), el sistema operativo, la información sobre la versión y la configuración del sistema, los números de identificación del dispositivo y de la aplicación, el tipo y la versión del navegador, el modelo de hardware, el proveedor de servicios de Internet y/o el operador de telefonía móvil, y la dirección del protocolo de Internet (IP) (o del servidor proxy). Si está utilizando nuestra(s) aplicación(es), también podemos recopilar información sobre la red telefónica asociada a su dispositivo móvil, el sistema operativo o la plataforma de su dispositivo móvil, el tipo de dispositivo móvil que utiliza, el identificador único de dispositivo de su dispositivo móvil e información sobre las funciones de nuestra(s) aplicación(es) a las que ha accedido.</li>
-                <li><em>Notificaciones push.</em> Podemos solicitarle que nos envíe notificaciones push relativas a su cuenta o a funciones específicas de su(s) aplicación(es). Si no desea recibirlas, puede desactivarlas en la configuración de su dispositivo.</li>
-              </ul>
-              <p>Esta información es necesaria principalmente para mantener la seguridad y el funcionamiento de nuestra(s) aplicación(es), para la resolución de problemas y para nuestros análisis internos y la elaboración de informes.</p>
-              <p>Toda la información personal que proporcione debe ser verdadera, completa y exacta, y debe notificarnos cualquier cambio en dicha información personal.</p>
+              <h2>1. Who Is Responsible for Your Data (Roles)</h2>
+              <p>1.1 <strong>School deployments.</strong> When you use the Services through a school or other institution (&quot;Institutional Customer&quot;), the institution is the data controller (responsable del tratamiento, controlador, or Data Fiduciary under the India DPDP Act) of Student Data and of the personal data of its staff processed in the platform. MUUD acts as data processor (encargado, operador, Data Processor), processing that data only on the institution&apos;s documented instructions under the DPA. Questions and rights requests concerning Student Data can be addressed to the institution or to MUUD; where MUUD receives them, we will coordinate with the institution.</p>
+              <p>1.2 <strong>Individual adult users and business teams.</strong> Where MUUD offers accounts to individual adults, or wellbeing services to companies for their adult team members, MUUD is the controller of account data, and the specific controller/processor allocation for company deployments is set out in the applicable agreement.</p>
+              <p>1.3 <strong>Website visitors, prospects and event participants.</strong> MUUD is the controller of personal data collected through our websites, demos, sales and marketing activities.</p>
 
-              <h3>Información recopilada automáticamente</h3>
-              <p><em>En resumen: algunos datos — como su dirección de Protocolo de Internet (IP) y/o las características de su navegador y dispositivo — se recogen automáticamente cuando visita nuestros servicios.</em></p>
-              <p>Recogemos automáticamente cierta información cuando usted visita, utiliza o navega por los servicios. Esta información no revela su identidad específica (como su nombre o información de contacto). Sin embargo, puede incluir información sobre el dispositivo y el uso, como su dirección IP, características del navegador y del dispositivo, sistema operativo, preferencias de idioma, URL de referencia, nombre del dispositivo, país, ubicación, información sobre cómo y cuándo utiliza nuestros Servicios y otros detalles técnicos. Esta información es necesaria principalmente para mantener la seguridad y el funcionamiento de nuestros Servicios y para nuestros análisis internos y la elaboración de informes.</p>
-              <p>Como muchas empresas, también recopilamos información a través de cookies y tecnologías similares.</p>
-              <p>La información que recopilamos incluye lo siguiente:</p>
-              <ul>
-                <li><em>Datos de registro y uso.</em> Los datos de registro y uso son información relacionada con el servicio, el diagnóstico, el uso y el rendimiento que nuestros servidores recopilan automáticamente cuando usted accede a nuestros Servicios o los utiliza, y que registramos en archivos de registro. Dependiendo de cómo interactúe con nosotros, estos datos de registro pueden incluir su dirección IP, información del dispositivo, tipo de navegador y configuración e información sobre su actividad en los Servicios (como las marcas de fecha/hora asociadas con su uso, páginas y archivos vistos, búsquedas y otras acciones que realice, como las funciones que utiliza), información de eventos del dispositivo (como actividad del sistema, informes de errores y configuración del hardware).</li>
-              </ul>
+              <h2>2. Information We Collect</h2>
+              <p>2.1 <strong>Account and profile data.</strong> Name, email address, username, password (stored hashed), role (student, teacher, counselor, administrator), school, grade or course, and language. For students, accounts are provisioned by or at the direction of the school; we ask schools to provide only the minimum fields necessary.</p>
+              <p>2.2 <strong>Wellbeing data (sensitive).</strong> Check-in responses (for example, mood selections and short answers), journal entries, and interactions with wellbeing content. This data may reveal information about emotional state and is treated as sensitive personal data under Applicable Data Protection Laws (including GDPR Art. 9, LGPD Arts. 5 and 11, and Chilean Law No. 21.719). Section 5 describes exactly how it is used and who can see it.</p>
+              <p>2.3 <strong>Usage and device data.</strong> IP address, device and browser type, operating system, app version, language settings, log data (timestamps, features used, error reports) and approximate country/region derived from IP. We collect this to operate, secure and improve the Services. We do not collect precise GPS geolocation and we do not access your camera, microphone, contacts or photos except where a specific feature you choose to use requires it, with the operating system permission prompt, and never in the student experience without the school&apos;s configuration.</p>
+              <p>2.4 <strong>Billing data.</strong> For paying customers, billing contact details, tax ID and invoicing information. Card payments for individual purchases are processed by the app stores or by our payment processors; MUUD does not store full card numbers.</p>
+              <p>2.5 <strong>Support and communications.</strong> The content of your messages when you contact support, respond to surveys we run for product feedback, or attend demos and events.</p>
+              <p>2.6 <strong>Data we do not collect.</strong> We do not collect or process data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic or biometric data, or data concerning sex life or sexual orientation. We do not request government identification numbers from students. We do not use social media login for the Services, and we do not receive advertising or data-broker data about users.</p>
+              <p>2.7 <strong>Sources.</strong> We collect data directly from you, from your institution when it provisions and manages accounts, and automatically from your device as described in 2.3. We do not purchase personal data from third parties.</p>
 
-              <h2>2. ¿Cómo procesamos su información?</h2>
-              <p><em>En pocas palabras: procesamos su información para prestar, mejorar y administrar nuestros servicios, comunicarnos con usted por motivos de seguridad y prevención del fraude, y para cumplir la ley. También podemos procesar su información para otros fines con su consentimiento.</em></p>
-              <h3>Tratamos su información personal por diversas razones, dependiendo de cómo interactúe con nuestros Servicios, entre ellas:</h3>
-              <ul>
-                <li><strong>Para facilitar la creación y autenticación de cuentas y gestionar de otro modo las cuentas de usuario.</strong> Podemos procesar su información para que pueda crear e iniciar sesión en su cuenta, así como para mantener su cuenta en funcionamiento.</li>
-                <li><strong>Prestar y facilitar la prestación de servicios al usuario.</strong> Podemos procesar su información para prestarle el servicio solicitado.</li>
-                <li><strong>Para responder a las consultas de los usuarios/ofrecerles asistencia.</strong> Podemos procesar su información para responder a sus preguntas y resolver cualquier posible problema que pueda tener con el servicio solicitado.</li>
-                <li><strong>Para enviarle información administrativa.</strong> Podemos procesar su información para enviarle detalles sobre nuestros productos y servicios, cambios en nuestras condiciones y políticas, y otra información similar.</li>
-                <li><strong>Para cumplir y gestionar sus pedidos.</strong> Podemos procesar su información para cumplir y gestionar sus pedidos, pagos, devoluciones y cambios realizados a través de los Servicios.</li>
-                <li><strong>Para permitir las comunicaciones entre usuarios.</strong> Podemos procesar su información si utiliza cualquiera de nuestras ofertas para comunicarse con otro usuario.</li>
-                <li><strong>Para solicitar opiniones.</strong> Podemos procesar su información cuando sea necesario para solicitar su opinión y ponernos en contacto con usted sobre el uso de nuestros Servicios.</li>
-                <li><strong>Para enviarle comunicaciones promocionales y de marketing.</strong> Podemos procesar la información personal que nos envíe, siguiendo sus preferencias de marketing. Puede darse de baja de nuestros correos electrónicos de marketing en cualquier momento.</li>
-                <li><strong>Para ofrecerle publicidad personalizada.</strong> Podemos procesar su información para desarrollar y mostrar contenidos personalizados y publicidad adaptada a sus intereses, ubicación, etc.</li>
-                <li><strong>Publicar testimonios.</strong> Publicamos testimonios en nuestros Servicios que pueden contener información personal.</li>
-                <li><strong>Para proteger nuestros Servicios.</strong> Podemos procesar su información como parte de nuestros esfuerzos para mantener nuestros Servicios seguros y protegidos, incluyendo la supervisión y prevención del fraude.</li>
-                <li><strong>Para administrar sorteos y concursos.</strong> Podemos procesar su información para administrar sorteos y concursos.</li>
-                <li><strong>Para evaluar y mejorar nuestros Servicios, productos, marketing y su experiencia.</strong> Podemos procesar su información cuando sea necesario para identificar tendencias de uso, determinar la eficacia de nuestras campañas promocionales y evaluar y mejorar nuestros Servicios, productos, marketing y su experiencia.</li>
-                <li><strong>Para identificar tendencias de uso.</strong> Podemos procesar información sobre cómo utiliza nuestros Servicios para comprender mejor cómo se utilizan y así poder mejorarlos.</li>
-                <li><strong>Para determinar la eficacia de nuestras campañas de marketing y promoción.</strong> Podemos procesar su información para comprender mejor cómo ofrecerle las campañas de marketing y promoción más relevantes para usted.</li>
-                <li><strong>Para cumplir con nuestras obligaciones legales.</strong> Podemos procesar su información para cumplir con nuestras obligaciones legales, responder a solicitudes legales y ejercer, establecer o defender nuestros derechos legales.</li>
-              </ul>
+              <h2>3. Purposes and Legal Bases</h2>
+              <p>We process personal data only for the purposes below and only with a valid legal basis. Where MUUD acts as processor for an institution, the institution establishes the legal basis; those most commonly relied on are indicated for transparency.</p>
+              <div className="legal-table-wrap">
+                <table className="legal-table">
+                  <thead>
+                    <tr>
+                      <th>Purpose</th>
+                      <th>Data used</th>
+                      <th>Legal basis (GDPR / LGPD / Law 21.719 and equivalents)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Provide the Services: accounts, check-ins, journals, wellbeing content, staff dashboards and alerts</td>
+                      <td>Account data; wellbeing data; usage data</td>
+                      <td>Performance of the contract with the institution or user; for wellbeing (sensitive) data, the basis established by the controller: explicit consent of the user or parent/guardian, or another basis permitted by law for the educational and wellbeing purpose, always in the best interest of the student</td>
+                    </tr>
+                    <tr>
+                      <td>Safety escalation: enabling designated school staff to follow up on wellbeing alerts</td>
+                      <td>Wellbeing data; account data</td>
+                      <td>Substantial public interest / protection of vital interests of the data subject where applicable; the institution&apos;s legal duties of care toward students; explicit consent where required</td>
+                    </tr>
+                    <tr>
+                      <td>Security, fraud prevention, troubleshooting</td>
+                      <td>Usage and device data; logs</td>
+                      <td>Legitimate interest in securing the Services; legal obligation</td>
+                    </tr>
+                    <tr>
+                      <td>Support and communications about the service (not marketing)</td>
+                      <td>Account data; support messages</td>
+                      <td>Performance of contract; legitimate interest</td>
+                    </tr>
+                    <tr>
+                      <td>Billing and administration of institutional subscriptions</td>
+                      <td>Billing data</td>
+                      <td>Performance of contract; legal obligations (tax, accounting)</td>
+                    </tr>
+                    <tr>
+                      <td>Product improvement and research on student wellbeing</td>
+                      <td>De-identified and aggregated data only (Section 6)</td>
+                      <td>Legitimate interest; not applicable to identified personal data</td>
+                    </tr>
+                    <tr>
+                      <td>Marketing to prospective institutional customers (never to students)</td>
+                      <td>Business contact data of school representatives</td>
+                      <td>Legitimate interest or consent, with opt-out at any time</td>
+                    </tr>
+                    <tr>
+                      <td>Legal compliance</td>
+                      <td>As required</td>
+                      <td>Legal obligation; establishment, exercise or defense of legal claims</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>We do not process personal data for third-party advertising, targeted advertising, offer walls, sweepstakes or contests, or the publication of testimonials containing personal data without specific prior consent. We do not use Student Data for marketing of any kind.</p>
 
-              <h2>3. ¿Cuándo y con quién compartimos sus datos personales?</h2>
-              <p><em>En resumen: Podemos compartir información en situaciones específicas descritas en esta sección y/o con los siguientes terceros.</em></p>
-              <p>Es posible que tengamos que compartir su información personal en las siguientes situaciones:</p>
-              <ul>
-                <li><strong>Transferencias empresariales.</strong> Podemos compartir o transferir su información en relación con o durante las negociaciones de cualquier fusión, venta de activos de la empresa, financiación o adquisición de la totalidad o parte de nuestro negocio a otra empresa.</li>
-                <li><strong>Filiales.</strong> Podemos compartir su información con nuestras filiales, en cuyo caso exigiremos a dichas filiales que respeten este aviso de privacidad. Las filiales incluyen nuestra empresa matriz y cualquier filial, empresa conjunta u otras empresas que controlemos o que estén bajo control común.</li>
-                <li><strong>Socios comerciales.</strong> Podemos compartir su información con nuestros socios comerciales para ofrecer determinados productos, servicios o promociones.</li>
-                <li><strong>Otros usuarios.</strong> Cuando usted comparte información personal (por ejemplo, mediante la publicación de comentarios, contribuciones u otros contenidos en los Servicios) o interactúa de otro modo con áreas públicas de los Servicios, dicha información personal puede ser vista por todos los usuarios y estar disponible públicamente fuera de los Servicios a perpetuidad. Si interactúa con otros usuarios de nuestros Servicios y se registra en nuestros servicios a través de una red social (como Facebook), sus contactos en la red social verán su nombre, foto de perfil y descripciones de su actividad. Del mismo modo, otros usuarios pueden ver sus informes de actividad, comunicarse con usted dentro de nuestros Servicios y ver su perfil.</li>
-                <li><strong>Muro de ofertas.</strong> Nuestra(s) aplicación(es) puede(n) mostrar un &quot;muro de ofertas&quot; alojado por terceros. Dicho muro de ofertas permite a los anunciantes de terceros ofrecer a los usuarios moneda virtual, regalos u otros artículos a cambio de la aceptación y finalización de una oferta publicitaria. Al hacer clic en un muro de ofertas, accederá a un sitio web externo perteneciente a otras personas y abandonará nuestra(s) aplicación(es). Se compartirá un identificador único, como su ID de usuario, con el proveedor del muro de ofertas para evitar fraudes y acreditar adecuadamente en su cuenta la recompensa correspondiente.</li>
-                <li><strong>Marco terapéutico.</strong> Priorizamos la confidencialidad y privacidad de la información que nos facilitas en la aplicación. Tus datos emocionales e información personal serán tratados con la máxima confidencialidad y sólo tendrá acceso a ellos el personal autorizado implicado en el funcionamiento y mejora de la Aplicación. Sin embargo, tenga en cuenta que en determinadas circunstancias en las que exista un riesgo para su bienestar físico o psicológico o el de otras personas, podemos vernos obligados a revelar la información pertinente a las autoridades competentes o a terceros. Esto incluye situaciones que impliquen un daño inminente, amenazas de violencia o cualquier obligación legal que requiera la divulgación de dicha información. Nos comprometemos a mantener su privacidad y sólo revelaremos información cuando sea necesario para proteger su seguridad y la de los demás.</li>
-              </ul>
+              <h2>4. Automated Analysis and AI Features</h2>
+              <p>4.1 The Services use software, including AI-based analysis, to organize check-in responses and, where the institution enables it, to flag patterns that may warrant human attention (for example, a sustained negative trend). These features exist to prioritize human follow-up by trained school staff. They do not produce clinical assessments or diagnoses.</p>
+              <p>4.2 No decision producing legal effects or similarly significant effects on a user is taken solely by automated means. Alerts are informational and any follow-up decision is made by people at the institution. Users and institutions can request human review of, and information about, the logic of these features (GDPR Art. 22, LGPD Art. 20, Law No. 21.719 and equivalents).</p>
+              <p>4.3 We do not use personal data, including wellbeing data, to train models for third parties, and we do not use identifiable Student Data to train our own models without the documented instruction of the controller and a valid legal basis; where model improvement uses data, we use de-identified and aggregated data under Section 6.</p>
 
-              <h2>4. ¿Utilizamos cookies y otras tecnologías de seguimiento?</h2>
-              <p><em>En resumen: podemos utilizar cookies y otras tecnologías de seguimiento para recopilar y almacenar su información.</em></p>
-              <p>Podemos utilizar cookies y tecnologías de seguimiento similares (como balizas web y píxeles) para acceder a la información o almacenarla. Nuestro Aviso sobre cookies proporciona información específica sobre cómo utilizamos dichas tecnologías y cómo puede rechazar determinadas cookies.</p>
+              <h2>5. Wellbeing Data: Confidentiality and Visibility</h2>
+              <p>5.1 <strong>Private by default.</strong> Personal journal entries are private to the user. They are not visible to school staff, other students or MUUD personnel in the ordinary course, except as strictly necessary for technical operation and support under confidentiality obligations and access logging.</p>
+              <p>5.2 <strong>What the school sees.</strong> Depending on the configuration disclosed to the institution, designated school staff can see check-in results, wellbeing trends and alerts for the students under their care. The institution decides which roles have access. Visibility never extends beyond what is necessary for the wellbeing purposes of the Services, and the specific visibility rules for each feature are documented for the institution and available to users on request.</p>
+              <p>5.3 <strong>Safety disclosures.</strong> If information processed in the Services indicates a serious and imminent risk to the life, safety or wellbeing of a user or of another person, the platform is designed so that the institution&apos;s designated staff are alerted and can act under the institution&apos;s own protocols and legal duties. MUUD may disclose information to competent authorities only where legally required or where necessary to protect someone&apos;s life or safety, and will document any such disclosure. MUUD is not an emergency service and does not monitor content in real time.</p>
+              <p>5.4 The Services are an educational wellbeing tool. They are not a medical, clinical, psychological or psychiatric service, and the data processed is not a medical record, without prejudice to its protection as sensitive data under Applicable Data Protection Laws.</p>
 
-              <h2>5. ¿Cómo gestionamos sus accesos sociales?</h2>
-              <p><em>En resumen: si decide registrarse o iniciar sesión en nuestros Servicios utilizando una cuenta de redes sociales, podemos tener acceso a cierta información sobre usted.</em></p>
-              <p>Nuestros servicios le permiten registrarse e iniciar sesión utilizando los datos de su cuenta de redes sociales (como Facebook o Twitter). Si decide hacerlo, recibiremos de su proveedor de redes sociales determinada información sobre su perfil. La información de perfil que recibimos puede variar en función del proveedor de redes sociales de que se trate, pero a menudo incluirá su nombre, dirección de correo electrónico, lista de amigos, foto de perfil y otra información que usted decida hacer pública en dichas plataformas de redes sociales.</p>
-              <p>Utilizaremos la información que recibamos únicamente para los fines descritos en este aviso de privacidad o que se le indiquen claramente en los Servicios correspondientes. Tenga en cuenta que no controlamos, ni somos responsables de, otros usos de su información personal por parte de su proveedor externo de redes sociales. Le recomendamos que consulte su aviso de privacidad para saber cómo recopilan, utilizan y comparten su información personal y cómo puede configurar sus preferencias de privacidad en sus sitios y aplicaciones.</p>
+              <h2>6. De-identified and Aggregated Data</h2>
+              <p>We may create de-identified, aggregated statistics (for example, overall wellbeing trends across a school, with no individual identifiable) to provide reporting to institutions, improve the Services and conduct research on student wellbeing. We apply the de-identification standards of Applicable Data Protection Laws, we contractually prohibit re-identification, and where a stricter student data standard applies (for example, certain U.S. state laws), we follow the stricter standard.</p>
 
-              <h2>6. ¿Cuánto tiempo conservamos sus datos?</h2>
-              <p><em>En resumen: conservamos su información durante el tiempo necesario para cumplir los fines descritos en este aviso de privacidad, a menos que la ley exija lo contrario.</em></p>
-              <p>Sólo conservaremos su información personal durante el tiempo que sea necesario para los fines establecidos en este aviso de privacidad, a menos que la ley exija o permita un período de conservación más prolongado (como requisitos fiscales, contables u otros requisitos legales). Ninguna de las finalidades previstas en este aviso nos obligará a conservar sus datos personales durante más de tres (3) meses una vez finalizada la cuenta del usuario.</p>
-              <p>Cuando ya no tengamos ninguna necesidad comercial legítima de procesar su información personal, eliminaremos o anonimizaremos dicha información o, si esto no es posible (por ejemplo, porque sus datos se han almacenado en archivos de copia de seguridad), almacenaremos de forma segura su información personal y la aislaremos de cualquier procesamiento posterior hasta que sea posible eliminarla.</p>
+              <h2>7. When and With Whom We Share Personal Data</h2>
+              <p>7.1 <strong>With your institution.</strong> In school deployments, Student Data and staff data are available to the institution as controller, per the visibility rules in Section 5.</p>
+              <p>7.2 <strong>Subprocessors and service providers.</strong> We use vetted providers for hosting, infrastructure, communications and support (for example, cloud hosting providers). They process personal data only under contract, only on our instructions, with confidentiality and security obligations flowing down from the DPA. A current subprocessor list is available at [INSERT URL] or on request, and institutional customers receive advance notice of changes.</p>
+              <p>7.3 <strong>Legal and safety.</strong> We may disclose personal data where required by law, regulation or binding order of a competent authority, or where strictly necessary to protect the life or safety of a person (Section 5.3), or to establish, exercise or defend legal claims. Where legally permitted, we will notify the affected institution before disclosing Customer Data in response to a government request and will challenge overbroad requests.</p>
+              <p>7.4 <strong>Corporate transactions.</strong> If MUUD is involved in a merger, acquisition, financing or sale of assets, personal data may be transferred as part of that transaction, subject to this Policy and to Applicable Data Protection Laws. Institutional customers will be notified, protections applicable to Student Data will continue to apply, and if they do not, customers may terminate and require deletion of their data before the transfer takes effect.</p>
+              <p>7.5 <strong>What we never do.</strong> We do not sell or rent personal data. We do not share personal data with advertisers, ad networks or data brokers. We do not operate offer walls, third-party advertising or social plug-ins inside the Services, and no Student Data is ever disclosed for commercial purposes unrelated to the Services.</p>
 
-              <h2>7. ¿Cómo mantenemos segura su información?</h2>
-              <p><em>En resumen: nuestro objetivo es proteger su información personal mediante medidas de seguridad organizativas y técnicas.</em></p>
-              <p>Hemos implantado medidas de seguridad técnicas y organizativas adecuadas y razonables, diseñadas para proteger la seguridad de cualquier información personal que procesemos. Sin embargo, a pesar de nuestras salvaguardas y esfuerzos por asegurar su información, no se puede garantizar que ninguna transmisión electrónica por Internet o tecnología de almacenamiento de información sea 100% segura, por lo que no podemos prometer ni garantizar que piratas informáticos, ciber delincuentes u otros terceros no autorizados no puedan burlar nuestra seguridad y recopilar, acceder, robar o modificar indebidamente su información. Aunque haremos todo lo posible para proteger su información personal, la transmisión de información personal hacia y desde nuestros Servicios corre por su cuenta y riesgo. Por lo tanto, sólo debe acceder a los servicios dentro de un entorno seguro.</p>
+              <h2>8. International Data Transfers</h2>
+              <p>8.1 The Services are hosted in [INSERT HOSTING REGION(S)]. Where personal data is transferred to a country that does not provide an adequate level of protection, we implement the safeguards required by law: the European Commission&apos;s Standard Contractual Clauses (with the UK Addendum or IDTA, and Swiss adaptations, as applicable) together with transfer impact assessments; the mechanisms of LGPD Arts. 33 to 36 for Brazil, including the ANPD&apos;s standard contractual clauses; the international transfer conditions of Chilean Law No. 21.719; and equivalent mechanisms under the laws of Mexico, Colombia, Peru, Argentina and India, including any applicable government restrictions on transfers under the India DPDP framework.</p>
+              <p>8.2 We do not treat continued use of the Services as consent to international transfers. Copies of the relevant safeguards can be requested through the contacts in Section 15.</p>
 
-              <h2>8. ¿Cuáles son sus derechos de privacidad?</h2>
-              <p><em>En resumen: puede revisar, modificar o cancelar su cuenta en cualquier momento.</em></p>
-              <p>Supongamos que se encuentra en el EEE o en el Reino Unido y cree que estamos tratando ilegalmente sus datos personales. En ese caso, también tiene derecho a reclamar ante la autoridad de protección de datos de su Estado miembro o del Reino Unido.</p>
-              <p>Si se encuentra en Suiza, puede ponerse en contacto con el Comisario Federal de Protección de Datos e Información.</p>
-              <p><strong>Retirada de su consentimiento:</strong> Si nos basamos en su consentimiento para procesar su información personal, tiene derecho a retirar su consentimiento en cualquier momento. Puede retirar su consentimiento en cualquier momento poniéndose en contacto con nosotros a través de los datos de contacto facilitados en la sección &quot;¿CÓMO PUEDE CONTACTAR CON NOSOTROS EN RELACIÓN CON ESTE AVISO?&quot; más abajo.</p>
-              <p>No obstante, tenga en cuenta que esto no afectará a la legalidad del tratamiento anterior a su retirada ni, cuando la legislación aplicable lo permita, afectará al tratamiento de su información personal realizado sobre la base de motivos legales de tratamiento distintos del consentimiento.</p>
-              <p><strong>Darse de baja de las comunicaciones promocionales y de marketing:</strong> Puede darse de baja de nuestras comunicaciones promocionales y de marketing en cualquier momento haciendo clic en el enlace para darse de baja que aparece en los correos electrónicos que le enviamos o poniéndose en contacto con nosotros. En ese caso, será eliminado de las listas de marketing. No obstante, podremos seguir comunicándonos con usted, por ejemplo, para enviarle mensajes relacionados con el servicio necesarios para la administración y el uso de su cuenta, responder a solicitudes de servicio o con otros fines no comerciales.</p>
+              <h2>9. Retention</h2>
+              <p>9.1 <strong>School deployments.</strong> We retain Customer Data, including Student Data, for the duration of the institution&apos;s subscription and as instructed by the institution, which can delete Student Data at any time using the administrative tools. Upon termination, data is available for export for at least 60 days and is then deleted from production systems within 90 days and from backups within the backup cycle, unless a longer retention is required by law. Deletion is certified on request.</p>
+              <p>9.2 <strong>Individual accounts.</strong> We retain personal data while the account is active. Upon deletion of the account, personal data is deleted or irreversibly anonymized within 90 days, except data we must retain to comply with legal obligations (for example, billing records for tax purposes), to resolve disputes or to enforce agreements, which is isolated and retained only as long as legally required. Free individual accounts inactive for 24 months may be deleted after at least 30 days&apos; prior notice.</p>
+              <p>9.3 <strong>Website and marketing data.</strong> Business contact data of prospects is retained while relevant to the relationship and deleted upon opt-out or after a defined period of inactivity documented in our internal retention schedule.</p>
 
-              <h3>Información sobre la cuenta</h3>
-              <p>Si en cualquier momento desea revisar o modificar la información de su cuenta o cancelarla, puede hacerlo:</p>
-              <ul>
-                <li>Póngase en contacto con nosotros utilizando la información de contacto facilitada.</li>
-              </ul>
-              <p>Cuando solicite la cancelación de su cuenta, desactivaremos o eliminaremos su cuenta e información de nuestras bases de datos activas. No obstante, es posible que conservemos algunos datos en nuestros archivos para evitar fraudes, solucionar problemas, ayudar en investigaciones, hacer cumplir nuestras condiciones legales y/o cumplir los requisitos legales aplicables.</p>
-              <p><strong>Cookies y tecnologías similares:</strong> La mayoría de los navegadores web están configurados para aceptar cookies por defecto. Normalmente puede configurar su navegador para eliminar y rechazar las cookies. Si decide eliminar o rechazar las cookies, esto podría afectar a determinadas funciones o servicios de nuestros Servicios. También puede optar por no recibir publicidad basada en sus intereses por parte de anunciantes en nuestros Servicios.</p>
-              <p>Si tiene preguntas o comentarios sobre sus derechos de privacidad, envíenos un correo electrónico a soporte@muud.app.</p>
+              <h2>10. Security and Breach Notification</h2>
+              <p>10.1 We apply technical and organizational measures appropriate to the sensitivity of the data, including encryption in transit (TLS) and at rest, role-based access controls, least-privilege access for personnel, access logging and monitoring, environment segregation, secure development practices, regular backups and periodic security reviews. Personnel with access to personal data are bound by confidentiality obligations and receive privacy and security training.</p>
+              <p>10.2 If a personal data breach occurs, we will notify the affected institution without undue delay and in any event within 72 hours of becoming aware of it, with the information needed for the institution to meet its own obligations. Where MUUD is the controller, we will notify the competent supervisory authority (including, as applicable, the relevant EU/EEA authority, the AEPD, the ANPD, Chile&apos;s Agencia de Proteccion de Datos Personales, or India&apos;s Data Protection Board) and affected individuals, within the deadlines and with the content required by Applicable Data Protection Laws.</p>
+              <p>10.3 No system is completely secure, but MUUD does not disclaim its legal responsibility for implementing and maintaining the security measures required by Applicable Data Protection Laws.</p>
 
-              <h2>9. Requisito de edad</h2>
-              <p>Debe tener al menos 13 años de edad para utilizar cualquiera de las Aplicaciones.</p>
+              <h2>11. Your Rights</h2>
+              <p>11.1 Depending on your jurisdiction, you have the rights of access, rectification, erasure (deletion), restriction of processing, objection, data portability, withdrawal of consent (without affecting prior processing), and the right not to be subject to solely automated decisions with legal or similarly significant effects. These include the ARCO rights recognized across Latin America, the rights in GDPR Arts. 15 to 22, LGPD Art. 18, Chilean Law No. 21.719 (ARCO plus portability), the rights of Data Principals under the India DPDP Act (access, correction and erasure, grievance redressal, nomination), and the rights of U.S. state privacy laws where applicable (access, correction, deletion, portability, opt-out of targeted advertising, sale and profiling; note that MUUD does not sell or share personal data or engage in targeted advertising).</p>
+              <p>11.2 <strong>How to exercise your rights.</strong> Contact us at privacy@muud.app [OR INSERT ADDRESS], through in-product settings where available, or through the data request form linked in the Site footer. We will verify your identity using only the information necessary for verification, respond within the deadline set by your law (for example, one month under the GDPR, extendable as permitted; 15 days for confirmation and simplified access under the LGPD; the deadlines of Law No. 21.719 in Chile; 45 days under most U.S. state laws), and will not discriminate against you for exercising your rights. You may use an authorized agent where your law allows it, subject to proof of authorization.</p>
+              <p>11.3 <strong>Students and parents.</strong> In school deployments, students, parents and guardians can exercise rights directly with the institution, which remains the point of contact under FERPA and equivalent frameworks; MUUD provides the institution with the tools to review, correct, export and delete Student Data. Parents and guardians may review and request deletion of their child&apos;s data, and may refuse to permit further collection, through the institution or through MUUD, which will coordinate with the institution.</p>
+              <p>11.4 <strong>Complaints.</strong> You may lodge a complaint with your supervisory authority, including any EU/EEA data protection authority or the UK ICO, the Spanish AEPD, Brazil&apos;s ANPD, Chile&apos;s Agencia de Proteccion de Datos Personales (and consumer complaints before SERNAC), Mexico&apos;s data protection authority, Colombia&apos;s SIC, Peru&apos;s ANPD, Argentina&apos;s AAIP, the U.S. FTC or your state Attorney General, or India&apos;s Data Protection Board. We would appreciate the chance to address your concern first through the contacts in Section 15.</p>
 
-              <h2>10. Controles para las funciones &quot;Do-Not-Track&quot;</h2>
-              <p>La mayoría de los navegadores web, sistemas operativos para móviles y aplicaciones para móviles incluyen una función o configuración Do-Not-Track (&quot;DNT&quot;) que usted puede activar para señalar su preferencia de privacidad y que no se controlen ni recopilen datos sobre sus actividades de navegación en línea. Sin embargo, no se ha ultimado ninguna norma tecnológica uniforme para reconocer y aplicar las señales DNT. Por ello, actualmente no respondemos a las señales DNT del navegador ni a ningún otro mecanismo que comunique automáticamente su decisión de no ser rastreado en línea. Si en el futuro se adopta una norma para el seguimiento en línea que debamos seguir, le informaremos sobre dicha práctica en una versión revisada de este aviso de privacidad.</p>
+              <h2>12. Cookies and Similar Technologies</h2>
+              <p>12.1 The Site uses strictly necessary cookies (session, security, load balancing) and, with your consent where required, analytics cookies to understand aggregate usage. We do not use advertising or cross-site tracking cookies, and no advertising cookies are used in the student experience. A cookie banner and settings page allow you to accept, refuse and change your choices for non-essential cookies at any time; refusing them does not degrade core functionality.</p>
+              <p>12.2 We honor opt-out preference signals such as Global Privacy Control where required by applicable law. Because we do not track users across third-party sites, browser Do-Not-Track signals do not change our practices, which already do not include such tracking.</p>
 
-              <h2>11. ¿Tienen los residentes en California derechos específicos en materia de privacidad?</h2>
-              <p><em>En pocas palabras: Sí, si usted reside en California, se le conceden derechos específicos en relación con el acceso a su información personal.</em></p>
-              <p>El artículo 1798.83 del Código Civil de California, también conocido como la ley &quot;Shine The Light&quot;, permite a nuestros usuarios residentes en California solicitar y obtener de nosotros, una vez al año y de forma gratuita, información sobre las categorías de datos personales (en su caso) que hayamos revelado a terceros con fines de marketing directo y los nombres y direcciones de todos los terceros con los que hayamos compartido información personal en el año natural inmediatamente anterior. Si es usted residente en California y desea realizar dicha solicitud, envíenosla por escrito utilizando la información de contacto que se facilita a continuación.</p>
-              <p>Si es menor de 18 años, reside en California y tiene una cuenta registrada en los Servicios, tiene derecho a solicitar la eliminación de los datos no deseados que publique en los Servicios. Para solicitar la eliminación de dichos datos, no dude en ponerse en contacto con nosotros utilizando la información de contacto que figura a continuación. Incluya la dirección de correo electrónico asociada a su cuenta y una declaración de que reside en California. Nos aseguraremos de que los datos no se muestren públicamente en los Servicios, pero tenga en cuenta que es posible que los datos se eliminen parcialmente de todos nuestros sistemas (por ejemplo, copias de seguridad, etc.).</p>
+              <h2>13. Children&apos;s Privacy</h2>
+              <p>13.1 Children do not create MUUD accounts on their own. Student accounts exist only under an institutional subscription, provisioned by or at the direction of the school, with the notices and consents required by the law of the student&apos;s country obtained as described in the Terms of Service: parental notice and school authorization or verifiable parental consent under COPPA in the United States; consent of holders of parental authority for children under the applicable digital consent age in the EU (Art. 8 GDPR; 14 in Spain under the LOPDGDD); processing in the best interest of children and adolescents with specific and highlighted parental consent where required in Brazil (LGPD Art. 14); the requirements of Chilean law, including Law No. 21.719 as of its entry into force; equivalent requirements in other Latin American jurisdictions; and verifiable parental or guardian consent for all users under 18 in India (DPDP Act Section 9 and Rule 10 of the DPDP Rules, 2025), except to the extent a statutory exemption applies to educational contexts.</p>
+              <p>13.2 We do not track or behaviourally monitor children, do not profile children except as necessary to provide the contracted wellbeing features, and do not direct any advertising at children. If we learn that a child&apos;s personal data was collected without the required consent or authorization, we will delete it without undue delay and notify the institution.</p>
 
-              <h3>Aviso de confidencialidad de la CCPA</h3>
-              <p>El Código Normativo de California define &quot;residente&quot; como:</p>
-              <ol>
-                <li>todo individuo que se encuentre en el Estado de California con un propósito que no sea temporal o transitorio y</li>
-                <li>toda persona física domiciliada en el Estado de California que se encuentre fuera del Estado de California con carácter temporal o transitorio</li>
-              </ol>
-              <p>Todas las demás personas se definen como &quot;no residentes&quot;.</p>
-              <p>Si esta definición de &quot;residente&quot; se aplica a usted, debemos respetar determinados derechos y obligaciones en relación con su información personal.</p>
+              <h2>14. Jurisdiction-Specific Disclosures</h2>
+              <p>14.1 <strong>EEA, UK and Switzerland.</strong> Our legal bases are described in Section 3. Where required by Art. 27 GDPR / UK GDPR, our EU representative is [INSERT] and our UK representative is [INSERT]. Transfers are protected as per Section 8.</p>
+              <p>14.2 <strong>Spain.</strong> The digital consent age is 14 (LOPDGDD Art. 7). The AEPD is the supervisory authority. Where a Spanish school is the controller, the school determines the legal basis in accordance with Spanish education regulations and AEPD guidance for educational centers.</p>
+              <p>14.3 <strong>Brazil.</strong> Our encarregado (DPO) for LGPD purposes is [INSERT NAME AND CONTACT]. Data subjects may exercise LGPD Art. 18 rights through Section 11 and may petition the ANPD. Processing of children&apos;s and adolescents&apos; data follows LGPD Art. 14 and ANPD guidance.</p>
+              <p>14.4 <strong>Chile.</strong> Processing is subject to Law No. 19.628 and, from December 1, 2026, Law No. 21.719, including its principles, sensitive data rules, ARCO and portability rights, breach notification and the authority of the Agencia de Proteccion de Datos Personales. This Policy is intended to operate in conformity with Law No. 21.719 as of its entry into force.</p>
+              <p>14.5 <strong>Other Latin American jurisdictions.</strong> In Mexico this document serves as the aviso de privacidad integral required by the LFPDPPP; ARCO requests follow Section 11. In Colombia, processing follows Law 1581 of 2012 and Decree 1377 of 2013, and this Policy, together with the institution&apos;s authorization records, implements the required data processing policy. In Peru (Law No. 29733) and Argentina (Law No. 25.326), registered databases and local requirements are maintained as applicable, and mandatory local rules prevail over any conflicting statement in this Policy.</p>
+              <p>14.6 <strong>United States.</strong> For school deployments, MUUD operates as a school official under FERPA and relies on school consent under COPPA as described in the Terms of Service; parents can review and request deletion of their child&apos;s information through the school. MUUD complies with state student privacy laws (including SOPIPA) and, where state consumer privacy laws such as the CCPA/CPRA, Virginia CDPA and similar laws apply, users have the rights listed in Section 11. MUUD does not sell or share personal information as defined by the CCPA, has not done so in the preceding 12 months, does not use or disclose sensitive personal information for purposes other than providing the Services, and does not knowingly process personal data for targeted advertising or profiling in furtherance of decisions with legal or similarly significant effects. California minors may request removal of content they posted (Cal. Bus. &amp; Prof. Code 22581) through the contacts in Section 15. Categories of personal information collected are those described in Section 2; categories of recipients are those described in Section 7. Appeals of rights decisions, where state law grants them, may be sent to privacy@muud.app and will be answered with reasons within the statutory deadline, with information on contacting your Attorney General.</p>
+              <p>14.7 <strong>India.</strong> For users in India, MUUD and, where applicable, the institution as Data Fiduciary comply with the DPDP Act, 2023 and DPDP Rules, 2025: itemized notices in English or an Eighth Schedule language on request, consent as easy to withdraw as to give, verifiable parental consent for users under 18 (Section 13), no tracking, behavioural monitoring or targeted advertising directed at children, breach notification to affected Data Principals and the Data Protection Board, defined erasure timelines, and grievance redressal. Our Grievance Officer is [INSERT NAME], reachable at [INSERT EMAIL]; unresolved grievances may be escalated to the Data Protection Board of India.</p>
 
-              <h3>¿Qué categorías de información personal recogemos?</h3>
-              <p>Hemos recopilado las siguientes categorías de información personal en los últimos doce (12) meses:</p>
-              <p>Utilizaremos y conservaremos la información personal recopilada según sea necesario para prestar los servicios o para la Categoría L (información personal sensible) — mientras el usuario tenga una cuenta con nosotros.</p>
-              <p>La información de categoría L puede utilizarse o divulgarse a un proveedor de servicios o contratista para fines adicionales específicos. Usted tiene derecho a limitar el uso o la divulgación de su información personal sensible.</p>
-              <p>También podemos recopilar otra información personal fuera de estas categorías a través de instancias en las que usted interactúa con nosotros en persona, en línea, o por teléfono o correo en el contexto de:</p>
-              <ul>
-                <li>Recibir ayuda a través de nuestros canales de atención al cliente;</li>
-                <li>Participación en encuestas o concursos de clientes.</li>
-                <li>Facilitar la prestación de nuestros Servicios y responder a sus consultas.</li>
-              </ul>
+              <h2>15. Contact</h2>
+              <p>Privacy contact / Data Protection Officer: privacy@muud.app</p>
+              <p>General support: soporte@muud.app | Tel: +56 9 2691 3974</p>
+              <p>Postal: MUUD SpA, Av. Presidente Kennedy 5600, Of. 507, Vitacura, Santiago, Chile</p>
 
-              <h3>¿Cómo utilizamos y compartimos su información personal?</h3>
-              <p>Encontrará más información sobre nuestras prácticas de recopilación e intercambio de datos en este aviso de privacidad.</p>
-              <p>Puede ponerse en contacto con nosotros por correo electrónico en soporte@muud.app o consultando los datos de contacto que figuran al final de este documento.</p>
-              <p>Si utiliza un agente autorizado para ejercer su derecho de exclusión voluntaria, podemos denegar una solicitud si el agente autorizado no presenta pruebas de que ha sido autorizado válidamente para actuar en su nombre.</p>
+              <h2>16. Changes to This Policy</h2>
+              <p>We may update this Policy. Material changes will be notified at least 30 days in advance by email and/or in-product notice, identifying what changed; where a change requires renewed consent under Applicable Data Protection Laws (for example, a new purpose for sensitive data), we will obtain it before applying the change. The current version and its date are always published on the Site, and previous versions are available on request. In school deployments, changes affecting the processing of Student Data are also governed by the DPA and require the process set out there.</p>
 
-              <h3>¿Se compartirán sus datos con otras personas?</h3>
-              <p>Podemos revelar su información personal a nuestros proveedores de servicios de acuerdo con un contrato escrito entre nosotros y cada proveedor de servicios. Cada proveedor de servicios es una entidad con ánimo de lucro que procesa la información en nuestro nombre, siguiendo las mismas estrictas obligaciones de protección de la privacidad exigidas por la CCPA.</p>
-              <p>Podemos utilizar su información personal para nuestros fines comerciales, como la realización de investigaciones internas para el desarrollo tecnológico y la demostración. Lo anterior no se considera &quot;venta&quot; de su información personal.</p>
-              <p>MUUD SpA no ha revelado, vendido o compartido ninguna información personal a terceros con fines empresariales o comerciales en los últimos doce (12) meses. Además, MUUD SpA no venderá ni compartirá datos personales pertenecientes a visitantes del sitio web, usuarios y otros consumidores en el futuro.</p>
-
-              <h3>Sus derechos en relación con sus datos</h3>
-              <p><strong>Derecho a solicitar la supresión de los datos — Solicitud de supresión</strong></p>
-              <p>Puede solicitar la eliminación de su información personal completando el siguiente formulario: https://forms.gle/UHQWPFUvzDZLKPud9. En ese caso, respetaremos su solicitud y borraremos su información personal, salvo en determinadas excepciones previstas por la ley. Cabe destacar que en caso de que su cuenta no presente uso durante más de 180 días en su versión gratuita, esta puede ser eliminada de forma automática por nuestros servidores.</p>
-              <p><strong>Derecho a ser informado — Solicitud de información</strong></p>
-              <p>Según las circunstancias, tiene derecho a saber:</p>
-              <ul>
-                <li>si recopilamos y utilizamos su información personal;</li>
-                <li>las categorías de información personal que recopilamos;</li>
-                <li>los fines para los que se utiliza la información personal recopilada;</li>
-                <li>si vendemos o compartimos información personal con terceros;</li>
-                <li>las categorías de datos personales que vendimos, compartimos o divulgamos con fines comerciales;</li>
-                <li>las categorías de terceros a los que se vendió, compartió o divulgó la información personal con fines comerciales;</li>
-                <li>la finalidad empresarial o comercial de la recogida, venta o intercambio de información privada; y</li>
-                <li>los datos personales concretos que hemos recopilado sobre usted.</li>
-              </ul>
-              <p>De acuerdo con la legislación aplicable, no estamos obligados a proporcionar o eliminar información del consumidor que esté des-identificada en respuesta a una solicitud del consumidor o a volver a identificar datos individuales para verificar una solicitud del consumidor.</p>
-              <p><strong>Derecho a la no discriminación por el ejercicio del derecho a la intimidad del consumidor.</strong> No le discriminaremos si ejerce su derecho a la intimidad.</p>
-              <p><strong>Derecho a limitar el uso y la divulgación de datos personales sensibles.</strong> Si la empresa recaba alguna de las siguientes cantidades:</p>
-              <ul>
-                <li>datos de la seguridad social, carnés de conducir, documentos de identidad estatales, números de pasaporte</li>
-                <li>información de acceso a la cuenta</li>
-                <li>números de tarjetas de crédito, información de cuentas financieras o credenciales que permitan acceder a dichas cuentas</li>
-                <li>geolocalización precisa</li>
-                <li>origen racial o étnico, creencias religiosas o filosóficas, afiliación sindical</li>
-                <li>el contenido del correo electrónico y los mensajes de texto, a menos que la empresa sea el destinatario de la comunicación</li>
-                <li>datos genéticos, biométricos y sanitarios</li>
-                <li>datos relativos a la orientación sexual y la vida sexual</li>
-              </ul>
-              <p>Usted tiene derecho a ordenar a dicha empresa que limite el uso de su información personal sensible a la necesaria para prestar los Servicios.</p>
-              <p>Para ejercer su derecho a limitar el uso y la divulgación de información personal sensible, envíe un correo electrónico a soporte@muud.app o presente una solicitud de acceso a los datos.</p>
-
-              <p><strong>Proceso de verificación</strong></p>
-              <p>Al recibir su solicitud, tendremos que verificar su identidad para determinar si es usted la misma persona de la que tenemos la información en nuestro sistema. Sólo utilizaremos la información personal facilitada en su solicitud para verificar su identidad o su autoridad para realizar la solicitud.</p>
-
-              <h3>Otros derechos de privacidad</h3>
-              <ul>
-                <li>Puede oponerse al tratamiento de sus datos personales.</li>
-                <li>Puede solicitar la rectificación de sus datos si son incorrectos o han dejado de ser pertinentes, o pedir que se restrinja el tratamiento de la información.</li>
-                <li>Puede designar a un agente autorizado para que solicite la CCPA en su nombre.</li>
-                <li>Puede solicitar que no se vendan ni compartan sus datos personales con terceros en el futuro. Cuando recibamos una solicitud de exclusión voluntaria, la atenderemos lo antes posible, en un plazo de quince (15) días a partir de la fecha de presentación de la solicitud.</li>
-              </ul>
-              <p>Para ejercer estos derechos, puede ponerse en contacto con nosotros por correo electrónico en la dirección soporte@muud.app o consultando los datos de contacto que figuran al final de este documento.</p>
-
-              <h2>12. ¿Tienen los residentes en Virginia derechos específicos en materia de privacidad?</h2>
-              <p><em>En pocas palabras: Sí, si usted es residente en Virginia, se le pueden conceder derechos específicos en relación con el acceso y el uso de su información personal.</em></p>
-
-              <h3>Aviso de privacidad de la CDPA de Virginia</h3>
-              <p>En virtud de la Ley de Protección de Datos de los Consumidores de Virginia (CDPA):</p>
-              <p>&quot;Consumidor&quot;: persona física residente en la Commonwealth que actúa únicamente en un contexto individual o doméstico. No incluye a las personas físicas que actúen en un contexto comercial o laboral.</p>
-              <p>&quot;Datos personales&quot; significa cualquier información vinculada o razonablemente vinculable a una persona física identificable. &quot;Datos personales&quot; no incluye los datos des-identificados ni la información públicamente disponible.</p>
-              <p>&quot;Venta de datos personales&quot;: intercambio de datos personales a cambio de una contraprestación económica.</p>
-              <p>Si esta definición de &quot;consumidor&quot; se aplica a usted, debemos respetar determinados derechos y obligaciones en relación con sus datos.</p>
-              <p>La información que recopilamos, utilizamos y revelamos sobre usted variará en función de cómo interactúe con MUUD SpA y nuestros Servicios.</p>
-
-              <p><strong>Sus derechos en relación con sus datos:</strong></p>
-              <ul>
-                <li>Derecho a ser informado de si estamos tratando sus datos o no.</li>
-                <li>Derecho de acceso a sus datos.</li>
-                <li>Derecho a corregir inexactitudes en sus datos.</li>
-                <li>Derecho a solicitar la supresión de sus datos.</li>
-                <li>Derecho a obtener una copia de los datos personales que nos ha comunicado anteriormente.</li>
-                <li>Derecho a oponerse al tratamiento de sus datos si se utilizan para publicidad dirigida, venta de datos personales o elaboración de perfiles.</li>
-              </ul>
-              <p>MUUD SpA no ha vendido datos personales a terceros con fines empresariales o comerciales. Además, MUUD SpA no venderá en el futuro datos personales pertenecientes a visitantes del sitio web, usuarios y otros consumidores.</p>
-
-              <p><strong>Ejercer los derechos que le otorga la CDPA de Virginia.</strong></p>
-              <p>Puede ponerse en contacto con nosotros por correo electrónico en soporte@muud.app, enviando una solicitud de acceso a los datos o consultando los datos de contacto que figuran al final de este documento.</p>
-              <p>Si utiliza un agente autorizado para ejercer sus derechos, podemos denegar una solicitud si el agente autorizado no presenta pruebas de que ha sido autorizado válidamente para actuar en su nombre.</p>
-
-              <p><strong>Proceso de verificación</strong></p>
-              <p>Podemos pedirle que nos proporcione la información adicional razonablemente necesaria para verificar su solicitud y la de su consumidor.</p>
-              <p>Una vez recibida su solicitud, responderemos sin demora indebida, pero en todos los casos, dentro de los cuarenta y cinco (45) días siguientes a la recepción. El plazo de respuesta podrá prorrogarse una vez por cuarenta y cinco (45) días adicionales cuando sea razonablemente necesario.</p>
-
-              <p><strong>Derecho de recurso</strong></p>
-              <p>Si nos negamos a tomar medidas en relación con su solicitud, le informaremos de nuestra decisión y de sus motivos. Si desea apelar nuestra decisión, envíenos un correo electrónico a soporte@muud.app. En un plazo de sesenta (60) días a partir de la recepción del recurso, le informaremos por escrito de las medidas adoptadas o no adoptadas en respuesta al recurso, incluida una explicación por escrito de los motivos de las decisiones. Puede ponerse en contacto con el Fiscal General para presentar una queja si se deniega su recurso.</p>
-
-              <h2>13. ¿Realizamos actualizaciones de este aviso?</h2>
-              <p><em>En pocas palabras: Sí, actualizaremos este aviso para cumplir la legislación pertinente.</em></p>
-              <p>Podemos actualizar este aviso de privacidad de vez en cuando. La versión actualizada se indicará mediante una fecha &quot;Revisada&quot; actualizada, y la versión actualizada entrará en vigor tan pronto como sea accesible. Además, si realizamos cambios sustanciales en este aviso de privacidad, podremos notificárselo mediante la publicación destacada de un aviso de dichos cambios o enviándole directamente una notificación. Por lo tanto, le recomendamos que revise este aviso de privacidad con frecuencia para estar informado de cómo protegemos su información.</p>
-
-              <h2>14. ¿Cómo puede ponerse en contacto con nosotros en relación con este aviso?</h2>
-              <p>Si tiene preguntas o comentarios sobre este aviso, puede enviarnos un correo electrónico a soporte@muud.app o ponerse en contacto con nosotros por correo postal en:</p>
-              <p>
-                MUUD SpA<br />
-                Av. Pdte. Kennedy 5600, Of 507<br />
-                Vitacura, Región Metropolitana, Chile
-              </p>
-
-              <h2>15. ¿Cómo puede revisar, actualizar o eliminar los datos que recopilamos sobre usted?</h2>
-              <p>En función de la legislación aplicable en su país, puede tener derecho a solicitar el acceso a la información personal que recopilamos sobre usted, a modificar dicha información o a eliminarla. Para solicitar la revisión, actualización o eliminación de su información personal, rellene y envíe una solicitud de acceso a los datos.</p>
-
-              <p style={{ marginTop: 48, color: "var(--muted)", fontSize: "0.9rem" }}>© 2023 MUUD SpA, Todos los Derechos Reservados</p>
+              <p style={{ marginTop: 48, color: "var(--muted)", fontSize: "0.9rem" }}>&copy; 2026 MUUD SpA. All rights reserved.</p>
             </div>
           </div>
         </section>
