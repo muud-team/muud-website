@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import JsonLd from "@/components/JsonLd";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
+import { alternatesFor, buildOpenGraph } from "@/lib/seo";
+import { breadcrumbSchema, graph, serviceSchema, webPageSchema } from "@/lib/structured-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,17 +17,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    openGraph: {
-      title: t('ogTitle'),
-      description: t('ogDescription'),
-      url: "/colegios",
-    },
-    alternates: { canonical: "/colegios" },
+    openGraph: buildOpenGraph({
+      locale,
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      path: "colegios",
+    }),
+    alternates: alternatesFor(locale, 'colegios'),
   };
 }
 
 export default function ColegiosPage() {
+  const locale = useLocale();
   const t = useTranslations('schools');
+  const tMeta = useTranslations('metadata.schools');
+  const tSchema = useTranslations('metadata.schema');
   const tNav = useTranslations('schools.navLinks');
 
   const NAV_LINKS = [
@@ -40,13 +47,28 @@ export default function ColegiosPage() {
   const stats = t.raw('stats.items');
   const testimonials = t.raw('testimonials.items');
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "MUUD para Colegios",
-    description: "Plataforma de bienestar socioemocional con IA para comunidades escolares.",
-    brand: { "@type": "Organization", name: "MUUD" },
-  };
+  const breadcrumb = breadcrumbSchema(locale, tSchema('breadcrumbHome'), [
+    { name: tSchema('schools.name'), path: 'colegios' },
+  ]);
+
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      path: 'colegios',
+      name: tMeta('title'),
+      description: tMeta('description'),
+      breadcrumbId: breadcrumb['@id'],
+    }),
+    breadcrumb,
+    serviceSchema({
+      locale,
+      path: 'colegios',
+      name: tSchema('schools.name'),
+      serviceType: tSchema('schools.serviceType'),
+      description: tSchema('schools.description'),
+      audienceType: tSchema('schools.audience'),
+    })
+  );
 
   const renderWithHighlight = (text: string) => {
     return text
@@ -62,7 +84,7 @@ export default function ColegiosPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       <Nav activePage="colegios" sectionLinks={NAV_LINKS} />
 
       <main id="top">

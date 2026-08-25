@@ -724,6 +724,29 @@
       "description": "Acuerdo de Licencia de Usuario Final de MUUD SpA. Términos de licencia para el uso de la aplicación MUUD.",
       "ogTitle": "EULA — MUUD SpA",
       "ogDescription": "Acuerdo de licencia de usuario final para la aplicación MUUD."
+    },
+    "default": {
+      "title": "MUUD — Bienestar emocional con inteligencia artificial",
+      "description": "MUUD impulsa el bienestar emocional de personas con inteligencia artificial, para construir equipos y comunidades más sanas.",
+      "keywords": "bienestar socioemocional, convivencia escolar, salud mental escolar, bienestar laboral, clima laboral, inteligencia artificial, check-in emocional, alertas tempranas, colegios, empresas, Chile"
+    },
+    "schema": {
+      "organization": "MUUD es una plataforma chilena de bienestar socioemocional que usa inteligencia artificial para acompañar a estudiantes, docentes y equipos de trabajo, y entregar alertas tempranas a colegios y empresas.",
+      "website": "Bienestar socioemocional con inteligencia artificial para colegios y empresas.",
+      "app": "MÜUD es la app móvil de check-in emocional y journal personal que acompaña día a día a estudiantes, docentes y colaboradores.",
+      "breadcrumbHome": "Inicio",
+      "schools": {
+        "name": "MUUD para Colegios",
+        "serviceType": "Plataforma de bienestar socioemocional para comunidades escolares",
+        "description": "Check-in emocional, journal, reportes con IA y alertas tempranas para acompañar a estudiantes y docentes y fortalecer la convivencia escolar.",
+        "audience": "Colegios, sostenedores y comunidades educativas"
+      },
+      "business": {
+        "name": "MUUD para Empresas",
+        "serviceType": "Plataforma de bienestar emocional para equipos de trabajo",
+        "description": "Un espacio personal para cada colaborador y datos agregados de clima y ánimo para que líderes y RRHH acompañen a tiempo, sin exponer a las personas.",
+        "audience": "Empresas, áreas de Recursos Humanos y líderes de equipo"
+      }
     }
   }
 }

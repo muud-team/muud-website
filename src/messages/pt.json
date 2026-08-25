@@ -695,6 +695,29 @@
       "description": "Contrato de Licença de Usuário Final da MUUD SpA. Termos de licença para o uso do aplicativo MUUD.",
       "ogTitle": "EULA — MUUD SpA",
       "ogDescription": "Contrato de licença de usuário final para o aplicativo MUUD."
+    },
+    "default": {
+      "title": "MUUD — Bem-estar emocional com inteligência artificial",
+      "description": "MUUD impulsiona o bem-estar emocional das pessoas com inteligência artificial, para construir equipes e comunidades mais saudáveis.",
+      "keywords": "bem-estar socioemocional, convivência escolar, saúde mental escolar, bem-estar no trabalho, clima organizacional, inteligência artificial, check-in emocional, alertas precoces, escolas, empresas, Chile"
+    },
+    "schema": {
+      "organization": "MUUD é uma plataforma chilena de bem-estar socioemocional que usa inteligência artificial para acompanhar estudantes, professores e equipes de trabalho, e entregar alertas precoces a escolas e empresas.",
+      "website": "Bem-estar socioemocional com inteligência artificial para escolas e empresas.",
+      "app": "MÜUD é o aplicativo móvel de check-in emocional e diário pessoal que acompanha dia a dia estudantes, professores e colaboradores.",
+      "breadcrumbHome": "Início",
+      "schools": {
+        "name": "MUUD para Escolas",
+        "serviceType": "Plataforma de bem-estar socioemocional para comunidades escolares",
+        "description": "Check-in emocional, diário, relatórios com IA e alertas precoces para acompanhar estudantes e professores e fortalecer a convivência escolar.",
+        "audience": "Escolas, mantenedoras e comunidades educacionais"
+      },
+      "business": {
+        "name": "MUUD para Empresas",
+        "serviceType": "Plataforma de bem-estar emocional para equipes de trabalho",
+        "description": "Um espaço pessoal para cada colaborador e dados agregados de clima e humor para que líderes e RH acompanhem a tempo, sem expor as pessoas.",
+        "audience": "Empresas, áreas de Recursos Humanos e líderes de equipe"
+      }
     }
   },
   "cookie": {

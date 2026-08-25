@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
+import JsonLd from "@/components/JsonLd";
+import { alternatesFor, buildOpenGraph } from "@/lib/seo";
+import { graph, webPageSchema } from "@/lib/structured-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -12,12 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: buildOpenGraph({
+      locale,
       title: t("ogTitle"),
       description: t("ogDescription"),
-      url: "/eula",
-    },
-    alternates: { canonical: "/eula" },
+      path: "eula",
+      ogImagePath: "",
+    }),
+    alternates: alternatesFor(locale, "eula"),
+    robots: { index: false, follow: true },
   };
 }
 
@@ -27,9 +33,21 @@ export function generateStaticParams() {
 
 export default function EulaPage() {
   const t = useTranslations("eula");
+  const locale = useLocale();
+  const tMeta = useTranslations("metadata.eula");
+
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      path: "eula",
+      name: tMeta("title"),
+      description: tMeta("description"),
+    })
+  );
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <Nav sectionLinks={[]} />
 
       <main id="top">
