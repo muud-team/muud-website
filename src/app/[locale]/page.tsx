@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import JsonLd from "@/components/JsonLd";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
+import { alternatesFor, buildOpenGraph } from "@/lib/seo";
+import { graph, webPageSchema } from "@/lib/structured-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,12 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    openGraph: {
-      title: t('ogTitle'),
-      description: t('ogDescription'),
-      url: "/",
-    },
-    alternates: { canonical: "/" },
+    openGraph: buildOpenGraph({
+      locale,
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      path: "",
+    }),
+    alternates: alternatesFor(locale),
   };
 }
 
@@ -40,7 +44,9 @@ function renderWithStrong(text: string) {
 }
 
 export default function HomePage() {
+  const locale = useLocale();
   const t = useTranslations('home');
+  const tMeta = useTranslations('metadata.home');
   const tNav = useTranslations('home.navLinks');
 
   const NAV_LINKS = [
@@ -141,28 +147,19 @@ export default function HomePage() {
     },
   ];
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "MUUD",
-    url: "https://muud.app",
-    description: "Bienestar socioemocional con inteligencia artificial para colegios y empresas.",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Av. Presidente Kennedy 5600, Of. 507",
-      addressLocality: "Vitacura",
-      addressCountry: "CL",
-    },
-    sameAs: [
-      "https://www.instagram.com/muud.app/",
-      "https://www.linkedin.com/company/muud-app/",
-      "https://www.facebook.com/muud.app.latam",
-    ],
-  };
+  // Organization / WebSite / MobileApplication live in the layout; this page
+  // only declares itself and points at them by @id.
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      name: tMeta('title'),
+      description: tMeta('description'),
+    })
+  );
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       <Nav sectionLinks={NAV_LINKS} />
 
       <main id="top">

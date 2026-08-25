@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
+import JsonLd from "@/components/JsonLd";
+import { alternatesFor, buildOpenGraph } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema, graph, serviceSchema, webPageSchema } from "@/lib/structured-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,12 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    openGraph: {
-      title: t('ogTitle'),
-      description: t('ogDescription'),
-      url: "/empresas",
-    },
-    alternates: { canonical: "/empresas" },
+    openGraph: buildOpenGraph({
+      locale,
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      path: "empresas",
+    }),
+    alternates: alternatesFor(locale, 'empresas'),
   };
 }
 
@@ -41,7 +45,10 @@ function StarIcon() {
 }
 
 export default function EmpresasPage() {
+  const locale = useLocale();
   const t = useTranslations('business');
+  const tMeta = useTranslations('metadata.business');
+  const tSchema = useTranslations('metadata.schema');
   const tNav = useTranslations('business.navLinks');
 
   const NAV_LINKS = [
@@ -59,26 +66,29 @@ export default function EmpresasPage() {
   const stats = t.raw('stats.items');
   const faqItems = t.raw('faq.items');
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "MUUD",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "iOS, Android",
-    description: "MUUD ayuda a las empresas a cuidar el bienestar emocional de sus equipos con inteligencia artificial.",
-    url: "https://muud.app/empresas",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-    },
-    author: {
-      "@type": "Organization",
-      name: "MUUD SpA",
-      url: "https://muud.app",
-    },
-  };
+  const breadcrumb = breadcrumbSchema(locale, tSchema('breadcrumbHome'), [
+    { name: tSchema('business.name'), path: 'empresas' },
+  ]);
+
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      path: 'empresas',
+      name: tMeta('title'),
+      description: tMeta('description'),
+      breadcrumbId: breadcrumb['@id'],
+    }),
+    breadcrumb,
+    serviceSchema({
+      locale,
+      path: 'empresas',
+      name: tSchema('business.name'),
+      serviceType: tSchema('business.serviceType'),
+      description: tSchema('business.description'),
+      audienceType: tSchema('business.audience'),
+    }),
+    faqSchema(locale, 'empresas', faqItems as { question: string; answer: string }[])
+  );
 
   const renderWithHighlight = (text: string) => {
     return text
@@ -95,10 +105,7 @@ export default function EmpresasPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <Nav activePage="empresas" sectionLinks={NAV_LINKS} />
 
       <main id="top">

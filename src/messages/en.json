@@ -695,6 +695,29 @@
       "description": "End User License Agreement for MUUD SpA. License terms for using the MUUD application.",
       "ogTitle": "EULA — MUUD SpA",
       "ogDescription": "End user license agreement for the MUUD application."
+    },
+    "default": {
+      "title": "MUUD — Emotional wellbeing powered by artificial intelligence",
+      "description": "MUUD drives people's emotional wellbeing with artificial intelligence, to build healthier teams and communities.",
+      "keywords": "socioemotional wellbeing, school coexistence, student mental health, workplace wellbeing, team climate, artificial intelligence, emotional check-in, early alerts, schools, companies, Chile"
+    },
+    "schema": {
+      "organization": "MUUD is a Chilean socioemotional wellbeing platform that uses artificial intelligence to support students, teachers and work teams, and to deliver early alerts to schools and companies.",
+      "website": "Socioemotional wellbeing with artificial intelligence for schools and businesses.",
+      "app": "MÜUD is the mobile app for emotional check-in and personal journaling that supports students, teachers and employees day by day.",
+      "breadcrumbHome": "Home",
+      "schools": {
+        "name": "MUUD for Schools",
+        "serviceType": "Socioemotional wellbeing platform for school communities",
+        "description": "Emotional check-in, journal, AI reports and early alerts to support students and teachers and strengthen school coexistence.",
+        "audience": "Schools, school networks and educational communities"
+      },
+      "business": {
+        "name": "MUUD for Business",
+        "serviceType": "Emotional wellbeing platform for work teams",
+        "description": "A personal space for every team member and aggregated climate and mood data so leaders and HR can step in on time, without exposing individuals.",
+        "audience": "Companies, HR departments and team leaders"
+      }
     }
   },
   "cookie": {
