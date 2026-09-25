@@ -25,7 +25,7 @@
     "legalTitle": "Legal",
     "termsAndConditions": "Termos e condições",
     "privacyPolicy": "Política de privacidade",
-    "eula": "EULA",
+    "dpa": "DPA",
     "deleteAccount": "Excluir conta",
     "contactTitle": "Contato",
     "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
@@ -696,6 +696,12 @@
       "ogTitle": "EULA — MUUD SpA",
       "ogDescription": "Contrato de licença de usuário final para o aplicativo MUUD."
     },
+    "dpa": {
+      "title": "Aditivo de Tratamento de Dados (DPA) — MUUD SpA",
+      "description": "Aditivo de Tratamento de Dados (DPA) da MUUD: como a MUUD trata dados pessoais em nome de escolas e organizações clientes.",
+      "ogTitle": "Aditivo de Tratamento de Dados (DPA) — MUUD SpA",
+      "ogDescription": "Condições de tratamento de dados pessoais entre a MUUD e seus clientes institucionais."
+    },
     "default": {
       "title": "MUUD — Bem-estar emocional com inteligência artificial",
       "description": "MUUD impulsiona o bem-estar emocional das pessoas com inteligência artificial, para construir equipes e comunidades mais saudáveis.",
@@ -736,17 +742,5 @@
     "learnMore": "Política de privacidade",
     "customizeTitle": "Personalize suas preferências de cookies",
     "customizeDescription": "Você pode escolher quais tipos de cookies permitir. Observe que desabilitar alguns cookies pode afetar sua experiência no site."
-  },
-  "terms": {
-    "title": "Termos e Condições MUUD SpA",
-    "lastUpdated": "Última atualização"
-  },
-  "privacy": {
-    "title": "Política de Privacidade MUUD SpA",
-    "lastUpdated": "Última atualização"
-  },
-  "eula": {
-    "title": "Contrato de Licença de Usuário Final",
-    "lastUpdated": "Última atualização"
   }
 }

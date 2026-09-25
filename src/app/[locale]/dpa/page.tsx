@@ -5,15 +5,15 @@ import LegalPage, { legalMetadata } from "@/components/LegalPage";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return legalMetadata("privacy", locale);
+  return legalMetadata("dpa", locale);
 }
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function DpaPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <LegalPage doc="privacy" locale={locale} />;
+  return <LegalPage doc="dpa" locale={locale} />;
 }

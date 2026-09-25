@@ -26,6 +26,17 @@ const nextConfig: NextConfig = {
         destination: "/:locale/terminos-y-condiciones",
         permanent: true,
       },
+      // The EULA was folded into the Terms of Service.
+      {
+        source: "/eula",
+        destination: "/terminos-y-condiciones",
+        permanent: true,
+      },
+      {
+        source: "/:locale/eula",
+        destination: "/:locale/terminos-y-condiciones",
+        permanent: true,
+      },
     ];
   },
   images: {
