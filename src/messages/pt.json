@@ -25,6 +25,7 @@
     "legalTitle": "Legal",
     "termsAndConditions": "Termos e condições",
     "privacyPolicy": "Política de privacidade",
+    "eula": "EULA",
     "dpa": "DPA",
     "deleteAccount": "Excluir conta",
     "contactTitle": "Contato",
@@ -652,6 +653,18 @@
         "handle": "muud.app.latam"
       }
     }
+  },
+  "terms": {
+    "title": "Termos e Condições MUUD SpA",
+    "lastUpdated": "Última atualização"
+  },
+  "privacy": {
+    "title": "Política de Privacidade MUUD SpA",
+    "lastUpdated": "Última atualização"
+  },
+  "eula": {
+    "title": "Contrato de Licença de Usuário Final",
+    "lastUpdated": "Última atualização"
   },
   "metadata": {
     "home": {
