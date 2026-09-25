@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -9,6 +9,7 @@ interface FooterProps {
 
 export default function Footer({ variant = "general" }: FooterProps) {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   const description = variant === "empresas"
     ? t('descriptionBusiness')
@@ -52,10 +53,10 @@ export default function Footer({ variant = "general" }: FooterProps) {
           </div>
           <div className="foot-col">
             <h4>{t('legalTitle')}</h4>
-            <Link href="/terminos-y-condiciones">{t('termsAndConditions')}</Link>
-            <Link href="/eula">{t('eula')}</Link>
-            <Link href="/politica-de-privacidad">{t('privacyPolicy')}</Link>
-            <Link href="/dpa">{t('dpa')}</Link>
+            <Link href="/terminos-y-condiciones" locale={locale}>{t('termsAndConditions')}</Link>
+            <Link href="/eula" locale={locale}>{t('eula')}</Link>
+            <Link href="/politica-de-privacidad" locale={locale}>{t('privacyPolicy')}</Link>
+            <Link href="/dpa" locale={locale}>{t('dpa')}</Link>
             <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">{t('deleteAccount')}</a>
           </div>
           <div className="foot-col">
