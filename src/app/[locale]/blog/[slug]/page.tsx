@@ -6,6 +6,9 @@ import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { NewsletterSection } from "@/components/SharedSections";
+import JsonLd from "@/components/JsonLd";
+import { alternatesFor, localizedUrl, ogLocales } from "@/lib/seo";
+import { articleSchema, breadcrumbSchema, graph, webPageSchema } from "@/lib/structured-data";
 import { BLOG_POSTS, getPostBySlug, formatDate } from "@/data/blog-posts";
 
 interface Props {
@@ -32,18 +35,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.title} — Blog MUUD`,
+    title: post.title,
     description: post.summary,
+    keywords: post.tags,
+    authors: [{ name: "Rodrigo Torres" }],
     openGraph: {
+      type: "article",
+      siteName: "MUUD",
       title: post.title,
       description: post.summary,
-      url: `/blog/${post.slug}`,
-      images: [{ url: post.image, width: 1280, height: 720 }],
-      type: "article",
+      url: localizedUrl(locale, `blog/${post.slug}`),
+      images: [{ url: post.image, width: 1280, height: 720, alt: post.title }],
       publishedTime: post.date,
+      modifiedTime: post.date,
       authors: ["Rodrigo Torres"],
+      tags: post.tags,
+      section: post.tags[0],
+      ...ogLocales(locale),
     },
-    alternates: { canonical: `/blog/${post.slug}` },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [post.image],
+    },
+    alternates: alternatesFor(locale, `blog/${post.slug}`),
   };
 }
 
@@ -59,22 +75,39 @@ export default async function BlogPostPage({ params }: Props) {
   const idx = BLOG_POSTS.findIndex((p) => p.slug === slug);
   const related = BLOG_POSTS.filter((_, i) => i !== idx).slice(0, 3);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    image: post.image,
-    datePublished: post.date,
-    author: { "@type": "Person", name: "Rodrigo Torres" },
-    publisher: { "@type": "Organization", name: "MUUD" },
-    description: post.summary,
-  };
+  const tSchema = await getTranslations('metadata.schema');
+
+  const breadcrumb = breadcrumbSchema(locale, tSchema('breadcrumbHome'), [
+    { name: 'Blog', path: 'blog' },
+    { name: post.title, path: `blog/${post.slug}` },
+  ]);
+
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      path: `blog/${post.slug}`,
+      name: post.title,
+      description: post.summary,
+      breadcrumbId: breadcrumb['@id'],
+    }),
+    breadcrumb,
+    articleSchema({
+      locale,
+      slug: post.slug,
+      headline: post.title,
+      description: post.summary,
+      image: post.image,
+      datePublished: post.date,
+      tags: post.tags,
+      wordCount: post.content.trim().split(/\s+/).length,
+    })
+  );
 
   const paragraphs = post.content.split("\n\n");
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       <Nav sectionLinks={[{ href: "/blog", label: t('backToBlog') }]} />
 
       <main id="top">

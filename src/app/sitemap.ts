@@ -1,39 +1,52 @@
 import { MetadataRoute } from 'next';
-import { locales } from '@/i18n/config';
+import { locales, defaultLocale } from '@/i18n/config';
 import { BLOG_POSTS } from '@/data/blog-posts';
+import { localizedUrl } from '@/lib/seo';
 
-const baseUrl = 'https://muud.app';
+/**
+ * Bumped by hand when marketing copy changes. Using `new Date()` here would
+ * tell crawlers every page changed on every deploy, which devalues the signal.
+ */
+const CONTENT_LAST_MODIFIED = '2026-08-24';
+
+type Route = {
+  path: string;
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'];
+  priority: number;
+};
+
+const ROUTES: Route[] = [
+  { path: '', changeFrequency: 'monthly', priority: 1.0 },
+  { path: 'colegios', changeFrequency: 'monthly', priority: 0.9 },
+  { path: 'empresas', changeFrequency: 'monthly', priority: 0.9 },
+  { path: 'blog', changeFrequency: 'weekly', priority: 0.7 },
+];
+
+function languagesFor(path: string) {
+  return {
+    ...Object.fromEntries(locales.map((l) => [l, localizedUrl(l, path)])),
+    'x-default': localizedUrl(defaultLocale, path),
+  };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ['', 'colegios', 'empresas', 'blog'];
-
-  // Generate main page entries for all locales
-  const mainPages = routes.flatMap((route) =>
+  const mainPages = ROUTES.flatMap((route) =>
     locales.map((locale) => ({
-      url: `${baseUrl}/${locale}${route ? `/${route}` : ''}`,
-      lastModified: new Date(),
-      changeFrequency: route === 'blog' ? 'weekly' as const : 'monthly' as const,
-      priority: route === '' ? 1.0 : 0.8,
-      alternates: {
-        languages: Object.fromEntries(
-          locales.map((l) => [l, `${baseUrl}/${l}${route ? `/${route}` : ''}`])
-        ),
-      },
+      url: localizedUrl(locale, route.path),
+      lastModified: new Date(CONTENT_LAST_MODIFIED),
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+      alternates: { languages: languagesFor(route.path) },
     }))
   );
 
-  // Generate blog post entries for all locales
   const blogPosts = BLOG_POSTS.flatMap((post) =>
     locales.map((locale) => ({
-      url: `${baseUrl}/${locale}/blog/${post.slug}`,
+      url: localizedUrl(locale, `blog/${post.slug}`),
       lastModified: new Date(post.date),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'yearly' as const,
       priority: 0.6,
-      alternates: {
-        languages: Object.fromEntries(
-          locales.map((l) => [l, `${baseUrl}/${l}/blog/${post.slug}`])
-        ),
-      },
+      alternates: { languages: languagesFor(`blog/${post.slug}`) },
     }))
   );
 

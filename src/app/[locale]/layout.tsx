@@ -1,9 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { alternatesFor, ogLocales, SITE_URL } from '@/lib/seo';
+import { graph, organizationSchema, websiteSchema, mobileAppSchema } from '@/lib/structured-data';
+import JsonLd from "@/components/JsonLd";
 import "../globals.css";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import CookieBanner from "@/components/CookieBanner";
@@ -22,34 +25,36 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#FBF7F2",
+  colorScheme: "light",
+};
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.default' });
 
   return {
-    metadataBase: new URL("https://muud.app"),
+    metadataBase: new URL(SITE_URL),
     title: {
-      default: "MUUD — Bienestar emocional con inteligencia artificial",
+      default: t('title'),
       template: "%s | MUUD",
     },
-    description:
-      "MUUD impulsa el bienestar emocional de personas con inteligencia artificial, para construir equipos y comunidades más sanas.",
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        'es': '/es',
-        'en': '/en',
-        'pt': '/pt',
-        'x-default': '/es',
-      },
-    },
+    description: t('description'),
+    keywords: t('keywords').split(',').map((k) => k.trim()),
+    applicationName: "MUUD",
+    authors: [{ name: "MUUD SpA", url: SITE_URL }],
+    creator: "MUUD SpA",
+    publisher: "MUUD SpA",
+    alternates: alternatesFor(locale),
     openGraph: {
       type: "website",
       siteName: "MUUD",
-      locale: locale,
+      ...ogLocales(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -57,6 +62,18 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    formatDetection: {
+      telephone: false,
+      address: false,
+      email: false,
     },
     manifest: "/site.webmanifest",
     icons: {
@@ -87,6 +104,15 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'metadata.schema' });
+
+  // Site-wide entities. Pages emit only their own nodes and reference these
+  // by @id, so the whole site resolves to one MUUD entity.
+  const siteGraph = graph(
+    organizationSchema(t('organization')),
+    websiteSchema(locale, t('website')),
+    mobileAppSchema(t('app')),
+  );
 
   return (
     <html
@@ -94,6 +120,7 @@ export default async function LocaleLayout({
       className={`${bricolage.variable} ${jakarta.variable}`}
     >
       <body>
+        <JsonLd data={siteGraph} />
         <NextIntlClientProvider messages={messages}>
           <RevealOnScroll />
           {children}

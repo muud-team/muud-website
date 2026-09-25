@@ -1,0 +1,38 @@
+# MUUD
+
+> MUUD es una plataforma chilena de bienestar socioemocional que usa inteligencia
+> artificial para acompañar a estudiantes, docentes y equipos de trabajo, y entregar
+> alertas tempranas y reportes agregados a colegios y empresas.
+
+Operada por MUUD SpA (Av. Presidente Kennedy 5600, Of. 507, Vitacura, Santiago, Chile).
+Contacto: hola@muud.app · Sitio: https://muud.app
+
+## Qué hace MUUD
+
+- **Check-in emocional diario**: cada persona registra cómo está en la app móvil MÜUD (iOS y Android).
+- **Journal personal y privado**: el contenido individual no es visible para el colegio ni la empresa.
+- **Reportes con IA**: colegios y empresas ven una mirada agregada del clima y el ánimo, por curso o por equipo.
+- **Alertas tempranas**: señales de cuándo conviene acompañar a un grupo, sin exponer a personas individuales.
+
+## Privacidad
+
+El journal y los registros de cada persona son personales. Los equipos directivos, docentes,
+líderes y RRHH acceden únicamente a reportes agregados diseñados para resguardar la
+privacidad individual.
+
+## Páginas principales
+
+- [Inicio](https://muud.app/es): qué es MUUD, cómo funciona y testimonios.
+- [MUUD para Colegios](https://muud.app/es/colegios): bienestar socioemocional y convivencia escolar para comunidades educativas.
+- [MUUD para Empresas](https://muud.app/es/empresas): bienestar emocional, clima y liderazgo para equipos de trabajo.
+- [Blog](https://muud.app/es/blog): opinión sobre violencia escolar, salud mental y políticas educativas en Chile, por Rodrigo Torres, cofundador de MUUD.
+
+## Idiomas
+
+El sitio está disponible en español (`/es`, por defecto), inglés (`/en`) y portugués (`/pt`).
+
+## Legal
+
+- [Términos y condiciones](https://muud.app/es/terminos-y-condiciones)
+- [Política de privacidad](https://muud.app/es/politica-de-privacidad)
+- [EULA](https://muud.app/es/eula)

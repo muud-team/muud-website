@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { NewsletterSection } from "@/components/SharedSections";
+import JsonLd from "@/components/JsonLd";
+import { alternatesFor, buildOpenGraph } from "@/lib/seo";
+import { blogSchema, breadcrumbSchema, graph, webPageSchema } from "@/lib/structured-data";
 import { BLOG_POSTS, formatDate } from "@/data/blog-posts";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -15,17 +18,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
-    openGraph: {
+    openGraph: buildOpenGraph({
+      locale,
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: "/blog",
-    },
-    alternates: { canonical: "/blog" },
+      path: 'blog',
+    }),
+    alternates: alternatesFor(locale, 'blog'),
   };
 }
 
 export default function BlogPage() {
+  const locale = useLocale();
   const t = useTranslations('blog');
+  const tSeo = useTranslations('metadata.blog');
+  const tSchema = useTranslations('metadata.schema');
   const tNav = useTranslations('blog.navLinks');
   const tMeta = useTranslations('blog.meta');
 
@@ -36,6 +43,27 @@ export default function BlogPage() {
 
   const [featured, ...rest] = BLOG_POSTS;
 
+  const breadcrumb = breadcrumbSchema(locale, tSchema('breadcrumbHome'), [
+    { name: 'Blog', path: 'blog' },
+  ]);
+
+  const jsonLd = graph(
+    webPageSchema({
+      locale,
+      path: 'blog',
+      name: tSeo('title'),
+      description: tSeo('description'),
+      breadcrumbId: breadcrumb['@id'],
+    }),
+    breadcrumb,
+    blogSchema({
+      locale,
+      name: tSeo('ogTitle'),
+      description: tSeo('description'),
+      posts: BLOG_POSTS,
+    })
+  );
+
   const renderWithHighlight = (text: string) => {
     const html = text
       .replace('<highlight>', '<span class="hl">')
@@ -45,6 +73,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <Nav sectionLinks={NAV_LINKS} />
 
       <main id="top">
