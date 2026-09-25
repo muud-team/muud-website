@@ -26,7 +26,13 @@ export type LegalDocumentKey = keyof typeof DOCUMENTS;
 
 function getDocument(doc: LegalDocumentKey, locale: string): LegalDoc {
   const content: Record<string, LegalDoc> = DOCUMENTS[doc].content;
-  return content[locale] ?? content[defaultLocale];
+  const fallback = content[locale] ?? content[defaultLocale] ?? Object.values(content)[0];
+
+  if (!fallback) {
+    throw new Error(`Missing legal document content for ${doc}`);
+  }
+
+  return fallback;
 }
 
 export async function legalMetadata(doc: LegalDocumentKey, locale: string): Promise<Metadata> {
