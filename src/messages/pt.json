@@ -25,6 +25,7 @@
     "legalTitle": "Legal",
     "termsAndConditions": "Termos e condições",
     "privacyPolicy": "Política de privacidade",
+    "eula": "EULA",
     "dpa": "DPA",
     "deleteAccount": "Excluir conta",
     "contactTitle": "Contato",
@@ -653,6 +654,18 @@
       }
     }
   },
+  "terms": {
+    "title": "Termos e Condições MUUD SpA",
+    "lastUpdated": "Última atualização"
+  },
+  "privacy": {
+    "title": "Política de Privacidade MUUD SpA",
+    "lastUpdated": "Última atualização"
+  },
+  "eula": {
+    "title": "Contrato de Licença de Usuário Final",
+    "lastUpdated": "Última atualização"
+  },
   "metadata": {
     "home": {
       "title": "MUUD — Convertemos emoções em dados",
@@ -689,6 +702,12 @@
       "description": "Política de privacidade da MUUD SpA. Informações sobre como coletamos, usamos e protegemos suas informações pessoais.",
       "ogTitle": "Política de Privacidade — MUUD SpA",
       "ogDescription": "Como a MUUD SpA coleta, usa e protege suas informações pessoais."
+    },
+    "eula": {
+      "title": "EULA — MUUD SpA",
+      "description": "Contrato de Licença de Usuário Final da MUUD SpA. Termos de licença para o uso do aplicativo MUUD.",
+      "ogTitle": "EULA — MUUD SpA",
+      "ogDescription": "Contrato de licença de usuário final para o aplicativo MUUD."
     },
     "dpa": {
       "title": "Aditivo de Tratamento de Dados (DPA) — MUUD SpA",
