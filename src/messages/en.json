@@ -25,7 +25,7 @@
     "legalTitle": "Legal",
     "termsAndConditions": "Terms and conditions",
     "privacyPolicy": "Privacy policy",
-    "eula": "EULA",
+    "dpa": "DPA",
     "deleteAccount": "Delete account",
     "contactTitle": "Contact",
     "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
@@ -690,11 +690,11 @@
       "ogTitle": "Privacy Policy — MUUD SpA",
       "ogDescription": "How MUUD SpA collects, uses and protects your personal information."
     },
-    "eula": {
-      "title": "EULA — MUUD SpA",
-      "description": "End User License Agreement for MUUD SpA. License terms for using the MUUD application.",
-      "ogTitle": "EULA — MUUD SpA",
-      "ogDescription": "End user license agreement for the MUUD application."
+    "dpa": {
+      "title": "Data Processing Addendum (DPA) — MUUD SpA",
+      "description": "MUUD's Data Processing Addendum (DPA): how MUUD processes personal data on behalf of schools and organizations.",
+      "ogTitle": "Data Processing Addendum (DPA) — MUUD SpA",
+      "ogDescription": "Terms for processing personal data between MUUD and its institutional customers."
     },
     "default": {
       "title": "MUUD — Emotional wellbeing powered by artificial intelligence",
@@ -736,17 +736,5 @@
     "learnMore": "Privacy policy",
     "customizeTitle": "Customize your cookie preferences",
     "customizeDescription": "You can choose which types of cookies to allow. Note that disabling some cookies may affect your experience on the site."
-  },
-  "terms": {
-    "title": "Terms and Conditions MUUD SpA",
-    "lastUpdated": "Last updated"
-  },
-  "privacy": {
-    "title": "Privacy Policy MUUD SpA",
-    "lastUpdated": "Last updated"
-  },
-  "eula": {
-    "title": "End User License Agreement",
-    "lastUpdated": "Last updated"
   }
 }

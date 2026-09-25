@@ -54,7 +54,7 @@ export default function Footer({ variant = "general" }: FooterProps) {
             <h4>{t('legalTitle')}</h4>
             <Link href="/terminos-y-condiciones">{t('termsAndConditions')}</Link>
             <Link href="/politica-de-privacidad">{t('privacyPolicy')}</Link>
-            <Link href="/eula">{t('eula')}</Link>
+            <Link href="/dpa">{t('dpa')}</Link>
             <a href="https://forms.gle/qXwFsM4n2VEnoo5h7" target="_blank" rel="noopener noreferrer">{t('deleteAccount')}</a>
           </div>
           <div className="foot-col">
