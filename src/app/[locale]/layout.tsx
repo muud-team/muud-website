@@ -105,6 +105,7 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: 'metadata.schema' });
+  const tA11y = await getTranslations({ locale, namespace: 'a11y' });
 
   // Site-wide entities. Pages emit only their own nodes and reference these
   // by @id, so the whole site resolves to one MUUD entity.
@@ -120,11 +121,16 @@ export default async function LocaleLayout({
       className={`${bricolage.variable} ${jakarta.variable}`}
     >
       <body>
+        <a className="skip-link" href="#top">{tA11y('skipToContent')}</a>
+        <noscript>
+          <style>{`.reveal{opacity:1;transform:none}`}</style>
+        </noscript>
         <JsonLd data={siteGraph} />
         <NextIntlClientProvider messages={messages}>
           <RevealOnScroll />
-          {children}
+          {/* Before the page content so keyboard users reach it early. */}
           <CookieBanner />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

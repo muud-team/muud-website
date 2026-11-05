@@ -72,7 +72,7 @@ export default async function LegalPage({ doc, locale }: { doc: LegalDocumentKey
       <JsonLd data={jsonLd} />
       <Nav sectionLinks={[]} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="sec sec-paper" style={{ paddingTop: 160 }}>
           <div className="wrap legal-wrap">
             <div className="legal-header">

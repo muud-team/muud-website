@@ -37,6 +37,9 @@ const SOURCES = {
   },
 };
 
+/** Name for the keyboard-focusable scroll area around each table. */
+const TABLE_LABELS = { es: "Tabla", en: "Table", pt: "Tabela" };
+
 const stripTags = (html) => html.replace(/<[^>]+>/g, "").trim();
 
 function slugify(text) {
@@ -71,7 +74,7 @@ function autolink(html) {
   });
 }
 
-function transform(rawHtml, file) {
+function transform(rawHtml, file, locale) {
   let html = rawHtml;
 
   const h1 = html.match(/^<h1>(.*?)<\/h1>/s);
@@ -95,7 +98,9 @@ function transform(rawHtml, file) {
   });
 
   html = html
-    .replace(/<table>/g, '<div class="legal-table-wrap"><table class="legal-table">')
+    // tabindex: narrow screens scroll these sideways, which must work by keyboard.
+    .replace(/<table>/g, `<div class="legal-table-wrap" role="region" aria-label="${TABLE_LABELS[locale]}" tabindex="0"><table class="legal-table">`)
+    .replace(/<th>/g, '<th scope="col">')
     .replace(/<\/table>/g, "</table></div>")
     .replace(/<p><\/p>/g, "");
 
@@ -114,7 +119,7 @@ for (const [doc, locales] of Object.entries(SOURCES)) {
   for (const [locale, file] of Object.entries(locales)) {
     const { value, messages } = await mammoth.convertToHtml({ path: path.join(DOCS_DIR, file) });
     for (const m of messages) console.warn(`  ${file}: ${m.type}: ${m.message}`);
-    out[locale] = transform(value, file);
+    out[locale] = transform(value, file, locale);
   }
   const target = path.join(OUT_DIR, `${doc}.json`);
   await writeFile(target, JSON.stringify(out, null, 2) + "\n");

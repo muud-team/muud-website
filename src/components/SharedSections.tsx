@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import NewsletterForm from "./NewsletterForm";
+import NewTabHint from "./NewTabHint";
+import YouTubeFacade from "./YouTubeFacade";
 import { BLOG_POSTS, formatDate } from "@/data/blog-posts";
 
 const SOCIAL = [
@@ -40,9 +42,9 @@ export function NewsSection() {
         </div>
         <div className="blog-grid">
           {LATEST_POSTS.map((post, i) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card reveal" data-d={String(i + 1)}>
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card reveal" lang="es" data-d={String(i + 1)}>
               <div className="blog-card-img">
-                <Image src={post.image} alt={post.title} fill style={{ objectFit: "cover" }} sizes="(max-width: 600px) 100vw, 33vw" />
+                <Image src={post.image} alt="" fill style={{ objectFit: "cover" }} sizes="(max-width: 600px) 100vw, 33vw" />
               </div>
               <div className="blog-card-body">
                 <div className="blog-tags">
@@ -63,28 +65,15 @@ export function NewsSection() {
         <div className="press reveal">
           <span className="press-label">{t('press.label')}</span>
           <div className="press-videos">
-            <div className="press-video">
-              <iframe
-                src="https://www.youtube.com/embed/WIXmaxCrfJA"
-                title="Reportaje MUUD — 24 Horas"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <div className="press-video">
-              <iframe
-                src="https://www.youtube.com/embed/g8ACl2Svelo"
-                title="Reportaje MUUD — Marca Chile"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+            <YouTubeFacade id="WIXmaxCrfJA" title={t('press.video1')} />
+            <YouTubeFacade id="g8ACl2Svelo" title={t('press.video2')} />
           </div>
+          <p className="press-video-note">{t('press.thirdParty')}</p>
           <div className="press-logos">
             {PRESS.map((p) => (
               <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer" className="press-logo">
                 <Image src={p.logo} alt={p.name} width={120} height={48} style={{ objectFit: "contain" }} />
-              </a>
+              <NewTabHint /></a>
             ))}
           </div>
         </div>
@@ -136,8 +125,8 @@ export function NewsletterSection() {
                 <span className="sc-net">{s.net}</span>
                 <span className="sc-handle">{s.handle}</span>
               </span>
-              <span className="sc-go">↗</span>
-            </a>
+              <span className="sc-go" aria-hidden="true">↗</span>
+            <NewTabHint /></a>
           ))}
         </div>
       </div>
