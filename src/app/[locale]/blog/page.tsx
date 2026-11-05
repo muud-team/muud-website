@@ -76,7 +76,7 @@ export default function BlogPage() {
       <JsonLd data={jsonLd} />
       <Nav sectionLinks={NAV_LINKS} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="hero hero-blog">
           <div className="wrap">
             <span className="eyebrow reveal">{t('hero.eyebrow')}</span>
@@ -92,11 +92,11 @@ export default function BlogPage() {
         <section id="articulos" className="sec sec-paper">
           <div className="wrap">
             {/* Featured post */}
-            <Link href={`/blog/${featured.slug}`} className="blog-featured reveal">
+            <Link href={`/blog/${featured.slug}`} className="blog-featured reveal" lang="es">
               <div className="blog-featured-img">
                 <Image
                   src={featured.image}
-                  alt={featured.title}
+                  alt=""
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 860px) 100vw, 55vw"
@@ -112,7 +112,7 @@ export default function BlogPage() {
                 <p>{featured.summary}</p>
                 <div className="blog-meta">
                   <span>{tMeta('author')}</span>
-                  <span className="dot" />
+                  <span className="dot" aria-hidden="true" />
                   <time dateTime={featured.date}>{formatDate(featured.date)}</time>
                 </div>
               </div>
@@ -125,12 +125,13 @@ export default function BlogPage() {
                   key={post.slug}
                   href={`/blog/${post.slug}`}
                   className="blog-card reveal"
+                  lang="es"
                   data-d={String((i % 3) + 1)}
                 >
                   <div className="blog-card-img">
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt=""
                       fill
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 600px) 100vw, (max-width: 860px) 50vw, 33vw"

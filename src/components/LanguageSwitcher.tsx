@@ -1,33 +1,32 @@
 "use client";
 
-import { useParams } from 'next/navigation';
-import { usePathname, useRouter } from '@/i18n/routing';
-import { locales, localeFlags, type Locale } from '@/i18n/config';
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/routing";
+import { locales, localeNames } from "@/i18n/config";
 
 export default function LanguageSwitcher() {
-  const params = useParams();
   const pathname = usePathname();
-  const router = useRouter();
-  const currentLocale = params.locale as Locale;
-
-  const switchLocale = (newLocale: Locale) => {
-    router.replace(pathname, { locale: newLocale });
-  };
+  const currentLocale = useLocale();
+  const t = useTranslations("a11y");
 
   return (
-    <div className="language-switcher">
+    <nav className="language-switcher" aria-label={t("languageNav")}>
       {locales.map((locale, i) => (
         <span key={locale}>
-          {i > 0 && <span className="sep">|</span>}
-          <button
-            onClick={() => switchLocale(locale)}
-            className={currentLocale === locale ? 'active' : ''}
-            aria-label={`Switch to ${locale}`}
+          {i > 0 && <span className="sep" aria-hidden="true">|</span>}
+          <Link
+            href={pathname}
+            locale={locale}
+            lang={locale}
+            hrefLang={locale}
+            className={currentLocale === locale ? "active" : ""}
+            aria-current={currentLocale === locale ? "true" : undefined}
+            aria-label={`${locale.toUpperCase()}, ${localeNames[locale]}`}
           >
             {locale.toUpperCase()}
-          </button>
+          </Link>
         </span>
       ))}
-    </div>
+    </nav>
   );
 }

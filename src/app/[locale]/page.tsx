@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import NewTabHint from "@/components/NewTabHint";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 function StarIcon() {
   return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+    <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="var(--coral)" />
     </svg>
   );
@@ -89,7 +90,7 @@ export default function HomePage() {
       icon: "heart",
       tag: t('howItWorks.steps.0.tag'),
       tagBg: "rgba(84,196,232,.14)",
-      tagColor: "var(--blue)",
+      tagColor: "var(--blue-text)",
       grad: "var(--sky),var(--blue)",
       title: t('howItWorks.steps.0.title'),
       desc: t('howItWorks.steps.0.description'),
@@ -99,7 +100,7 @@ export default function HomePage() {
       icon: "journal",
       tag: t('howItWorks.steps.1.tag'),
       tagBg: "rgba(200,192,242,.22)",
-      tagColor: "#6B5AD0",
+      tagColor: "#5A48BF",
       grad: "var(--lilac),#8E7DE8",
       title: t('howItWorks.steps.1.title'),
       desc: t('howItWorks.steps.1.description'),
@@ -109,7 +110,7 @@ export default function HomePage() {
       icon: "chart",
       tag: t('howItWorks.steps.2.tag'),
       tagBg: "rgba(249,139,107,.16)",
-      tagColor: "var(--coral-deep)",
+      tagColor: "var(--coral-text)",
       grad: "var(--coral),var(--coral-deep)",
       title: t('howItWorks.steps.2.title'),
       desc: t('howItWorks.steps.2.description'),
@@ -119,7 +120,7 @@ export default function HomePage() {
       icon: "bell",
       tag: t('howItWorks.steps.3.tag'),
       tagBg: "rgba(246,180,76,.18)",
-      tagColor: "#C98A1E",
+      tagColor: "#855600",
       grad: "#F6B44C,var(--coral)",
       title: t('howItWorks.steps.3.title'),
       desc: t('howItWorks.steps.3.description'),
@@ -162,7 +163,7 @@ export default function HomePage() {
       <JsonLd data={jsonLd} />
       <Nav sectionLinks={NAV_LINKS} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         {/* HERO */}
         <section className="hero">
           <div className="wrap hero-grid">
@@ -175,15 +176,15 @@ export default function HomePage() {
               <div className="hero-cta reveal" data-d="3">
                 <div className="stores">
                   <a href="https://apps.apple.com/cl/app/m%C3%BCud/id6455428632" aria-label={t('hero.downloadAppStore')}>
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b5_App%20Store%20-%20Button.svg" alt="App Store" width={140} height={50} />
+                    <Image src="/brand/app-store.svg" alt={t('cta.downloadAppStore')} width={140} height={50} />
                   </a>
                   <a href="https://play.google.com/store/apps/details?id=app.muud" aria-label={t('hero.downloadPlayStore')}>
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b7_Play%20Store%20-%20Button.svg" alt="Google Play" width={140} height={50} />
+                    <Image src="/brand/google-play.svg" alt={t('cta.downloadPlayStore')} width={140} height={50} />
                   </a>
                 </div>
               </div>
               <div className="hero-trust reveal" data-d="4">
-                <span className="stars">{[...Array(5)].map((_, i) => <StarIcon key={i} />)}</span>
+                <span className="stars" aria-hidden="true">{[...Array(5)].map((_, i) => <StarIcon key={i} />)}</span>
                 {t('hero.trustBadge')}
               </div>
             </div>
@@ -192,8 +193,8 @@ export default function HomePage() {
               <Image className="hero-phone" src="/tablet_preview_es.webp" alt={t('hero.phoneAlt')} width={480} height={640} priority />
               <div className="float f-emoji1"><Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7b0c3b9fe43db2692351_emoji-1.png" alt="" width={88} height={88} /></div>
               <div className="float f-emoji2"><Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7b3f57ea33947ec4d65e_emoji-2.png" alt="" width={74} height={74} /></div>
-              <Image className="float f-star f-s1" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={26} height={26} />
-              <Image className="float f-star f-s2" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={20} height={20} />
+              <Image className="float f-star f-s1" src="/brand/star-white.svg" alt="" width={26} height={26} />
+              <Image className="float f-star f-s2" src="/brand/star-white.svg" alt="" width={20} height={20} />
             </div>
           </div>
         </section>
@@ -202,7 +203,7 @@ export default function HomePage() {
         <section className="context">
           <div className="wrap">
             <div className="context-card reveal">
-              <Image className="star-bg" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b3_Star%201.svg" alt="" width={160} height={160} />
+              <Image className="star-bg" src="/brand/star-outline.svg" alt="" width={160} height={160} />
               <p>{t('context.text')}</p>
               <div className="ctx-media">
                 <Image className="ctx-emoji" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7bac38164fd8fc55ed9e_emoji-4.png" alt="" width={120} height={120} />
@@ -223,8 +224,8 @@ export default function HomePage() {
             <div className="prob-grid">
               {problems.map((p, i) => (
                 <article key={p.num} className="prob-card reveal" data-d={String(i + 1)}>
-                  <span className="num">{p.num}</span>
-                  <Image className="prob-face" src={`https://cdn.prod.website-files.com/64836681fe716f7bceb62090/${p.emoji}`} alt={p.title} width={62} height={62} />
+                  <span className="num" aria-hidden="true">{p.num}</span>
+                  <Image className="prob-face" src={`https://cdn.prod.website-files.com/64836681fe716f7bceb62090/${p.emoji}`} alt="" width={62} height={62} />
                   <h3>{p.title}</h3>
                   <p>{p.desc}</p>
                 </article>
@@ -265,12 +266,12 @@ export default function HomePage() {
             <div className="feat-grid">
               {features.map((f, i) => (
                 <div key={i} className="feat-card reveal" data-d={String((i % 2) + 1)}>
-                  <span className="step">{f.step}</span>
+                  <span className="step" aria-hidden="true">{f.step}</span>
                   <div className="feat-ico" style={{ background: `linear-gradient(135deg,${f.grad})` }}>
-                    {f.icon === "heart" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.3-8.5C1 9 2.5 5.5 6 5.5c2 0 3.2 1.1 4 2.3.8-1.2 2-2.3 4-2.3 3.5 0 5 3.5 3.3 7C19 16.65 12 21 12 21z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /></svg>}
-                    {f.icon === "journal" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 4h11l3 3v13H5z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M8.5 9.5h7M8.5 13h7M8.5 16.5h4" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>}
-                    {f.icon === "chart" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 19V9M12 19V5M19 19v-7" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" /><path d="M3 19h18" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" /></svg>}
-                    {f.icon === "bell" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 4a5 5 0 0 0-5 5c0 4-2 5-2 7h14c0-2-2-3-2-7a5 5 0 0 0-5-5z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M10 20a2 2 0 0 0 4 0" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>}
+                    {f.icon === "heart" && <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.3-8.5C1 9 2.5 5.5 6 5.5c2 0 3.2 1.1 4 2.3.8-1.2 2-2.3 4-2.3 3.5 0 5 3.5 3.3 7C19 16.65 12 21 12 21z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /></svg>}
+                    {f.icon === "journal" && <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 4h11l3 3v13H5z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M8.5 9.5h7M8.5 13h7M8.5 16.5h4" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>}
+                    {f.icon === "chart" && <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 19V9M12 19V5M19 19v-7" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" /><path d="M3 19h18" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" /></svg>}
+                    {f.icon === "bell" && <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 4a5 5 0 0 0-5 5c0 4-2 5-2 7h14c0-2-2-3-2-7a5 5 0 0 0-5-5z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M10 20a2 2 0 0 0 4 0" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>}
                   </div>
                   <span className="feat-tag" style={{ background: f.tagBg, color: f.tagColor }}>{f.tag}</span>
                   <h3>{f.title}</h3>
@@ -282,31 +283,31 @@ export default function HomePage() {
             {/* Dashboard mock */}
             <div className="dash reveal" data-d="2">
               <div className="dash-top">
-                <span className="dash-dot" style={{ background: "#FF6058" }} />
-                <span className="dash-dot" style={{ background: "#FEBC2E" }} />
-                <span className="dash-dot" style={{ background: "#28C840" }} />
+                <span className="dash-dot" aria-hidden="true" style={{ background: "#FF6058" }} />
+                <span className="dash-dot" aria-hidden="true" style={{ background: "#FEBC2E" }} />
+                <span className="dash-dot" aria-hidden="true" style={{ background: "#28C840" }} />
                 <span className="dash-title">{t('howItWorks.dashboard.title')}</span>
               </div>
-              <div className="dash-body" style={{ gridTemplateColumns: "repeat(4,1fr)" }}>
+              <div className="dash-body cols-4">
                 <div className="metric">
                   <div className="lab">{t('howItWorks.dashboard.metrics.checkins')}</div>
-                  <div className="val" style={{ color: "var(--blue)" }}>{t('howItWorks.dashboard.metrics.checkinsValue')}</div>
-                  <div className="bar"><i style={{ width: "82%", background: "var(--blue)" }} /></div>
+                  <div className="val" style={{ color: "var(--blue-text)" }}>{t('howItWorks.dashboard.metrics.checkinsValue')}</div>
+                  <div className="bar" aria-hidden="true"><i style={{ width: "82%", background: "var(--blue)" }} /></div>
                 </div>
                 <div className="metric">
                   <div className="lab">{t('howItWorks.dashboard.metrics.climate')}</div>
-                  <div className="val" style={{ color: "#1F9D6B" }}>{t('howItWorks.dashboard.metrics.climateValue')}</div>
-                  <div className="bar"><i style={{ width: "74%", background: "#1F9D6B" }} /></div>
+                  <div className="val" style={{ color: "var(--green-text)" }}>{t('howItWorks.dashboard.metrics.climateValue')}</div>
+                  <div className="bar" aria-hidden="true"><i style={{ width: "74%", background: "#1F9D6B" }} /></div>
                 </div>
                 <div className="metric">
                   <div className="lab">{t('howItWorks.dashboard.metrics.participation')}</div>
-                  <div className="val" style={{ color: "#6B5AD0" }}>{t('howItWorks.dashboard.metrics.participationValue')}</div>
-                  <div className="bar"><i style={{ width: "91%", background: "#8E7DE8" }} /></div>
+                  <div className="val" style={{ color: "#5A48BF" }}>{t('howItWorks.dashboard.metrics.participationValue')}</div>
+                  <div className="bar" aria-hidden="true"><i style={{ width: "91%", background: "#8E7DE8" }} /></div>
                 </div>
                 <div className="metric alert">
-                  <div className="lab" style={{ color: "var(--coral-deep)" }}>{t('howItWorks.dashboard.metrics.alerts')}</div>
-                  <div className="val" style={{ color: "var(--coral-deep)" }}>{t('howItWorks.dashboard.metrics.alertsValue')}</div>
-                  <div className="bar"><i style={{ width: "30%", background: "var(--coral)" }} /></div>
+                  <div className="lab" style={{ color: "var(--coral-text)" }}>{t('howItWorks.dashboard.metrics.alerts')}</div>
+                  <div className="val" style={{ color: "var(--coral-text)" }}>{t('howItWorks.dashboard.metrics.alertsValue')}</div>
+                  <div className="bar" aria-hidden="true"><i style={{ width: "30%", background: "var(--coral)" }} /></div>
                 </div>
               </div>
             </div>
@@ -323,14 +324,14 @@ export default function HomePage() {
             </div>
             <div className="testi-grid">
               {testimonials.map((item, i) => (
-                <div key={i} className="testi-card reveal" data-d={String(i + 1)}>
-                  <div className="testi-quote">&ldquo;</div>
-                  <p>{item.quote}</p>
-                  <div className="testi-author">
-                    <Image src={item.img} alt={item.name} width={50} height={50} />
+                <figure key={i} className="testi-card reveal" data-d={String(i + 1)}>
+                  <div className="testi-quote" aria-hidden="true">&ldquo;</div>
+                  <blockquote><p>{item.quote}</p></blockquote>
+                  <figcaption className="testi-author">
+                    <Image src={item.img} alt="" width={50} height={50} />
                     <div><div className="name">{item.name}</div><div className="role">{item.role}</div></div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </div>
@@ -347,11 +348,11 @@ export default function HomePage() {
                 <p className="lede">{t('cta.subtitle')}</p>
                 <div className="cta-stores">
                   <a href="https://apps.apple.com/cl/app/m%C3%BCud/id6455428632" target="_blank" rel="noopener noreferrer">
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b5_App%20Store%20-%20Button.svg" alt="App Store" width={140} height={50} />
-                  </a>
+                    <Image src="/brand/app-store.svg" alt={t('cta.downloadAppStore')} width={140} height={50} />
+                  <NewTabHint /></a>
                   <a href="https://play.google.com/store/apps/details?id=app.muud" target="_blank" rel="noopener noreferrer">
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b7_Play%20Store%20-%20Button.svg" alt="Google Play" width={140} height={50} />
-                  </a>
+                    <Image src="/brand/google-play.svg" alt={t('cta.downloadPlayStore')} width={140} height={50} />
+                  <NewTabHint /></a>
                 </div>
               </div>
               <ContactForm variant="schools" />

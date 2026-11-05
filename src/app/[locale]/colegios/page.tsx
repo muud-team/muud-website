@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import NewTabHint from "@/components/NewTabHint";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
@@ -87,7 +88,7 @@ export default function ColegiosPage() {
       <JsonLd data={jsonLd} />
       <Nav activePage="colegios" sectionLinks={NAV_LINKS} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         {/* HERO */}
         <section className="hero">
           <div className="wrap hero-grid">
@@ -100,7 +101,7 @@ export default function ColegiosPage() {
               <div className="hero-cta reveal" data-d="3">
                 <a href="https://calendar.app.google/eM6oThKNK9euEWmg7" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                   {t('hero.scheduleDemo')}
-                </a>
+                <NewTabHint /></a>
                 <a href="#solucion" className="btn btn-ghost">{t('hero.learnMore')}</a>
               </div>
             </div>
@@ -109,8 +110,8 @@ export default function ColegiosPage() {
               <Image className="hero-phone" src="/tablet_preview_es.webp" alt={t('hero.phoneAlt')} width={480} height={640} priority />
               <div className="float f-emoji1"><Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7b0c3b9fe43db2692351_emoji-1.png" alt="" width={88} height={88} /></div>
               <div className="float f-emoji2"><Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7b3f57ea33947ec4d65e_emoji-2.png" alt="" width={74} height={74} /></div>
-              <Image className="float f-star f-s1" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={26} height={26} />
-              <Image className="float f-star f-s2" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={20} height={20} />
+              <Image className="float f-star f-s1" src="/brand/star-white.svg" alt="" width={26} height={26} />
+              <Image className="float f-star f-s2" src="/brand/star-white.svg" alt="" width={20} height={20} />
             </div>
           </div>
         </section>
@@ -126,7 +127,7 @@ export default function ColegiosPage() {
             <div className="prob-grid">
               {problems.map((p: any, i: number) => (
                 <article key={p.number} className="prob-card reveal" data-d={String(i + 1)}>
-                  <span className="num">{p.number}</span>
+                  <span className="num" aria-hidden="true">{p.number}</span>
                   <Image
                     className="prob-face"
                     src={`https://cdn.prod.website-files.com/64836681fe716f7bceb62090/${
@@ -135,7 +136,7 @@ export default function ColegiosPage() {
                       i === 2 ? '648b40fac1081537aaaed288_Face%20With%20Head%20Bandage.png' :
                       '648b410d0dd822359603da79_Flushed%20Face.png'
                     }`}
-                    alt={p.title}
+                    alt=""
                     width={62}
                     height={62}
                   />
@@ -159,8 +160,8 @@ export default function ColegiosPage() {
 
           <div className="wrap split">
             <div className="split-copy reveal">
-              <span className="eyebrow" style={{ color: "var(--blue)" }}>{t('solution.students.eyebrow')}</span>
-              <h2>{t('solution.students.title')}</h2>
+              <span className="eyebrow" style={{ color: "var(--blue-text)" }}>{t('solution.students.eyebrow')}</span>
+              <h3>{t('solution.students.title')}</h3>
               <p>{t('solution.students.description')}</p>
               <ul className="check-list">
                 {t.raw('solution.students.features').map((feature: string, i: number) => (
@@ -178,28 +179,28 @@ export default function ColegiosPage() {
             <div className="split-visual reveal">
               <div className="dash small">
                 <div className="dash-top">
-                  <span className="dash-dot" style={{ background: "#FF6058" }} />
-                  <span className="dash-dot" style={{ background: "#FEBC2E" }} />
-                  <span className="dash-dot" style={{ background: "#28C840" }} />
+                  <span className="dash-dot" aria-hidden="true" style={{ background: "#FF6058" }} />
+                  <span className="dash-dot" aria-hidden="true" style={{ background: "#FEBC2E" }} />
+                  <span className="dash-dot" aria-hidden="true" style={{ background: "#28C840" }} />
                   <span className="dash-title">{t('solution.school.dashboard.title')}</span>
                 </div>
-                <div className="dash-body" style={{ gridTemplateColumns: "1fr 1fr" }}>
+                <div className="dash-body">
                   <div className="metric">
                     <div className="lab">{t('solution.school.dashboard.climate')}</div>
-                    <div className="val" style={{ color: "#1F9D6B" }}>{t('solution.school.dashboard.climateValue')}</div>
-                    <div className="bar"><i style={{ width: "74%", background: "#1F9D6B" }} /></div>
+                    <div className="val" style={{ color: "var(--green-text)" }}>{t('solution.school.dashboard.climateValue')}</div>
+                    <div className="bar" aria-hidden="true"><i style={{ width: "74%", background: "#1F9D6B" }} /></div>
                   </div>
                   <div className="metric alert">
-                    <div className="lab" style={{ color: "var(--coral-deep)" }}>{t('solution.school.dashboard.alerts')}</div>
-                    <div className="val" style={{ color: "var(--coral-deep)" }}>{t('solution.school.dashboard.alertsValue')}</div>
-                    <div className="bar"><i style={{ width: "30%", background: "var(--coral)" }} /></div>
+                    <div className="lab" style={{ color: "var(--coral-text)" }}>{t('solution.school.dashboard.alerts')}</div>
+                    <div className="val" style={{ color: "var(--coral-text)" }}>{t('solution.school.dashboard.alertsValue')}</div>
+                    <div className="bar" aria-hidden="true"><i style={{ width: "30%", background: "var(--coral)" }} /></div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="split-copy reveal" data-d="1">
-              <span className="eyebrow" style={{ color: "var(--coral)" }}>{t('solution.school.eyebrow')}</span>
-              <h2>{t('solution.school.title')}</h2>
+              <span className="eyebrow" style={{ color: "var(--coral-text)" }}>{t('solution.school.eyebrow')}</span>
+              <h3>{t('solution.school.title')}</h3>
               <p>{t('solution.school.description')}</p>
               <ul className="check-list">
                 {t.raw('solution.school.features').map((feature: string, i: number) => (
@@ -221,7 +222,7 @@ export default function ColegiosPage() {
             <div className="role-grid four">
               {roles.map((r: any, i: number) => (
                 <div key={i} className="role-card reveal" data-d={String(i + 1)}>
-                  <span className="role-icon">{r.icon}</span>
+                  <span className="role-icon" aria-hidden="true">{r.icon}</span>
                   <h3>{r.title}</h3>
                   <p>{r.description}</p>
                 </div>
@@ -271,17 +272,17 @@ export default function ColegiosPage() {
             </div>
             <div className="testi-grid">
               {testimonials.map((item: any, i: number) => (
-                <div key={i} className="testi-card reveal" data-d={String(i + 1)}>
-                  <div className="testi-quote">&ldquo;</div>
-                  <p>{item.quote}</p>
-                  <div className="testi-author">
+                <figure key={i} className="testi-card reveal" data-d={String(i + 1)}>
+                  <div className="testi-quote" aria-hidden="true">&ldquo;</div>
+                  <blockquote><p>{item.quote}</p></blockquote>
+                  <figcaption className="testi-author">
                     <Image
                       src={
                         i === 0 ? '/avatar_antonella.jpg' :
                         i === 1 ? '/avatar_paulo.jpg' :
                         '/avatar_natalia.jpg'
                       }
-                      alt={item.name}
+                      alt=""
                       width={50}
                       height={50}
                     />
@@ -289,8 +290,8 @@ export default function ColegiosPage() {
                       <div className="name">{item.name}</div>
                       <div className="role">{item.role}</div>
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </div>

@@ -7,7 +7,7 @@ import { localizedUrl } from '@/lib/seo';
  * Bumped by hand when marketing copy changes. Using `new Date()` here would
  * tell crawlers every page changed on every deploy, which devalues the signal.
  */
-const CONTENT_LAST_MODIFIED = '2026-08-24';
+const CONTENT_LAST_MODIFIED = '2026-11-05';
 
 type Route = {
   path: string;
@@ -20,6 +20,7 @@ const ROUTES: Route[] = [
   { path: 'colegios', changeFrequency: 'monthly', priority: 0.9 },
   { path: 'empresas', changeFrequency: 'monthly', priority: 0.9 },
   { path: 'blog', changeFrequency: 'weekly', priority: 0.7 },
+  { path: 'accesibilidad', changeFrequency: 'yearly', priority: 0.3 },
 ];
 
 function languagesFor(path: string) {

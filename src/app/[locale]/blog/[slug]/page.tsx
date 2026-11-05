@@ -5,6 +5,7 @@ import { Link } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import NewTabHint from "@/components/NewTabHint";
 import { NewsletterSection } from "@/components/SharedSections";
 import JsonLd from "@/components/JsonLd";
 import { alternatesFor, localizedUrl, ogLocales } from "@/lib/seo";
@@ -110,12 +111,12 @@ export default async function BlogPostPage({ params }: Props) {
       <JsonLd data={jsonLd} />
       <Nav sectionLinks={[{ href: "/blog", label: t('backToBlog') }]} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <article className="blog-post">
           <div className="blog-post-hero">
             <Image
               src={post.image}
-              alt={post.title}
+              alt=""
               fill
               style={{ objectFit: "cover" }}
               priority
@@ -126,16 +127,16 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="wrap blog-post-wrap">
             <div className="blog-post-header reveal">
-              <div className="blog-tags">
+              <div className="blog-tags" lang="es">
                 {post.tags.map((tag) => (
                   <span key={tag} className="blog-tag">{tag}</span>
                 ))}
               </div>
-              <h1>{post.title}</h1>
+              <h1 lang="es">{post.title}</h1>
               <div className="blog-post-byline">
                 <Image
                   src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7bbb3fa58727d47c3b42_character-muud.png"
-                  alt="Rodrigo Torres"
+                  alt=""
                   width={44}
                   height={44}
                   style={{ borderRadius: "50%", objectFit: "cover", background: "var(--cream)" }}
@@ -144,11 +145,11 @@ export default async function BlogPostPage({ params }: Props) {
                   <strong>{tMeta('author')}</strong>
                   <span>{t('authorRole')}</span>
                 </div>
-                <time dateTime={post.date}>{formatDate(post.date)}</time>
+                <time lang="es" dateTime={post.date}>{formatDate(post.date)}</time>
               </div>
             </div>
 
-            <div className="blog-post-body reveal" data-d="1">
+            <div className="blog-post-body reveal" lang="es" data-d="1">
               {paragraphs.map((p, i) => {
                 if (p.startsWith("**") && p.endsWith("**")) {
                   return <h2 key={i}>{p.replace(/\*\*/g, "")}</h2>;
@@ -162,10 +163,10 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
 
             <div className="blog-post-footer reveal">
-              <Link href="/blog" className="btn btn-ghost">← {t('backToBlog')}</Link>
+              <Link href="/blog" className="btn btn-ghost"><span aria-hidden="true">←</span> {t('backToBlog')}</Link>
               <a href="https://calendar.app.google/eM6oThKNK9euEWmg7" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 {t('scheduleDemo')}
-              </a>
+              <NewTabHint /></a>
             </div>
           </div>
         </article>
@@ -179,9 +180,9 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             <div className="blog-grid">
               {related.map((r, i) => (
-                <Link key={r.slug} href={`/blog/${r.slug}`} className="blog-card reveal" data-d={String(i + 1)}>
+                <Link key={r.slug} href={`/blog/${r.slug}`} className="blog-card reveal" lang="es" data-d={String(i + 1)}>
                   <div className="blog-card-img">
-                    <Image src={r.image} alt={r.title} fill style={{ objectFit: "cover" }} sizes="(max-width: 600px) 100vw, 33vw" />
+                    <Image src={r.image} alt="" fill style={{ objectFit: "cover" }} sizes="(max-width: 600px) 100vw, 33vw" />
                   </div>
                   <div className="blog-card-body">
                     <div className="blog-tags">

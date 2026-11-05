@@ -11,7 +11,11 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "forSchools": "For schools",
-    "forBusiness": "For business"
+    "forBusiness": "For business",
+    "home": "MUUD, go to home page",
+    "solutionsNav": "Solutions",
+    "sectionsNav": "Sections on this page",
+    "menuLabel": "Menu"
   },
   "footer": {
     "description": "We drive the socioemotional development of students and teachers with artificial intelligence to promote healthy school coexistence.",
@@ -32,7 +36,9 @@
     "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
     "email": "hola@muud.app",
     "copyright": "© 2026 MUUD SpA · All rights reserved",
-    "madeInChile": "Made with love in Chile 🇨🇱"
+    "madeInChile": "Made with love in Chile 🇨🇱",
+    "accessibility": "Accessibility",
+    "cookiePreferences": "Cookie preferences"
   },
   "common": {
     "learnMore": "Learn more",
@@ -613,7 +619,12 @@
       "successEmoji": "🎉",
       "successTitle": "Thank you!",
       "successMessage": "We received your request. We'll contact you very soon.",
-      "note": "We'll respond within 24 business hours."
+      "note": "We'll respond within 24 business hours.",
+      "requiredNote": "Fields marked with * are required.",
+      "errorRequired": "This field is required.",
+      "errorEmail": "Enter a valid email, for example name@domain.com.",
+      "healthNote": "Please do not include health information or student data in this form.",
+      "privacyNote": "We handle this data as described in our <link>Privacy Policy</link>."
     }
   },
   "newsletter": {
@@ -627,7 +638,9 @@
       "submitting": "Sending...",
       "errorGeneric": "An error occurred. Please try again.",
       "successMessage": "Done! You've subscribed to our newsletter 🎉",
-      "disclaimer": "No spam. You can unsubscribe anytime."
+      "disclaimer": "No spam. You can unsubscribe anytime.",
+      "errorRequired": "Enter your email.",
+      "errorEmail": "Enter a valid email, for example name@domain.com."
     }
   },
   "shared": {
@@ -636,7 +649,11 @@
       "title": "Latest articles",
       "subtitle": "Opinion and analysis on education, school coexistence, and mental health in Chile.",
       "press": {
-        "label": "Media mentions"
+        "label": "Media mentions",
+        "video1": "MUUD feature on 24 Horas",
+        "video2": "MUUD feature on Marca Chile",
+        "play": "Play video: {title}",
+        "thirdParty": "Videos load from YouTube only when you press play."
       }
     },
     "social": {
@@ -737,6 +754,12 @@
         "description": "A personal space for every team member and aggregated climate and mood data so leaders and HR can step in on time, without exposing individuals.",
         "audience": "Companies, HR departments and team leaders"
       }
+    },
+    "accessibility": {
+      "title": "Accessibility statement",
+      "description": "MUUD's commitment to web accessibility, WCAG 2.2 AA conformance status, known limitations and how to report barriers.",
+      "ogTitle": "Accessibility statement — MUUD",
+      "ogDescription": "How we approach accessibility on the MUUD website and how to report barriers."
     }
   },
   "cookie": {
@@ -754,6 +777,50 @@
     "marketingDescription": "Used to track visitors across websites and display relevant ads.",
     "learnMore": "Privacy policy",
     "customizeTitle": "Customize your cookie preferences",
-    "customizeDescription": "You can choose which types of cookies to allow. Note that disabling some cookies may affect your experience on the site."
+    "customizeDescription": "You can choose which types of cookies to allow. Note that disabling some cookies may affect your experience on the site.",
+    "saved": "Your cookie preferences were saved."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "newTab": "(opens in a new tab)",
+    "languageNav": "Language"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home"
+  },
+  "accessibility": {
+    "title": "Accessibility statement",
+    "updated": "Last reviewed: November 5, 2026",
+    "intro": "At MUUD we want everyone to be able to use this site, including people who browse with a keyboard, screen readers, magnification or captions.",
+    "sections": [
+      {
+        "heading": "Standard",
+        "paragraphs": [
+          "We use the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA, as our reference."
+        ]
+      },
+      {
+        "heading": "Conformance status",
+        "paragraphs": [
+          "This site partially conforms to WCAG 2.2 AA: most content meets the standard, but some parts do not yet. This statement covers muud.app; it does not cover the mobile apps or the school.muud.app and business.muud.app platforms."
+        ]
+      },
+      {
+        "heading": "How we evaluated it",
+        "paragraphs": [
+          "Self-assessment using automated tests (axe-core) on every page and language, at 1280 and 320 pixels wide, plus testing of keyboard navigation, focus management, reduced motion and text spacing. We have not yet had an external audit or complete screen reader testing."
+        ]
+      }
+    ],
+    "limitationsHeading": "Known limitations",
+    "limitations": [
+      "Press features hosted on YouTube are third-party content: their captions depend on YouTube and they have no audio description.",
+      "Blog articles and the EULA are available in Spanish only, even when you browse in another language.",
+      "The account deletion request and demo scheduling use external Google forms, whose accessibility we do not control."
+    ],
+    "contactHeading": "Report a barrier",
+    "contactText": "If you run into an accessibility problem or need this content in another format, write to <link>hola@muud.app</link> with the page and what happened."
   }
 }

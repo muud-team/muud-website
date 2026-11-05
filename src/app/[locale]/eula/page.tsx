@@ -50,15 +50,15 @@ export default function EulaPage() {
       <JsonLd data={jsonLd} />
       <Nav sectionLinks={[]} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="sec sec-paper" style={{ paddingTop: 160 }}>
           <div className="wrap legal-wrap">
             <div className="legal-header">
               <h1>{t("title")}</h1>
-              <p className="legal-updated">{t("lastUpdated")}: 9 de abril de 2025</p>
+              <p className="legal-updated">{t("lastUpdated")}: <span lang="es">9 de abril de 2025</span></p>
             </div>
 
-            <div className="legal-body">
+            <div className="legal-body" lang="es">
               <p><strong>IMPORTANTE – LEA DETENIDAMENTE</strong></p>
               <p>Este Acuerdo de Licencia de Usuario Final (&quot;Acuerdo&quot;) es un contrato legal entre usted y MUUD SpA que regula el uso de la Aplicación Licenciada, la cual incluye la aplicación de software, su contenido y cualquier actualización o servicio relacionado.</p>
 

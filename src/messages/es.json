@@ -11,7 +11,11 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "forSchools": "Para colegios",
-    "forBusiness": "Para empresas"
+    "forBusiness": "Para empresas",
+    "home": "MUUD, ir al inicio",
+    "solutionsNav": "Soluciones",
+    "sectionsNav": "Secciones de esta página",
+    "menuLabel": "Menú"
   },
   "footer": {
     "description": "Impulsamos el desarrollo socioemocional de estudiantes y docentes con inteligencia artificial, para promover una sana convivencia escolar.",
@@ -32,7 +36,9 @@
     "address": "Av. Presidente Kennedy 5600, Of. 507, Vitacura, Chile",
     "email": "hola@muud.app",
     "copyright": "© 2026 MUUD SpA · Todos los derechos reservados",
-    "madeInChile": "Hecho con cariño en Chile 🇨🇱"
+    "madeInChile": "Hecho con cariño en Chile 🇨🇱",
+    "accessibility": "Accesibilidad",
+    "cookiePreferences": "Preferencias de cookies"
   },
   "common": {
     "learnMore": "Conocer más",
@@ -613,7 +619,12 @@
       "successEmoji": "🎉",
       "successTitle": "¡Gracias!",
       "successMessage": "Recibimos tu solicitud. Te contactaremos muy pronto.",
-      "note": "Te responderemos dentro de 24 horas hábiles."
+      "note": "Te responderemos dentro de 24 horas hábiles.",
+      "requiredNote": "Los campos marcados con * son obligatorios.",
+      "errorRequired": "Este campo es obligatorio.",
+      "errorEmail": "Ingresa un correo válido, por ejemplo nombre@dominio.com.",
+      "healthNote": "Por favor no incluyas información de salud ni datos de estudiantes en este formulario.",
+      "privacyNote": "Tratamos estos datos según nuestra <link>Política de privacidad</link>."
     }
   },
   "newsletter": {
@@ -627,7 +638,9 @@
       "submitting": "Enviando...",
       "errorGeneric": "Ocurrió un error. Intenta de nuevo.",
       "successMessage": "¡Listo! Te suscribiste a nuestro newsletter 🎉",
-      "disclaimer": "Sin spam. Puedes darte de baja cuando quieras."
+      "disclaimer": "Sin spam. Puedes darte de baja cuando quieras.",
+      "errorRequired": "Ingresa tu correo.",
+      "errorEmail": "Ingresa un correo válido, por ejemplo nombre@dominio.com."
     }
   },
   "shared": {
@@ -636,7 +649,11 @@
       "title": "Últimos artículos",
       "subtitle": "Opinión y análisis sobre educación, convivencia escolar y salud mental en Chile.",
       "press": {
-        "label": "Medios que nos mencionan"
+        "label": "Medios que nos mencionan",
+        "video1": "Reportaje a MUUD en 24 Horas",
+        "video2": "Reportaje a MUUD en Marca Chile",
+        "play": "Reproducir video: {title}",
+        "thirdParty": "Los videos se cargan desde YouTube solo cuando presionas reproducir."
       }
     },
     "social": {
@@ -669,7 +686,8 @@
     "marketingDescription": "Se utilizan para rastrear visitantes en los sitios web y mostrar anuncios relevantes.",
     "learnMore": "Política de privacidad",
     "customizeTitle": "Personaliza tus preferencias de cookies",
-    "customizeDescription": "Puedes elegir qué tipos de cookies permitir. Ten en cuenta que deshabilitar algunas cookies puede afectar tu experiencia en el sitio."
+    "customizeDescription": "Puedes elegir qué tipos de cookies permitir. Ten en cuenta que deshabilitar algunas cookies puede afectar tu experiencia en el sitio.",
+    "saved": "Tus preferencias de cookies fueron guardadas."
   },
   "terms": {
     "title": "Términos y Condiciones MUUD SpA",
@@ -754,6 +772,55 @@
         "description": "Un espacio personal para cada colaborador y datos agregados de clima y ánimo para que líderes y RRHH acompañen a tiempo, sin exponer a las personas.",
         "audience": "Empresas, áreas de Recursos Humanos y líderes de equipo"
       }
+    },
+    "accessibility": {
+      "title": "Declaración de accesibilidad",
+      "description": "Compromiso de MUUD con la accesibilidad web, estado de conformidad con WCAG 2.2 AA, limitaciones conocidas y cómo reportar barreras.",
+      "ogTitle": "Declaración de accesibilidad — MUUD",
+      "ogDescription": "Cómo trabajamos la accesibilidad en el sitio de MUUD y cómo reportar barreras."
     }
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "newTab": "(se abre en una pestaña nueva)",
+    "languageNav": "Idioma"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "La página que buscas no existe o cambió de dirección.",
+    "home": "Volver al inicio"
+  },
+  "accessibility": {
+    "title": "Declaración de accesibilidad",
+    "updated": "Última revisión: 5 de noviembre de 2026",
+    "intro": "En MUUD queremos que cualquier persona pueda usar este sitio, incluidas personas que navegan con teclado, lectores de pantalla, ampliación o subtítulos.",
+    "sections": [
+      {
+        "heading": "Estándar",
+        "paragraphs": [
+          "Usamos como referencia las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.2, nivel AA."
+        ]
+      },
+      {
+        "heading": "Estado de conformidad",
+        "paragraphs": [
+          "Este sitio es parcialmente conforme con WCAG 2.2 AA: la mayor parte del contenido cumple con el estándar, pero algunas partes aún no lo hacen. Esta declaración cubre muud.app; no cubre las aplicaciones móviles ni las plataformas school.muud.app y business.muud.app."
+        ]
+      },
+      {
+        "heading": "Cómo lo evaluamos",
+        "paragraphs": [
+          "Autoevaluación con pruebas automatizadas (axe-core) en todas las páginas e idiomas, a 1280 y 320 píxeles de ancho, más pruebas de navegación por teclado, gestión del foco, movimiento reducido y espaciado de texto. Todavía no contamos con una auditoría externa ni con pruebas completas con lectores de pantalla."
+        ]
+      }
+    ],
+    "limitationsHeading": "Limitaciones conocidas",
+    "limitations": [
+      "Los reportajes de prensa alojados en YouTube son de terceros: sus subtítulos dependen de YouTube y no tienen audiodescripción.",
+      "Los artículos del blog y el EULA están disponibles solo en español, aunque navegues en otro idioma.",
+      "La solicitud de eliminación de cuenta y la agenda de demos usan formularios externos de Google, cuya accesibilidad no controlamos."
+    ],
+    "contactHeading": "Reporta una barrera",
+    "contactText": "Si encuentras un problema de accesibilidad o necesitas este contenido en otro formato, escríbenos a <link>hola@muud.app</link> indicando la página y lo que ocurrió."
   }
 }

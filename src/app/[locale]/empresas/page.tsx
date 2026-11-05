@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import NewTabHint from "@/components/NewTabHint";
 import ContactForm from "@/components/ContactForm";
 import { NewsSection, NewsletterSection } from "@/components/SharedSections";
 import JsonLd from "@/components/JsonLd";
@@ -28,14 +29,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const CHECK_SVG = (
-  <svg viewBox="0 0 24 24" fill="none">
-    <path d="M5 12l4 4 10-10" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+  <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+    <path d="M5 12l4 4 10-10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 function StarIcon() {
   return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+    <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none">
       <path
         d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
         fill="var(--coral)"
@@ -108,7 +109,7 @@ export default function EmpresasPage() {
       <JsonLd data={jsonLd} />
       <Nav activePage="empresas" sectionLinks={NAV_LINKS} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         {/* HERO */}
         <section className="hero">
           <div className="wrap hero-grid">
@@ -121,11 +122,11 @@ export default function EmpresasPage() {
               <div className="hero-cta reveal" data-d="3">
                 <a href="https://calendar.app.google/eM6oThKNK9euEWmg7" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                   {t('hero.scheduleDemo')}
-                </a>
+                <NewTabHint /></a>
                 <a href="#solucion" className="btn btn-ghost">{t('hero.seeHowItWorks')}</a>
               </div>
               <div className="hero-trust reveal" data-d="4">
-                <span className="stars">
+                <span className="stars" aria-hidden="true">
                   {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
                 </span>
                 {t('hero.trustBadge')}
@@ -147,8 +148,8 @@ export default function EmpresasPage() {
               <div className="float f-emoji2">
                 <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7b3f57ea33947ec4d65e_emoji-2.png" alt="" width={74} height={74} />
               </div>
-              <Image className="float f-star f-s1" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={26} height={26} />
-              <Image className="float f-star f-s2" src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620bc_White-Star.svg" alt="" width={20} height={20} />
+              <Image className="float f-star f-s1" src="/brand/star-white.svg" alt="" width={26} height={26} />
+              <Image className="float f-star f-s2" src="/brand/star-white.svg" alt="" width={20} height={20} />
             </div>
           </div>
         </section>
@@ -164,7 +165,7 @@ export default function EmpresasPage() {
             <div className="prob-grid">
               {problems.map((p: any, i: number) => (
                 <article key={p.number} className="prob-card reveal" data-d={String(i + 1)}>
-                  <span className="num">{p.number}</span>
+                  <span className="num" aria-hidden="true">{p.number}</span>
                   <Image
                     className="prob-face"
                     src={`https://cdn.prod.website-files.com/64836681fe716f7bceb62090/${
@@ -173,7 +174,7 @@ export default function EmpresasPage() {
                       i === 2 ? '648b40e4b4ce483ba43c9dac_Pensive%20Face.png' :
                       '648b40fac1081537aaaed288_Face%20With%20Head%20Bandage.png'
                     }`}
-                    alt={p.title}
+                    alt=""
                     width={62}
                     height={62}
                   />
@@ -226,31 +227,31 @@ export default function EmpresasPage() {
               <div className="split-media reveal">
                 <div className="dash" style={{ marginTop: 0 }}>
                   <div className="dash-top">
-                    <span className="dash-dot" style={{ background: "#FF6058" }} />
-                    <span className="dash-dot" style={{ background: "#FEBC2E" }} />
-                    <span className="dash-dot" style={{ background: "#28C840" }} />
+                    <span className="dash-dot" aria-hidden="true" style={{ background: "#FF6058" }} />
+                    <span className="dash-dot" aria-hidden="true" style={{ background: "#FEBC2E" }} />
+                    <span className="dash-dot" aria-hidden="true" style={{ background: "#28C840" }} />
                     <span className="dash-title">{t('solution.leaders.dashboard.title')}</span>
                   </div>
                   <div className="dash-body">
                     <div className="metric">
                       <div className="lab">{t('solution.leaders.dashboard.participation')}</div>
-                      <div className="val" style={{ color: "var(--blue)" }}>{t('solution.leaders.dashboard.participationValue')}</div>
-                      <div className="bar"><i style={{ width: "87%", background: "var(--blue)" }} /></div>
+                      <div className="val" style={{ color: "var(--blue-text)" }}>{t('solution.leaders.dashboard.participationValue')}</div>
+                      <div className="bar" aria-hidden="true"><i style={{ width: "87%", background: "var(--blue)" }} /></div>
                     </div>
                     <div className="metric">
                       <div className="lab">{t('solution.leaders.dashboard.climate')}</div>
-                      <div className="val" style={{ color: "#1F9D6B" }}>{t('solution.leaders.dashboard.climateValue')}</div>
-                      <div className="bar"><i style={{ width: "78%", background: "#1F9D6B" }} /></div>
+                      <div className="val" style={{ color: "var(--green-text)" }}>{t('solution.leaders.dashboard.climateValue')}</div>
+                      <div className="bar" aria-hidden="true"><i style={{ width: "78%", background: "#1F9D6B" }} /></div>
                     </div>
                     <div className="metric">
                       <div className="lab">{t('solution.leaders.dashboard.mood')}</div>
-                      <div className="val" style={{ color: "#6B5AD0" }}>{t('solution.leaders.dashboard.moodValue')}</div>
-                      <div className="bar"><i style={{ width: "78%", background: "#8E7DE8" }} /></div>
+                      <div className="val" style={{ color: "#5A48BF" }}>{t('solution.leaders.dashboard.moodValue')}</div>
+                      <div className="bar" aria-hidden="true"><i style={{ width: "78%", background: "#8E7DE8" }} /></div>
                     </div>
                     <div className="metric alert">
-                      <div className="lab" style={{ color: "var(--coral-deep)" }}>{t('solution.leaders.dashboard.areas')}</div>
-                      <div className="val" style={{ color: "var(--coral-deep)" }}>{t('solution.leaders.dashboard.areasValue')}</div>
-                      <div className="bar"><i style={{ width: "25%", background: "var(--coral)" }} /></div>
+                      <div className="lab" style={{ color: "var(--coral-text)" }}>{t('solution.leaders.dashboard.areas')}</div>
+                      <div className="val" style={{ color: "var(--coral-text)" }}>{t('solution.leaders.dashboard.areasValue')}</div>
+                      <div className="bar" aria-hidden="true"><i style={{ width: "25%", background: "var(--coral)" }} /></div>
                     </div>
                   </div>
                 </div>
@@ -289,18 +290,18 @@ export default function EmpresasPage() {
                                 "linear-gradient(135deg,var(--lilac),#8E7DE8)"
                   }}>
                     {i === 0 && (
-                      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                      <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none">
                         <path d="M12 21s-7-4.35-9.3-8.5C1 9 2.5 5.5 6 5.5c2 0 3.2 1.1 4 2.3.8-1.2 2-2.3 4-2.3 3.5 0 5 3.5 3.3 7C19 16.65 12 21 12 21z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" />
                       </svg>
                     )}
                     {i === 1 && (
-                      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                      <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none">
                         <path d="M4 19c0-3.3 3.6-5 8-5s8 1.7 8 5" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
                         <circle cx="12" cy="8" r="3.4" stroke="#fff" strokeWidth="2" />
                       </svg>
                     )}
                     {i === 2 && (
-                      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                      <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none">
                         <path d="M5 19V9M12 19V5M19 19v-7" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" />
                         <path d="M3 19h18" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" />
                       </svg>
@@ -358,14 +359,14 @@ export default function EmpresasPage() {
         {/* BIG QUOTE */}
         <section className="sec sec-cream">
           <div className="wrap">
-            <div className="bigquote reveal">
-              <p className="q">
+            <figure className="bigquote reveal">
+              <blockquote className="q">
                 &ldquo;{t('quote.text')}&rdquo;
-              </p>
-              <div className="by">
+              </blockquote>
+              <figcaption className="by">
                 <Image
                   src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/648c7bbb3fa58727d47c3b42_character-muud.png"
-                  alt={t('quote.imageAlt')}
+                  alt=""
                   width={54}
                   height={54}
                   style={{ objectFit: "contain", background: "rgba(84,196,232,.15)" }}
@@ -374,8 +375,8 @@ export default function EmpresasPage() {
                   <div className="name">{t('quote.author')}</div>
                   <div className="role">{t('quote.role')}</div>
                 </div>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           </div>
         </section>
 
@@ -408,11 +409,11 @@ export default function EmpresasPage() {
                 <p className="lede">{t('cta.subtitle')}</p>
                 <div className="cta-stores">
                   <a href="https://apps.apple.com/cl/app/m%C3%BCud/id6455428632" target="_blank" rel="noopener noreferrer">
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b5_App%20Store%20-%20Button.svg" alt={t('cta.downloadAppStore')} width={140} height={50} />
-                  </a>
+                    <Image src="/brand/app-store.svg" alt={t('cta.downloadAppStore')} width={140} height={50} />
+                  <NewTabHint /></a>
                   <a href="https://play.google.com/store/apps/details?id=app.muud" target="_blank" rel="noopener noreferrer">
-                    <Image src="https://cdn.prod.website-files.com/64836681fe716f7bceb62090/64836681fe716f7bceb620b7_Play%20Store%20-%20Button.svg" alt={t('cta.downloadPlayStore')} width={140} height={50} />
-                  </a>
+                    <Image src="/brand/google-play.svg" alt={t('cta.downloadPlayStore')} width={140} height={50} />
+                  <NewTabHint /></a>
                 </div>
               </div>
               <ContactForm variant="business" />
